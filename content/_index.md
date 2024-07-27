@@ -1,17 +1,12 @@
 ---
-title: My Site
-toc: false
+title: Holstad Volleyball
+toc: true
 ---
 
-This is the landing page.
+Holstad IL Volleyball er en klubb med 200 medlemmer, og vi holder til i Ås. Vi
+har et tilbud for alle i alle aldre.
 
-## Explore
+## Utforsk
 
-{{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
-{{< /cards >}}
-
-## Documentation
-
-For more information, visit [Hextra](https://imfing.github.io/hextra).
+{{< cards >}} {{< card link="bli-medlem" title="Bli Medlem" icon="plus" >}} {{<
+/cards >}}
