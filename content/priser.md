@@ -11,8 +11,8 @@ title: Priser
 
 - Treningsavgiften følger sesongen, som et skoleår.
 - For Diamantvolley er det ingen treningsavgift.
-- For Tullball er den pålydende 100 kr. (inkluderer frukt)
-- For knøttene (1. og 2. klasse) er den pålydende 200 kr.
+- For Tullball er den pålydende 200 kr. Dette inkluderer frukt.)
+- For knøttene (1. og 2. klasse) er den pålydende 300 kr.
 - For mini er den pålydende 800 kr.
 - For aldersbestemte fra U15 til U19 og 5. og 4. divisjon er den pålydende 1100
   kr.
