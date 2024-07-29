@@ -2,15 +2,55 @@
 title: Lag og treningstider
 ---
 
-### Treningshaller
+## Treningshaller
 
-- Vi trener hovedsakelig på [Åsgård Skole, Skoleveien 7, 1430 Ås](https://goo.gl/maps/7vrwL8nrGXpeffq59)
-- Tullball for de minste arrangeres i Åshallen 2 (den
-  eldste hallen), Gamle Hogstvetvei 9, 1435 Ås
+- Vi trener hovedsakelig på
+  [Åsgård Skole, Skoleveien 7, 1430 Ås](https://goo.gl/maps/7vrwL8nrGXpeffq59)
+- Tullball for de minste arrangeres i Åshallen 2 (den eldste hallen), Gamle
+  Hogstvetvei 9, 1435 Ås
 
-#### Lørdagsvolley
+## Treningstider Åsgård Flerbrukshall
 
-Fellestrening for alle i klubben Lørdag kl 11:00-13:00, Åsgård
+### Mandag
+
+| Tidspunkt     | Bane 1 | Bane 2 | Bane 3   |
+| ------------- | ------ | ------ | -------- |
+| 17:00 - 18:30 | GU15   | JU15   | Knøttene |
+| 18:30 - 20:00 | GU17   | JU17   | D1       |
+| 20:00 - 22:00 | GU19   | JU19   | H1       |
+
+### Tirsdag
+
+| Tidspunkt     | Bane 1  | Bane 2 | Bane 3       |
+| ------------- | ------- | ------ | ------------ |
+| 17:00 - 18:00 | Diamant | GU15   | 4./5. klasse |
+| 18:00 - 19:00 | Diamant | GU15   |              |
+
+### Onsdag
+
+| Tidspunkt     | Bane 1 | Bane 2 | Bane 3 |
+| ------------- | ------ | ------ | ------ |
+| 18:30 - 20:00 | GU15   | JU15   | JU17   |
+| 20:00 - 22:00 | H2     | JU19   |        |
+
+### Torsdag
+
+| Tidspunkt     | Bane 1 | Bane 2 | Bane 3          |
+| ------------- | ------ | ------ | --------------- |
+| 17:00 - 18:30 | GU17   | JU17   | JU15            |
+| 18:30 - 20:00 | GU17   | JU17   | 6./7. klasse    |
+| 20:00 - 22:00 | H1     | H2     | Foreldretrening |
+
+### Fredag
+
+| Tidspunkt     | Bane 1 | Bane 2 | Bane 3 |
+| ------------- | ------ | ------ | ------ |
+| 17:00 - 18:30 | *      | *      | GU17   |
+| 18:30 - 20:00 | *      | *      | GU19   |
+
+#### FredagsVolley
+
+Fellestrening for alle i klubben Fredag kveld, Åsgård
 
 Spondgruppe: https://group.spond.com/LBEAX
 
