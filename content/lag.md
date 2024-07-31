@@ -70,7 +70,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 - Diamantvolley er trening for spillere med utviklingshemning.
 - Torsdag 17:00 - 18:00, Åsgård Flerbrukshall
-- Trener: Geir Åge Michelsen med J15-spillere
+- Trener: Doga og Caroline
 - Spondgruppe: https://group.spond.com/XLNTC
 
 ### Tullball (Barnehage og 1. klasse)
@@ -146,7 +146,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Torsdag kl. 17:00-18:30, Åsgård Flerbrukshall
 - Spondgruppe: https://group.spond.com/UTGZU
 - Trener: Jonas og Max
-- Lagkontakt: Ledig oppgave.
+- Lagkontakt: Amund Kvalbein.
 
 ### GU19 (f. 2006 og yngre)
 
