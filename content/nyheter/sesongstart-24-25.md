@@ -7,10 +7,13 @@ tags:
   - Volleyball
 ---
 
-- Vi trenger nå i Åsgård Flerbrukshall. Det er bra! Litt om hvorfor.
+Velkommen til en ny sesong!
+
+<!-- - Vi trenger nå i Åsgård Flerbrukshall. Det er bra! Litt om hvorfor.
 
 - Oppdaterte treningstider
 
 - Tullball
 
 - Foreldretrening
+-->
