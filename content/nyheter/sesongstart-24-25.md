@@ -9,6 +9,8 @@ tags:
 
 Velkommen til en ny sesong!
 
+Nytt av året er at alle treninger i Åsgård Flerbrukshall.
+
 <!-- - Vi trenger nå i Åsgård Flerbrukshall. Det er bra! Litt om hvorfor.
 
 - Oppdaterte treningstider
