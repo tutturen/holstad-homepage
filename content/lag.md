@@ -58,9 +58,9 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 ### Tirsdag
 
-| Tidspunkt     | Bane 1   | Bane 2   | Bane 3   |
-| ------------- | -------- | -------- | -------- |
-| 16:00 - 17:00 | Tullball | Tullball | Tullball |
+| Tidspunkt     | Bane 1   | Bane 2   | Bane 3   | Bane 4   |
+| ------------- | -------- | -------- | -------- | -------- |
+| 16:00 - 17:00 | Tullball | Tullball | Tullball | Tullball |
 
 # Lag
 
@@ -171,6 +171,8 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Spondgruppe: https://group.spond.com/DZBQO
 - Lagkontakt: Magnus Hushovd
 
+## Annet
+
 ### FredagsVolley
 
 - Fellestrening for alle i klubben.
@@ -178,8 +180,6 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Fredag kveld 17:00-20:00, Åsgård Flerbrukshall
 
 Spondgruppe: https://group.spond.com/LBEAX
-
-## Annet
 
 ### Holstad VBK
 
