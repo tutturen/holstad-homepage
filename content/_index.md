@@ -58,10 +58,10 @@ Diamantvolleyball.
     link="priser"
     subtitle="Se hvor mye det koster for medlemskontigent, treningsavgift og lisens."
   >}}
-  {{< hextra/feature-card
+  <!--{{< hextra/feature-card
     title="Styret"
     subtitle="Se hvem som sitter i styret og hva de jobber med."
-  >}}
+  >}}-->
   {{< hextra/feature-card
     title="Dommerkurs"
     subtitle="Vi ønsker å utdanne våre spillere som dommere. Se når neste dommerkurs er."

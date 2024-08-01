@@ -33,8 +33,6 @@ menu:
     - name: Klubbtøy ↗
       url: "/klubbtoy"
       weight: 3
-    - name: Styret
-      pageRef: /styret
       weight: 2
     - name: Søk
       weight: 4
