@@ -7,19 +7,31 @@ tags:
   - Volleyball
 ---
 
-Velkommen til en ny sesong!
+## Velkommen til en ny sesong med innendørs volleyball!
 
-- Nytt av året er at alle treninger i Åsgård Flerbrukshall.
-- [Oppdaterte treningstider](/lag) finner er nå på nettsiden.
-- Det blir en kickoff-turnering for hele klubben i september! Mer info kommer!
+Vi gjør oss klare for å trene innendørs igjen, og her kommer litt praktisk info.
 
-<!-- - Vi trenger nå i Åsgård Flerbrukshall. Det er bra! Litt om hvorfor.
+### Treninger er i Åsgård Flerbrukshall. 
 
-- Kickoff-turnering.
+Nytt av året er at alle treninger flyttes til Åsgård Flebrukshall. Der får vi trene på tre gode baner, med god plass rundt hver bane, og skillevegger mellom banene. Vi har fått gode tilbakemeldinger på Åsgård Flebrukshall fra forrige sesong, så vi tror dette fort kan bli veldig bra.
 
-- Oppdaterte treningstider
+NB! Tullball vil fortsatt være i Åshallen (gammel del), men alt annet flyttes til Åsgård.
 
-- Tullball
+### Nye treningstider og oppstart
 
-- Foreldretrening
--->
+- Første trening for sesongen er **mandag 19. august**.
+- [Oppdaterte treningstider](/lag) kan du nå finne på hjemmesiden vår.
+
+
+### Kickoff-turnering
+
+Det blir en kickoff-turnering for hele klubben i september! Mer info kommer om det snart.
+
+
+### Foreldretrening
+
+Nytt i år er at vi ønsker å gi et lavterskel tilbud om trening og spill for alle foreldre i klubben en gang i uka. 
+
+- Trening onsdager kl 20:00-22:00.
+- Meld interesse på post@holstadvolley.com eller send melding til Per-Egil om dette er interessant!
+
