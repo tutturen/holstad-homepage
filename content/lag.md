@@ -22,7 +22,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 | Tidspunkt     | Bane 1 | Bane 2 | Bane 3   |
 | ------------- | ------ | ------ | -------- |
 | 17:00 - 18:30 | GU17   | JU15   | Knøttene |
-| 18:30 - 20:00 | GU19   | JU17   | D1       |
+| 18:30 - 20:00 | GU19   | JU17   |          |
 | 20:00 - 22:00 | H1     | JU19   |          |
 
 ### Tirsdag
@@ -41,11 +41,11 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 ### Torsdag
 
-| Tidspunkt     | Bane 1 | Bane 2 | Bane 3 |
-| ------------- | ------ | ------ | ------ |
-| 17:00 - 18:30 | GU17   | JU15   |        |
-| 18:30 - 20:00 | GU19   | JU17   |        |
-| 20:00 - 22:00 | H1     | H2     | JU19   |
+| Tidspunkt     | Bane 1 | Bane 2 | Bane 3           |
+| ------------- | ------ | ------ | ---------------- |
+| 17:00 - 18:30 | GU17   | JU15   | Diamant (1 time) |
+| 18:30 - 20:00 | GU19   | JU17   |                  |
+| 20:00 - 22:00 | H1     | JU19   | H2               |
 
 ### Fredag
 
