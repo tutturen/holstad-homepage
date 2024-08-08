@@ -110,7 +110,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Torsdag kl. 18:30-20:00, Åsgård Flerbrukshall
 - Spondgruppe: https://group.spond.com/MXMSD
 - Trener: Geir Åge Michelsen
-- Lagkontakt: Marta Sødenfor
+- Lagkontakt: Ledig oppgave
 
 #### J f. 06/07/08 (JU19)
 
@@ -171,6 +171,17 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Lagkontakt: Magnus Hushovd
 
 ## Annet
+
+### Foreldretrening
+
+- Lavterskel trening for foreldre i gruppa.
+- Ingen krav til volleyball-erfaring.
+- Meld interesse på post@holstadvolley.com eller send melding til Per-Egil om
+  dette er interessant!
+- Lagkontakt: Per-Egil Gran Jakobsen
+- Onsdag kl 20:00-22:00, Åsgård Flerbrukshall
+
+Spondgruppe: https://group.spond.com/LBEAX
 
 ### FredagsVolley
 
