@@ -133,7 +133,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 ### GU15 (f. 2010 og yngre)
 
-- Onsdag kl. 17:00-19:00, Åsgård Flerbrukshall
+- Tirsdag kl. 17:00-19:00, Åsgård Flerbrukshall
 - Onsdag kl. 18:00-20:00, Åsgård Flerbrukshall
 - Spondgruppe: https://group.spond.com/AYTVI
 - Trener: Victor og Dimian
