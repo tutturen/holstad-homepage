@@ -36,14 +36,14 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 | Tidspunkt     | Bane 1          | Bane 2  | Bane 3  |
 | ------------- | --------------- | ------- | ------- |
 | 18:00 - 20:00 | GU15            | J f. 09 | J f. 10 |
-| 20:00 - 22:00 | Foreldretrening | D1      | H2      |
+| 20:00 - 22:00 | Foreldretrening | Damer   | H2      |
 
 ### Torsdag
 
 | Tidspunkt     | Bane 1 | Bane 2        | Bane 3           |
 | ------------- | ------ | ------------- | ---------------- |
 | 17:00 - 18:30 | GU17   | J f. 10/11    | Diamant (1 time) |
-| 18:30 - 20:00 | GU19   | J f. 09       |                  |
+| 18:30 - 20:00 | GU19   | J f. 09       | Damer satsning   |
 | 20:00 - 22:00 | H1     | J f. 06/07/08 | H2               |
 
 ### Fredag
@@ -101,7 +101,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Torsdag kl. 17:00-18:30, Åsgård Flerbrukshall
 - Spondgruppe: https://group.spond.com/FAYLZ
 - Trener: Geir Åge Michelsen
-- Lagkontakt: Ingvild Follerås, trenger en til da det er en stor gruppe
+- Lagkontakt: Ledig oppgave
 
 #### J f. 09 (JU17)
 
@@ -124,6 +124,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 #### D1 Dametrening (4. divisjon)
 
 - Onsdag kl. 20:00-22:00, Åsgård Flerbrukshall
+- Torsdag kl 18:30-20:00, Åsgård Flerbrukshall, satsetrening med erfaren trener
 - Spondgruppe: https://group.spond.com/XGULL
 - Trener: Laget trener seg selv
 - Lagkontakt: Birgitte Kvarme
@@ -132,9 +133,8 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 ### GU15 (f. 2010 og yngre)
 
-- Mandag kl. 16:00-17:30, Åsgård Flerbrukshall
-- Onsdag kl. 17:00-18:30, Åsgård Flerbrukshall
-- Torsdag kl. 17:00-18:30, Åsgård Flerbrukshall
+- Onsdag kl. 17:00-19:00, Åsgård Flerbrukshall
+- Onsdag kl. 18:00-20:00, Åsgård Flerbrukshall
 - Spondgruppe: https://group.spond.com/AYTVI
 - Trener: Victor og Dimian
 - Lagkontakt: Nora Nordhaug
