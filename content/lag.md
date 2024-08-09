@@ -21,28 +21,28 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 | Tidspunkt     | Bane 1 | Bane 2        | Bane 3   |
 | ------------- | ------ | ------------- | -------- |
-| 17:00 - 18:30 | GU17   | J f. 10/11    | Knøttene |
-| 18:30 - 20:00 | GU19   | J f. 09       |          |
+| 17:00 - 18:30 | G f. 08| J f. 10/11    | Knøttene |
+| 18:30 - 20:00 | GU19   | J f. 09       | GU15     |
 | 20:00 - 22:00 | H1     | J f. 06/07/08 |          |
 
 ### Tirsdag
 
 | Tidspunkt     | Bane 1 | Bane 2        | Bane 3             |
 | ------------- | ------ | ------------- | ------------------ |
-| 17:00 - 19:00 | GU15   | J f. 06/07/08 | 4./5./6./7. klasse |
+| 17:00 - 19:00 | G f. 09| J f. 06/07/08 | 4./5./6./7. klasse |
 
 ### Onsdag
 
 | Tidspunkt     | Bane 1          | Bane 2  | Bane 3  |
 | ------------- | --------------- | ------- | ------- |
-| 18:00 - 20:00 | GU15            | J f. 09 | J f. 10 |
+| 18:00 - 20:00 | G f. 09         | J f. 09 | J f. 10 |
 | 20:00 - 22:00 | Foreldretrening | Damer   | H2      |
 
 ### Torsdag
 
 | Tidspunkt     | Bane 1 | Bane 2        | Bane 3           |
 | ------------- | ------ | ------------- | ---------------- |
-| 17:00 - 18:30 | GU17   | J f. 10/11    | Diamant (1 time) |
+| 17:00 - 18:30 | G f. 08| J f. 10/11    | Diamant (1 time) |
 | 18:30 - 20:00 | GU19   | J f. 09       | Damer satsning   |
 | 20:00 - 22:00 | H1     | J f. 06/07/08 | H2               |
 
@@ -50,7 +50,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 | Tidspunkt     | Bane 1 | Bane 2 | Bane 3 |
 | ------------- | ------ | ------ | ------ |
-| 17:00 - 18:30 | *      | *      | *      |
+| 17:00 - 18:30 | *      | *      | GU15   |
 | 18:30 - 20:00 | *      | *      | *      |
 
 ## Treningstider Åshallen
