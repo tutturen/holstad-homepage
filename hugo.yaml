@@ -30,6 +30,9 @@ menu:
     - name: Bli medlem
       pageRef: /bli-medlem
       weight: 2
+    - name: For Trenere
+      pageRef: /trener
+      weight: 2
     - name: Klubbtøy ↗
       url: "/klubbtoy"
       weight: 3
