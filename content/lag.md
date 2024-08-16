@@ -19,17 +19,17 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 ### Mandag
 
-| Tidspunkt     | Bane 1 | Bane 2        | Bane 3   |
-| ------------- | ------ | ------------- | -------- |
-| 17:00 - 18:30 | G f. 08| J f. 10/11    | Knøttene |
-| 18:30 - 20:00 | GU19   | J f. 09       | GU15     |
-| 20:00 - 22:00 | H1     | J f. 06/07/08 |          |
+| Tidspunkt     | Bane 1  | Bane 2        | Bane 3   |
+| ------------- | ------- | ------------- | -------- |
+| 17:00 - 18:30 | G f. 08 | J f. 10/11    | Knøttene |
+| 18:30 - 20:00 | GU19    | J f. 09       | GU15     |
+| 20:00 - 22:00 | H1      | J f. 06/07/08 |          |
 
 ### Tirsdag
 
-| Tidspunkt     | Bane 1 | Bane 2        | Bane 3             |
-| ------------- | ------ | ------------- | ------------------ |
-| 17:00 - 19:00 | G f. 09| J f. 06/07/08 | 4./5./6./7. klasse |
+| Tidspunkt     | Bane 1  | Bane 2        | Bane 3             |
+| ------------- | ------- | ------------- | ------------------ |
+| 17:00 - 19:00 | G f. 09 | J f. 06/07/08 | 4./5./6./7. klasse |
 
 ### Onsdag
 
@@ -40,11 +40,11 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 ### Torsdag
 
-| Tidspunkt     | Bane 1 | Bane 2        | Bane 3           |
-| ------------- | ------ | ------------- | ---------------- |
-| 17:00 - 18:30 | G f. 08| J f. 10/11    | Diamant (1 time) |
-| 18:30 - 20:00 | GU19   | J f. 09       | Damer satsning   |
-| 20:00 - 22:00 | H1     | J f. 06/07/08 | H2               |
+| Tidspunkt     | Bane 1  | Bane 2        | Bane 3           |
+| ------------- | ------- | ------------- | ---------------- |
+| 17:00 - 18:30 | G f. 08 | J f. 10/11    | Diamant (1 time) |
+| 18:30 - 20:00 | GU19    | J f. 09       | Damer satsning   |
+| 20:00 - 22:00 | H1      | J f. 06/07/08 | H2               |
 
 ### Fredag
 
@@ -178,6 +178,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Ingen krav til volleyball-erfaring.
 - Meld interesse på post@holstadvolley.com eller send melding til Per-Egil om
   dette er interessant!
+- Spondgruppe: https://spond.com/landing/group/NDGHH
 - Lagkontakt: Per-Egil Gran Jakobsen
 - Onsdag kl 20:00-22:00, Åsgård Flerbrukshall
 
