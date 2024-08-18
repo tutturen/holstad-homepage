@@ -19,11 +19,11 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 ### Mandag
 
-| Tidspunkt     | Bane 1  | Bane 2        | Bane 3   |
-| ------------- | ------- | ------------- | -------- |
-| 17:00 - 18:30 | G f. 08 | J f. 10/11    | Knøttene |
-| 18:30 - 20:00 | GU19    | J f. 09       | GU15     |
-| 20:00 - 22:00 | H1      | J f. 06/07/08 |          |
+| Tidspunkt     | Bane 1  | Bane 2        | Bane 3        |
+| ------------- | ------- | ------------- | ------------- |
+| 17:00 - 18:30 | G f. 08 | J f. 10/11    | Mini f. 16/17 |
+| 18:30 - 20:00 | GU19    | J f. 09       | GU15          |
+| 20:00 - 22:00 | H1      | J f. 06/07/08 |               |
 
 ### Tirsdag
 
@@ -79,7 +79,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Lagkontakter: Thomas' mamma og Ebbes mamma
 - Spondgruppe: https://group.spond.com/KIRJO
 
-### Knøttene (2-3. klassinger)
+### Mini 2016/2017 (2-3. klassinger)
 
 - Mandag kl. 17:15-18:30, Åsgård Flerbrukshall
 - Trener og lagkontakt: Per Egil Gran Jakobsen
