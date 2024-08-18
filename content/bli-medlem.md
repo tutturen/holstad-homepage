@@ -6,7 +6,7 @@ title: Bli medlem
 
 1. Meld deg direkte inn i Holstad Idrettslag via Min
 Idrett: https://medlemskap.nif.no/19969
-2. Meld deg inn i vår felles Spond-gruppe her [link]
+2. Meld deg inn i riktig spondgruppe - se (https://holstadvolley.com/lag)[lagsidene]
 
 Vi bruker Klubbadmin som medlemsregister, som er basert på opplysninger fra Min
 Idrett. Det betyr at man må ha en bruker i Min Idrett.
