@@ -76,7 +76,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 - Tirsdager 16:00 - 17:00, Åshallen, gammel del
 - Trener: Sindre Øye Svendby
-- Lagkontakter: Thomas' mamma og Ebbes mamma
+- Lagkontakter: Mia (Ebbes mamma)
 - Spondgruppe: https://group.spond.com/KIRJO
 
 ### Mini 2016/2017 (2-3. klassinger)
@@ -85,7 +85,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Trener og lagkontakt: Per Egil Gran Jakobsen
 - Spondgruppe: https://group.spond.com/OGIAA
 
-### Barneskole (3. trinn til 7. trinn)
+### Barneskole (4. trinn til 7. trinn)
 
 - Tirsdag kl. 17:00-19:00, Åsgård flerbrukshall
 - Spondgruppe: https://group.spond.com/TISJQ
@@ -121,12 +121,12 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Trener: Oliver
 - Lagkontakt: Doga Duzgun
 
-#### D1 Dametrening (4. divisjon)
+####  Dametrening (4. divisjon)
 
 - Onsdag kl. 20:00-22:00, Åsgård Flerbrukshall
 - Torsdag kl 18:30-20:00, Åsgård Flerbrukshall, satsetrening med erfaren trener
 - Spondgruppe: https://group.spond.com/XGULL
-- Trener: Laget trener seg selv
+- Trener: 
 - Lagkontakt: Birgitte Kvarme
 
 ## Herrer / Gutter
@@ -139,14 +139,22 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Trener: Victor og Dimian
 - Lagkontakt: Nora Nordhaug
 
-### GU17 (f. 2008 og yngre)
+### G f. 09
+
+- Mandag kl. 17:00-18:30,Åsgård Flerbrukshall
+- Onsdag kl. 18:00 - 20:00, Åsgård Flerbrukshall
+- Spondgruppe: https://group.spond.com/UTGZU
+- Trener: Caroline og Doga
+- Lagkontakt: 
+
+### G f. 08 
 
 - Mandag kl. 17:00-18:30,Åsgård Flerbrukshall
 - Torsdag kl. 17:00-18:30, Åsgård Flerbrukshall
 - Spondgruppe: https://group.spond.com/UTGZU
 - Trener: Jonas og Max
 - Lagkontakt: Amund Kvalbein.
-
+  
 ### GU19 (f. 2006 og yngre)
 
 - Mandag kl. 18:30-20:00, Åsgård Flerbrukshall
@@ -155,7 +163,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Trener: Noah Vos
 - Lagkontakt: Ledig oppgave
 
-### H2 Herrelaget 4. divisjon (består av GU19)
+### H2 Herrelaget 4. divisjon 
 
 - Onsdag kl. 20:00-22:00, Åsgård Flerbrukshall
 - Torsdag kl. 20:00-22:00, Åsgård Flerbrukshall
@@ -194,5 +202,6 @@ Spondgruppe: https://group.spond.com/LBEAX
 
 ### Holstad VBK
 
-- For alle i klubben hvor det publiseres nyttig og god fellesinfo.
+- Intern gruppe for oppmenn, trener etc.
+- Alt av felles info kommer på mail og/eller blir kommunisert via lagenes spondgruppe
 - Spondgruppe: https://group.spond.com/NWIXX
