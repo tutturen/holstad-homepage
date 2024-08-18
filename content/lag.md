@@ -33,10 +33,10 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 ### Onsdag
 
-| Tidspunkt     | Bane 1          | Bane 2  | Bane 3  |
-| ------------- | --------------- | ------- | ------- |
-| 18:00 - 20:00 | G f. 09         | J f. 09 | J f. 10 |
-| 20:00 - 22:00 | Foreldretrening | Damer   | H2      |
+| Tidspunkt     | Bane 1          | Bane 2  | Bane 3     |
+| ------------- | --------------- | ------- | -------    |
+| 18:00 - 20:00 | G f. 09         | GU15    | J f. 09/10 |
+| 20:00 - 22:00 | Foreldretrening | Damer   | H2         |
 
 ### Torsdag
 
@@ -50,7 +50,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 | Tidspunkt     | Bane 1 | Bane 2 | Bane 3 |
 | ------------- | ------ | ------ | ------ |
-| 17:00 - 18:30 | *      | *      | GU15   |
+| 17:00 - 18:30 | *      | *      | *      |
 | 18:30 - 20:00 | *      | *      | *      |
 
 ## Treningstider Åshallen
