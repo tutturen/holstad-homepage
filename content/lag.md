@@ -22,21 +22,21 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 | Tidspunkt     | Bane 1  | Bane 2        | Bane 3        |
 | ------------- | ------- | ------------- | ------------- |
 | 17:00 - 18:30 | G f. 08 | J f. 10/11    | Mini f. 16/17 |
-| 18:30 - 20:00 | GU19    | J f. 09       |   G f. 09     |
+| 18:30 - 20:00 | GU19    | J f. 09       | G f. 09       |
 | 20:00 - 22:00 | H1      | J f. 06/07/08 |               |
 
 ### Tirsdag
 
-| Tidspunkt     | Bane 1  | Bane 2        | Bane 3             |
-| ------------- | ------- | ------------- | ------------------ |
-| 17:00 - 19:00 | GU15 | J f. 06/07/08 | 4./5./6./7. klasse |
+| Tidspunkt     | Bane 1 | Bane 2        | Bane 3             |
+| ------------- | ------ | ------------- | ------------------ |
+| 17:00 - 19:00 | GU15   | J f. 06/07/08 | 4./5./6./7. klasse |
 
 ### Onsdag
 
-| Tidspunkt     | Bane 1          | Bane 2  | Bane 3     |
-| ------------- | --------------- | ------- | -------    |
-| 18:00 - 20:00 | G f. 09         | GU15    | J f. 09/10 |
-| 20:00 - 22:00 | Foreldretrening | Damer   | H2         |
+| Tidspunkt     | Bane 1          | Bane 2 | Bane 3     |
+| ------------- | --------------- | ------ | ---------- |
+| 18:00 - 20:00 | G f. 09         | GU15   | J f. 09/10 |
+| 20:00 - 22:00 | Foreldretrening | Damer  | H2         |
 
 ### Torsdag
 
@@ -121,12 +121,12 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Trener: Oliver
 - Lagkontakt: Doga Duzgun
 
-####  Dametrening (4. divisjon)
+#### Dametrening (4. divisjon)
 
 - Onsdag kl. 20:00-22:00, Åsgård Flerbrukshall
 - Torsdag kl 18:30-20:00, Åsgård Flerbrukshall, satsetrening med erfaren trener
 - Spondgruppe: https://group.spond.com/XGULL
-- Trener: 
+- Trener:
 - Lagkontakt: Birgitte Kvarme
 
 ## Herrer / Gutter
@@ -145,16 +145,16 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Onsdag kl. 18:00 - 20:00, Åsgård Flerbrukshall
 - Spondgruppe: https://group.spond.com/UTGZU
 - Trener: Caroline og Doga
-- Lagkontakt: 
+- Lagkontakt:
 
-### G f. 08 
+### G f. 08
 
 - Mandag kl. 17:00-18:30,Åsgård Flerbrukshall
 - Torsdag kl. 17:00-18:30, Åsgård Flerbrukshall
 - Spondgruppe: https://group.spond.com/UTGZU
 - Trener: Jonas og Max
 - Lagkontakt: Amund Kvalbein.
-  
+
 ### GU19 (f. 2006 og yngre)
 
 - Mandag kl. 18:30-20:00, Åsgård Flerbrukshall
@@ -163,7 +163,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Trener: Noah Vos
 - Lagkontakt: Ledig oppgave
 
-### H2 Herrelaget 4. divisjon 
+### H2 Herrelaget 4. divisjon
 
 - Onsdag kl. 20:00-22:00, Åsgård Flerbrukshall
 - Torsdag kl. 20:00-22:00, Åsgård Flerbrukshall
@@ -189,19 +189,4 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Spondgruppe: https://spond.com/landing/group/NDGHH
 - Lagkontakt: Per-Egil Gran Jakobsen
 - Onsdag kl 20:00-22:00, Åsgård Flerbrukshall
-
-Spondgruppe: https://group.spond.com/LBEAX
-
-### FredagsVolley
-
-- Fellestrening for alle i klubben.
-- Mer informasjon kommer.
-- Fredag kveld 17:00-20:00, Åsgård Flerbrukshall
-
-Spondgruppe: https://group.spond.com/LBEAX
-
-### Holstad VBK
-
-- Intern gruppe for oppmenn, trener etc.
-- Alt av felles info kommer på mail og/eller blir kommunisert via lagenes spondgruppe
-- Spondgruppe: https://group.spond.com/NWIXX
+- Første trening er onsdag 21. august kl 20:00.
