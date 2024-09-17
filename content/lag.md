@@ -43,7 +43,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 | Tidspunkt     | Bane 1  | Bane 2        | Bane 3           |
 | ------------- | ------- | ------------- | ---------------- |
 | 17:00 - 18:30 | G f. 08 | J f. 10/11    | Diamant (1 time) |
-| 18:30 - 20:00 | GU19    | J f. 09       | Damer satsning   |
+| 18:30 - 20:00 | GU19    | J f. 09       | Damer  |
 | 20:00 - 22:00 | H1      | J f. 06/07/08 | H2               |
 
 ### Fredag
@@ -124,7 +124,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 #### Dametrening (4. divisjon)
 
 - Onsdag kl. 20:00-22:00, Åsgård Flerbrukshall
-- Torsdag kl 18:30-20:00, Åsgård Flerbrukshall, satsetrening med erfaren trener
+- Torsdag kl 18:30-20:00, Åsgård Flerbrukshall
 - Spondgruppe: https://group.spond.com/XGULL
 - Trener:
 - Lagkontakt: Birgitte Kvarme
