@@ -21,7 +21,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 | Tidspunkt     | Bane 1  | Bane 2        | Bane 3        |
 | ------------- | ------- | ------------- | ------------- |
-| 17:00 - 18:30 | G f. 08 | J f. 10/11    | Mini f. 16/17 |
+| 17:00 - 18:30 | G f. 08 | J f. 10/11    | Mini f. 15/16 |
 | 18:30 - 20:00 | GU19    | J f. 09       | G f. 09       |
 | 20:00 - 22:00 | H1      | J f. 06/07/08 |               |
 
@@ -72,14 +72,16 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Trener: Doga og Caroline
 - Spondgruppe: https://group.spond.com/XLNTC
 
-### Tullball (Barnehage og 1. klasse)
+### Tullball (Barnehage opp till 2. klasse)
 
-- Tirsdager 16:00 - 17:00, Åshallen, gammel del
+- 0-4 år: Tirsdager 16:00 - 17:00, Åshallen, gammel del 
+- 5-7 år:  Tirsdager 16:00 - 17:00, Åshallen, ny del
+- Aldersinndelingen er veiledende  
 - Trener: Sindre Øye Svendby
 - Lagkontakter: Mia (Ebbes mamma)
 - Spondgruppe: https://group.spond.com/KIRJO
 
-### Mini 2016/2017 (2-3. klassinger)
+### Mini 2016/2017 (3-4. klassinger)
 
 - Mandag kl. 17:15-18:30, Åsgård Flerbrukshall
 - Trener og lagkontakt: Per Egil Gran Jakobsen
