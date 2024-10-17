@@ -83,7 +83,7 @@ klubb.
 ### Alle skal med
 
 Norges Idrettsforbund støtter alle idrettslag med øremerkede midler for å sørge for at det ikke skal økonomien som er i veien for å drive idrett. 
-Det er for få som generelt ønsker støtte, det er vanskelig å be om hjelp. Vi oppfordrer på til å ta kontakt. 
+Det er generelt for få som ber om støtte, det er vanskelig å be om hjelp. Vi oppfordrer til å ta kontakt. 
 Holstad har økonomiske midler til å sørge for at sporten er gratis, så kan man heller støtte opp med å hjelpe til i kiosk eller lignende hvis man har tid til det. 
 Ta kontakt på post@holstadvolley.com (eller send melding til Kasserer, Sindre Øye Svendby - 93008598 hvis du ønsker en litt mer diskret behandling)
 
