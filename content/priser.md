@@ -76,8 +76,7 @@ klubb.
 - Dersom det oppstår tekniske problemer ved innlogging, registrering eller
   lignende – ta kontakt med NIF IT Support på tlf. 21029090 eller e-post
   support@idrettsforbundet.no
-- Finner du ikke en lisens under din bruker på Min Idrett, klubben på
-  post@holstadvolley.com eller sms til 99402123.
+- Finner du ikke en lisens under din bruker på Min Idrett, kontakt oss på  post@holstadvolley.com (hvis det haster send sms til 99402123 ) 
 
 
 ### Alle skal med
