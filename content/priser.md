@@ -2,6 +2,8 @@
 title: Priser
 ---
 
+Holstad støtter de som trenger det se [Betalingsfritak](#Betalingsfritak) for mer informasjon
+
 ## Årskontigent
 
 Årskontingenten er pålydende 250 kr. Den følger kalenderåret og betales fra det
@@ -79,12 +81,15 @@ klubb.
 - Finner du ikke en lisens under din bruker på Min Idrett, kontakt oss på  post@holstadvolley.com (hvis det haster send sms til 99402123 ) 
 
 
-### Alle skal med
+### Betalingsfritak
 
 Norges Idrettsforbund støtter alle idrettslag med øremerkede midler for å sørge for at det ikke skal økonomien som er i veien for å drive idrett. 
-Det er generelt for få som ber om støtte, det er vanskelig å be om hjelp. Vi oppfordrer til å ta kontakt. 
+Det er generelt for få som ber om Betalingsfritak eller/og støtte, det er vanskelig å be om hjelp. Vi oppfordrer til å ta kontakt. 
 Holstad har økonomiske midler til å sørge for at sporten er gratis for de som trenger det, og så kan man heller støtte opp med å hjelpe til i kiosk eller lignende, hvis man har tid til det. 
-Ta kontakt på post@holstadvolley.com (eller send melding til Kasserer, Sindre Øye Svendby - 93008598 hvis du ønsker en litt mer diskret behandling)
+Vi kan støtte medlemskontigent, treningsavgift, lisens, egenandeler på turer osv. 
+Ta kontakt på post@holstadvolley.com så finner vi en løsning sammen 
+
+(eller send melding til Kasserer, Sindre Øye Svendby - 93008598 hvis du ønsker en litt mer diskret behandling)
 
 
 
