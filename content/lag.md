@@ -10,8 +10,8 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 - Vi trener hovedsakelig på
   [Åsgård Skole, Skoleveien 7, 1430 Ås](https://goo.gl/maps/7vrwL8nrGXpeffq59)
-- Tullball for de minste arrangeres i Åshallen 2 (den eldste hallen), Gamle
-  Hogstvetvei 9, 1435 Ås
+- Tullball for de minste arrangeres i Åshallen (både den nye og den gamle
+  delen), Gamle Hogstvetvei 9, 1435 Ås
 
 # Treningstider
 
@@ -43,15 +43,15 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 | Tidspunkt     | Bane 1  | Bane 2        | Bane 3           |
 | ------------- | ------- | ------------- | ---------------- |
 | 17:00 - 18:30 | G f. 08 | J f. 10/11    | Diamant (1 time) |
-| 18:30 - 20:00 | GU19    | J f. 09       | Damer  |
+| 18:30 - 20:00 | GU19    | J f. 09       | Damer            |
 | 20:00 - 22:00 | H1      | J f. 06/07/08 | H2               |
 
 ### Fredag
 
-| Tidspunkt     | Bane 1 | Bane 2 | Bane 3 |
-| ------------- | ------ | ------ | ------ |
-| 17:00 - 18:30 | *      | *      | *      |
-| 18:30 - 20:00 | *      | *      | *      |
+| Tidspunkt     | Bane 1        | Bane 2        | Bane 3        |
+| ------------- | ------------- | ------------- | ------------- |
+| 17:00 - 18:30 | Fellestrening | Fellestrening | Fellestrening |
+| 18:30 - 20:00 | Fellestrening | Fellestrening | Fellestrening |
 
 ## Treningstider Åshallen
 
@@ -60,6 +60,9 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 | Tidspunkt     | Bane 1   | Bane 2   | Bane 3   | Bane 4   |
 | ------------- | -------- | -------- | -------- | -------- |
 | 16:00 - 17:00 | Tullball | Tullball | Tullball | Tullball |
+
+Tullball arrangeres både i Åshallen 1 og Åshallen 2. I Åshallen 2 er det fri lek
+for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 
 # Lag
 
@@ -74,9 +77,9 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 ### Tullball (Barnehage opp till 2. klasse)
 
-- 0-4 år: Tirsdager 16:00 - 17:00, Åshallen, gammel del 
-- 5-7 år:  Tirsdager 16:00 - 17:00, Åshallen, ny del
-- Aldersinndelingen er veiledende  
+- 0-4 år: Tirsdager 16:00 - 17:00, Åshallen, gammel del
+- 5-7 år: Tirsdager 16:00 - 17:00, Åshallen, ny del
+- Aldersinndelingen er veiledende
 - Trener: Sindre Øye Svendby
 - Lagkontakter: Mia (Ebbes mamma)
 - Spondgruppe: https://group.spond.com/KIRJO
@@ -128,7 +131,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Onsdag kl. 20:00-22:00, Åsgård Flerbrukshall
 - Torsdag kl 18:30-20:00, Åsgård Flerbrukshall
 - Spondgruppe: https://group.spond.com/XGULL
-- Trener:
+- Trener: Maks og Noah
 - Lagkontakt: Birgitte Kvarme
 
 ## Herrer / Gutter
@@ -154,7 +157,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Mandag kl. 17:00-18:30,Åsgård Flerbrukshall
 - Torsdag kl. 17:00-18:30, Åsgård Flerbrukshall
 - Spondgruppe: https://group.spond.com/UTGZU
-- Trener: Jonas og Max
+- Trener: Jonas og Maks
 - Lagkontakt: Amund Kvalbein.
 
 ### GU19 (f. 2006 og yngre)
@@ -169,7 +172,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 - Onsdag kl. 20:00-22:00, Åsgård Flerbrukshall
 - Torsdag kl. 20:00-22:00, Åsgård Flerbrukshall
-- Spondgruppe: https://group.spond.com/CAZZR
+- Spondgruppe: https://group.spond.com/DZBQO
 - Trener: Sindre Svendby
 - Lagkontakt: Ledig oppgave
 
@@ -178,6 +181,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 - Mandag kl. 20:00-22:00, Åsgård Flerbrukshall
 - Torsdag kl. 20:00-22:00, Åsgård Flerbrukshall
 - Spondgruppe: https://group.spond.com/DZBQO
+- Trener: Per-Egil Gran Jakobsen
 - Lagkontakt: Magnus Hushovd
 
 ## Annet
@@ -186,9 +190,7 @@ rundt banene. Tullball vil fortsatt være i Åshallen.
 
 - Lavterskel trening for foreldre i gruppa.
 - Ingen krav til volleyball-erfaring.
-- Meld interesse på post@holstadvolley.com eller send melding til Per-Egil om
-  dette er interessant!
+- Meld interesse på post@holstadvolley.com eller send melding til Per-Egil
 - Spondgruppe: https://spond.com/landing/group/NDGHH
 - Lagkontakt: Per-Egil Gran Jakobsen
 - Onsdag kl 20:00-22:00, Åsgård Flerbrukshall
-- Første trening er onsdag 21. august kl 20:00.
