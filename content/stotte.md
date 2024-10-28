@@ -47,9 +47,12 @@ Flax-lodd og Belago.
 Gjennom å være grasrotgiver er du med på å oppfylle små og store drømmer for
 medlemmene i Holstad Volley.
 
-Du kan bli grasrotgiver på en av følgende måter: • Hos kommisjonæren •
-Mobilspill • Norsk Tipping sine nettsider • SMS, send Grasrotandelen 971261633
-til 60000
+Du kan bli grasrotgiver på en av følgende måter:
+
+- Hos kommisjonæren
+- Mobilspill
+- Norsk Tipping sine nettsider
+- SMS, send Grasrotandelen 971261633 til 60000
 
 Les mer om ordningen på Norsk Tippings sider:
 https://www.norsk-tipping.no/grasrotandelen
