@@ -16,3 +16,8 @@ Volleyball.
 - [NVBF Faghefte Minivolleyball, Minisandvolleyball](/dokumenter/nvbf_faghefte-mini_ungdom.pdf)
 - [NVBF Utviklingstrappa](/dokumenter/nvbf_utviklingstrappa_15mai.pdf)
 - [NVBF Volleyballstyrke for ungdom](static/dokumenter/nvbf_volleyballstyrke-for-ungdom.pdf)
+
+## Kontaktinformasjon
+
+Kontakt sportslig ansvarlig i klubben **Vinh Vo-Ma** via Spond om du har noen
+spørsmål.
