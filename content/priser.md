@@ -2,7 +2,8 @@
 title: Priser
 ---
 
-Holstad støtter de som trenger det se [Betalingsfritak](#Betalingsfritak) for mer informasjon
+Holstad støtter de som trenger det se [Betalingsfritak](#Betalingsfritak) for
+mer informasjon
 
 ## Årskontigent
 
@@ -13,7 +14,8 @@ Holstad støtter de som trenger det se [Betalingsfritak](#Betalingsfritak) for m
 
 - Treningsavgiften følger sesongen, som et skoleår.
 - For Diamantvolley er det ingen treningsavgift.
-- For Tullball er den pålydende 200 kr. Dette inkluderer frukt.)
+- For Fredagsvolley er det ingen treningsavgift, men en må betale årskontigent.
+- For Tullball er den pålydende 200 kr. Dette inkluderer frukt.
 - For 2016/2017 (2-3. klassinger) er den pålydende 400 kr.
 - For Mini er den pålydende 800 kr.
 - For aldersbestemte fra U15 til U19 og 5. og 4. divisjon er den pålydende 1100
@@ -78,23 +80,19 @@ klubb.
 - Dersom det oppstår tekniske problemer ved innlogging, registrering eller
   lignende – ta kontakt med NIF IT Support på tlf. 21029090 eller e-post
   support@idrettsforbundet.no
-- Finner du ikke en lisens under din bruker på Min Idrett, kontakt oss på  post@holstadvolley.com (hvis det haster send sms til 99402123 ) 
-
+- Finner du ikke en lisens under din bruker på Min Idrett, kontakt oss på
+  post@holstadvolley.com (hvis det haster send sms til 99402123 )
 
 ### Betalingsfritak
 
-Norges Idrettsforbund støtter alle idrettslag med øremerkede midler for å sørge for at det ikke skal økonomien som er i veien for å drive idrett. 
-Det er generelt for få som ber om Betalingsfritak eller/og støtte, det er vanskelig å be om hjelp. Vi oppfordrer til å ta kontakt. 
-Holstad har økonomiske midler til å sørge for at sporten er gratis for de som trenger det, og så kan man heller støtte opp med å hjelpe til i kiosk eller lignende, hvis man har tid til det. 
-Vi kan støtte medlemskontigent, treningsavgift, lisens, egenandeler på turer osv. 
-Ta kontakt på post@holstadvolley.com så finner vi en løsning sammen 
+Norges Idrettsforbund støtter alle idrettslag med øremerkede midler for å sørge
+for at det ikke skal økonomien som er i veien for å drive idrett. Det er
+generelt for få som ber om Betalingsfritak eller/og støtte, det er vanskelig å
+be om hjelp. Vi oppfordrer til å ta kontakt. Holstad har økonomiske midler til å
+sørge for at sporten er gratis for de som trenger det, og så kan man heller
+støtte opp med å hjelpe til i kiosk eller lignende, hvis man har tid til det. Vi
+kan støtte medlemskontigent, treningsavgift, lisens, egenandeler på turer osv.
+Ta kontakt på post@holstadvolley.com så finner vi en løsning sammen
 
-(eller send melding til Kasserer, Sindre Øye Svendby - 93008598 hvis du ønsker en litt mer diskret behandling)
-
-
-
-
-
-
-
-
+(eller send melding til Kasserer, Torgeir Solvin - 90145444 hvis du ønsker en
+litt mer diskret behandling)
