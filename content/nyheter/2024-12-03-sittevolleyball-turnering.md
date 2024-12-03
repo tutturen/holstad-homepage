@@ -18,7 +18,7 @@ Oppmøte, oppvarming og bli kjent med regler fra 17:30.
 **Turneringen starter 18.00 og avsluttes kl 20.00**
 
 
-
+**Påmelding:** https://forms.gle/HWjc5LCgc4GGRoeX9
 
 #### Hva er sittevolleyball?
 
@@ -36,5 +36,8 @@ Vi senker nettet til rett over 1 meter og kjører litt mindre baner, hvert lag b
 Nei, dette er en lavterskelturnering med fokus på å ha det VELDIG gøy, men vinneren og 2 lag vi trekker ut får premie. 
 
 
+**Påmelding:** https://forms.gle/HWjc5LCgc4GGRoeX9
+
 Denne turneringen arrangeres av Holstad Volleyball i forbindelse med NVBF sin #SittNedUka 
 [Les mer om det på forbundet sine nettsider](https://volleyball.no/nyheter/sitt-ned-uka-2024-bli-med-og-fa-muligheten-til-a-vinne-20-000-kr-til-din-klubb/)
+
