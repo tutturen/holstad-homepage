@@ -16,11 +16,13 @@ mer informasjon
 - For Diamantvolley er det ingen treningsavgift.
 - For Fredagsvolley er det ingen treningsavgift, men en må betale årskontigent.
 - For Tullball er den pålydende 200 kr. Dette inkluderer frukt.
-- For 2016/2017 (2-3. klassinger) er den pålydende 400 kr.
-- For Mini er den pålydende 800 kr.
+- For Mini (2-3. klasse) er den pålydende 400 kr.
+- For Mini (4. klasse) er den pålydende 400 kr.
+- For Mini (5.-7. klasse) er den pålydende 800 kr.
 - For aldersbestemte fra U15 til U19 og 5. og 4. divisjon er den pålydende 1100
   kr.
 - For 3. divisjon og høyere divisjoner er den pålydende 1300 kr.
+- For Foreldretrening er treningsavgiften pålydende 600 kr.
 
 **Merk**
 
