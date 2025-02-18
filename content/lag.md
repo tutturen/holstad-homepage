@@ -136,7 +136,7 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Diamantvolley er trening for spillere med utviklingshemning.
 - Torsdag 17:00 - 18:00, Åsgård Skole
 - Trener: Doga og Caroline
-- Spondgruppe: https://group.spond.com/XLNTC
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### Tullball (Barnehage opp til 2. klasse)
 
@@ -145,27 +145,29 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Aldersinndelingen er veiledende
 - Trener: Sindre Øye Svendby
 - Lagkontakter: Mia (Ebbes mamma)
-- Spondgruppe: https://group.spond.com/KIRJO
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### Mini (2.-3. klasse)
 
 - Mandag kl. 17:15-18:30, Åsgård Skole
 - Trener og lagkontakt: Per Egil Gran Jakobsen
-- Spondgruppe: https://group.spond.com/OGIAA
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### Mini (4. klasse)
 
 - Tirsdag kl 16:00-17:00, Åshallen, ny del
-- Spondgruppe: https://group.spond.com/TISJQ
 - Trener og lagleder: Sindre Svendby
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
+
 
 ### Mini (5.-7. klasse)
 
 - Tirsdag kl. 17:00-18:30, Åsgård Skole
 - Torsdag kl 17:00-18:15, Åsgård Skole
-- Spondgruppe: https://group.spond.com/BXRKH
 - Trener: Geir Åge Michelsen
 - Lagkontakt: Meld interesse
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
+
 
 ## Damer / Jenter
 
@@ -174,35 +176,36 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Mandag kl. 17:00-18:30, Åsgård Skole
 - Onsdag kl. 18:00-20:00, Åsgård Skole
 - Torsdag kl. 18:00-19:30, Åsgård Skole
-- Spondgruppe: https://group.spond.com/FAYLZ
 - Trener: Geir Åge Michelsen
 - Lagkontakt: Ledig oppgave
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 #### J17 (f. 2009)
 
 - Mandag kl. 18:30-20:00, Åsgård Skole
 - Onsdag kl. 18:00-20:00, Åsgård Skole
 - Torsdag kl. 18:30-20:00, Åsgård Skole
-- Spondgruppe: https://group.spond.com/MXMSD
 - Trener: Geir Åge Michelsen
 - Lagkontakt: Ledig oppgave
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 #### J19 (f. 2006-2008)
 
 - Mandag kl. 20:00-22:00, Åsgård Skole
 - Tirsdag kl. 17:00-19:00, Åsgård Skole
 - Torsdag kl. 19:30-21:30, Åsgård Skole
-- Spondgruppe: https://group.spond.com/FIHJD
 - Trener: Oliver
 - Lagkontakt: Doga Duzgun
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
+
 
 #### Dametrening (4. divisjon)
 
 - Onsdag kl. 20:00-22:00, Åsgård Skole
 - Torsdag kl 19:30-21:30, felles med J19, Åsgård Skole
-- Spondgruppe: https://group.spond.com/XGULL
 - Trener: Maks og Noah
 - Lagkontakt: Birgitte Kvarme
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ## Herrer / Gutter
 
@@ -211,49 +214,49 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Tirsdag kl. 17:00-19:00, Åsgård Skole
 - Onsdag kl. 18:00-20:00, Åsgård Skole
 - Torsdag 17-18:30, Åsgård Skole
-- Spondgruppe: https://group.spond.com/AYTVI
 - Trener: Victor og Dimian
 - Lagkontakt: Nora Nordhaug
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### G17 (f. 2009)
 
 - Mandag kl. 17:00-18:30,Åsgård Skole
 - Onsdag kl. 18:00 - 20:00, Åsgård Skole
-- Spondgruppe: https://group.spond.com/UTGZU
 - Trener: Caroline og Doga
 - Lagkontakt:
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### G17 (f. 2008)
 
 - Mandag kl. 17:00-18:30,Åsgård Skole
 - Torsdag kl. 18:30-20:00, Åsgård Skole
-- Spondgruppe: https://group.spond.com/UTGZU
 - Trener: Jonas og Maks
 - Lagkontakt: Amund Kvalbein.
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### G19 (f. 2006 og yngre)
 
 - Mandag kl. 18:30-20:00, Åsgård Skole
 - Torsdag kl. 20:00-22:00, Åsgård Skole
-- Spondgruppe: https://group.spond.com/CAZZR
 - Trener: Noah Vos
 - Lagkontakt: Ledig oppgave
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### H2 Herrelaget 4. divisjon
 
 - Onsdag kl. 20:00-22:00, Åsgård Skole
 - Torsdag kl. 20:00-22:00, Åsgård Skole
-- Spondgruppe: https://group.spond.com/DZBQO
 - Trener: Sindre Svendby
 - Lagkontakt: Ledig oppgave
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### H1 Herrelaget 2. divisjon
 
 - Mandag kl. 20:00-22:00, Åsgård Skole
 - Torsdag kl. 20:00-22:00, Åsgård Skole
-- Spondgruppe: https://group.spond.com/DZBQO
 - Trener: Per-Egil Gran Jakobsen
 - Lagkontakt: Magnus Hushovd
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ## Annet
 
@@ -271,6 +274,6 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Lavterskel trening for foreldre i gruppa.
 - Ingen krav til volleyball-erfaring.
 - Meld interesse på post@holstadvolley.com eller send melding til Per-Egil
-- Spondgruppe: https://spond.com/landing/group/NDGHH
 - Lagkontakt: Per-Egil Gran Jakobsen
 - Onsdag kl 20:00-22:00, Åsgård Skole
+- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
