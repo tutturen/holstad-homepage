@@ -156,7 +156,8 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 ### Mini (4. klasse)
 
 - Tirsdag kl 16:00-17:00, Åshallen, ny del
-- Trener og lagleder: Sindre Svendby
+- Trener: Sindre Svendby
+- lagleder: Hanne Malde
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 
@@ -186,7 +187,7 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Onsdag kl. 18:00-20:00, Åsgård Skole
 - Torsdag kl. 18:30-20:00, Åsgård Skole
 - Trener: Geir Åge Michelsen
-- Lagkontakt: Ledig oppgave
+- Lagkontakt: Geir og Pål
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 #### J19 (f. 2006-2008)
@@ -231,7 +232,7 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Mandag kl. 17:00-18:30,Åsgård Skole
 - Torsdag kl. 18:30-20:00, Åsgård Skole
 - Trener: Jonas og Maks
-- Lagkontakt: Amund Kvalbein.
+- Lagkontakt: Amund Kvalbein
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### G19 (f. 2006 og yngre)
