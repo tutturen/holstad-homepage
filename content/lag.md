@@ -178,7 +178,7 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Onsdag kl. 18:00-20:00, Åsgård Skole
 - Torsdag kl. 18:00-19:30, Åsgård Skole
 - Trener: Geir Åge Michelsen
-- Lagkontakt: Ledig oppgave
+- Lagkontakt: Morten og Marta 
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 #### J17 (f. 2009)
