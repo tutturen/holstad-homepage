@@ -205,7 +205,7 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Onsdag kl. 20:00-22:00, Åsgård Skole
 - Torsdag kl 19:30-21:30, felles med J19, Åsgård Skole
 - Trener: Maks og Noah
-- Lagkontakt: Birgitte Kvarme
+- Lagkontakt: Marta Søndenfor
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ## Herrer / Gutter
@@ -216,7 +216,7 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Onsdag kl. 18:00-20:00, Åsgård Skole
 - Torsdag 17-18:30, Åsgård Skole
 - Trener: Victor og Dimian
-- Lagkontakt: Nora Nordhaug
+- Lagkontakt: Nora Nordhaug og Ane Bergum
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### G17 (f. 2009)
