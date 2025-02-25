@@ -14,8 +14,8 @@ mer informasjon
 
 - Treningsavgiften følger sesongen, som et skoleår.
 - For Diamantvolley er det ingen treningsavgift.
+- - For Tullball er det ingen treningsavgift
 - For Fredagsvolley er det ingen treningsavgift, men en må betale årskontigent.
-- For Tullball er den pålydende 200 kr. Dette inkluderer frukt.
 - For Mini (2-3. klasse) er den pålydende 400 kr.
 - For Mini (4. klasse) er den pålydende 400 kr.
 - For Mini (5.-7. klasse) er den pålydende 800 kr.
@@ -29,7 +29,7 @@ mer informasjon
 - Det praktiseres ikke søskenrabatt.
 - Det sendes ut en faktura for (halv) treningsavgift for høstsesongen og en
   faktura for (halv) treningsavgift for vårsesongen.
-- Treningsavgiften dekker påmelding til alle turneringer og honorar til trenere.
+- Treningsavgiften dekker påmelding til alle turneringer og lønn til trenere.
 
 ## Spillerlisens - lisensen for sesongen 2024/2025
 
