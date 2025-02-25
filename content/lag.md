@@ -24,7 +24,7 @@ banene. Tullball vil fortsatt være i Åshallen.
 | ------------- | ------------- | ------------------ | ------------------ |
 | 17:00 - 18:30 | G17 (f. 2008) | J15 (f. 2010/2011) | Mini (2-3. klasse) |
 | 18:30 - 20:00 | G19           | J17 (f. 2009)      | G17 (f. 2009)      |
-| 20:00 - 22:00 | H1            | H2                 | J19                |
+| 20:00 - 22:00 | H1            | Mosjonistvolley    | J19                |
 
 ## Tirsdag, Åsgård Skole
 
@@ -44,7 +44,7 @@ banene. Tullball vil fortsatt være i Åshallen.
 | Tidspunkt     | Bane 1          | Bane 2 | Bane 3     |
 | ------------- | --------------- | ------ | ---------- |
 | 18:00 - 20:00 | G17 (f. 2009)   | G15    | J f. 09/10 |
-| 20:00 - 22:00 | Foreldretrening | Damer  | H2         |
+| 20:00 - 22:00 | Mosjonistvolley | Damer  | H2         |
 
 ## Torsdag, Åsgård Skole
 
@@ -144,7 +144,7 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - 5-7 år: Tirsdager 16:00 - 17:00, Åshallen, ny del
 - Aldersinndelingen er veiledende
 - Trener: Sindre Øye Svendby
-- Lagkontakter: Mia (Ebbes mamma)
+- Lagkontakter: Mia (Ebbes mamma) og Edvard (Hedvigs Far)
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### Mini (2.-3. klasse)
@@ -269,11 +269,12 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Ingen treningsavgift, kun årskontigent
 - Kontakt: Geir Michelsen
 
-### Foreldretrening
+### Mosjonistvolley
 
-- Lavterskel trening for foreldre i gruppa.
+- Lavterskel trening for foreldre eller andre mosjonister
 - Ingen krav til volleyball-erfaring.
-- Meld interesse på post@holstadvolley.com eller send melding til Per-Egil
-- Lagkontakt: Per-Egil Gran Jakobsen
+- Meld interesse på post@holstadvolley.com 
+- Lagkontakt: Espen Langass
+- Mandag kl 20:00-22:00, Åsgård Skole
 - Onsdag kl 20:00-22:00, Åsgård Skole
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
