@@ -196,7 +196,7 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Tirsdag kl. 17:00-19:00, Åsgård Skole
 - Torsdag kl. 19:30-21:30, Åsgård Skole
 - Trener: Oliver
-- Lagkontakt: Doga Duzgun
+- Lagkontakt: Agnes
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 
@@ -224,7 +224,7 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Mandag kl. 17:00-18:30,Åsgård Skole
 - Onsdag kl. 18:00 - 20:00, Åsgård Skole
 - Trener: Caroline og Doga
-- Lagkontakt:
+- Lagkontakt: Jon Anders Næsset
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### G17 (f. 2008)
