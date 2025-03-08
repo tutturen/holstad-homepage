@@ -7,38 +7,19 @@ på best mulig måte. Klubben har her en oversikt over hvilke oppgaver som flere
 enn styret og trenerne kan bidra med å utføre. Innføring i alle oppgavene vil
 bli gitt.
 
-### Volleyballer (klubboppgave)
+### Bestiling av Klubbtøy 
+Kontaktperson mellom klubben og leverandør, følge opp at ting blir betalt når de blir bestilt, 
+håntere kommunikasjon til spillerne når ting har ankommet.  Vi bestiller hver 14 dag.
+forutsigbar jobb, arbeidsmengden er stor sett  jevnt ut over året. Ingen hast, kan sette av tid i kalenderen og følge opp når det passer deg.
 
-Vi trenger en ansvarlig som har i oppgave å ha oversikt over hvor mange baller
-vi har til rådighet og sikre at vi har synlig navn på ballene. Dette er en enkel
-oppgave som bør utføres hver annen måned. Noen ganger blir ballene
-ødelagte/utslitte, noen ganger kommer de ikke hjem etter en turnering, noen
-ganger havner de i taket e.l. Det er nødvendig at vi har et gitt antall baller
-til rådighet. Styret utfører bestilling av baller.
+### Lisens og overgangsansvarlig
 
-### Førstehjelpsmapper (klubboppgave)
+Nye spillere trenger lisens, dette gjøres stort sett på 3 min pr spiller, men det kan komme endel av de rett før turneringer. 
+Hver ting er enkel og håntere men forespørsel kan  komme fredag kveld eller lignende.  Tar du ting på stark arm, og fikser ting via mobilen så er dette en smal sak. 
+men ikke en oppgave man kan legge til side og gjøre hver 14 dag.
 
-Vi trenger å ha 6 førstehjelpsmapper. Det er behov for at en sikrer at de er
-klare til bruk, bør sjekkes en gang per måned. Innkjøp må normalt gjøres et par
-ganger i løpet av sesongen.
+### Handymann 
 
-### Turneringer (lagoppgaver kan deles på flere personer)
-
-Påmeldinger. Vi trenger en per lag som kan følge opp påmeldinger til turneringer
-innen en gitt frist, registrere spillerne som skal delta i Profixio og
-kontrollere at lisens er betalt.
-
-### Logistikk.
-
-Vi trenger en per lag som spiller ungdomsturnering til å ha ansvar for at
-logistikken med reisen til og fra ordnes.
-
-### Teenturneringer (klubboppgave)
-
-Hildegunn trenger en hjelper til å ivareta det praktiske i forbindelse med disse
-frivillige turneringene.
-
-### Dommere (klubboppgave)
-
-Klubben har krav til å stille med dommere som dømmer seriekamper. Det er behov
-for at en bistår og følger opp dommerne etter behov.
+Med 300 personer i arbeid er det stadig noen småting som må gjøres.
+Det kan være fylle på med førstehjelpsutstyr, kjøpe inn  småting (vi refundere), fikse stolper, bygge kasser eller andre apparater vi trenger.
+Hvis du f.eks jobber skift og har litt tid på dagen så kan dette være en fint ting å bidra med. 
