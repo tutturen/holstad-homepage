@@ -17,7 +17,7 @@ toc: true
 <div class="hx-mb-8 hx-max-w-[100px]">
 {{< hextra/hero-subtitle >}}
   Holstad Idrettslag er et idrettslag fra Holstad i Ås kommune som driver med
-  volleyball og sandvolleyball. Vi er 245 medlemmer i dag.
+  volleyball og sandvolleyball. Vi har ca 300 medlemmer i dag.
 {{< /hextra/hero-subtitle >}}
 </div>
 
