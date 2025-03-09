@@ -45,5 +45,6 @@ for å vite hvilken lisens du vil ha.
 
 ### Kjøpe drakt
 
-Du kan kjøpe drakt og annet tøy i [webshopen vår](/klubbtoy/). Det kan ta litt
-tid å få drakt, så vær tidlig ute.
+De aller fleste lagene har ikke noen draktbag, men personlige drakter. Du kan
+kjøpe drakt og annet tøy i [webshopen vår](/klubbtoy/). Det kan ta litt tid å få
+drakt, så vær tidlig ute.
