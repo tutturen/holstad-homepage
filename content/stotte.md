@@ -2,6 +2,19 @@
 
 ![Støtt Holstad Volleyball](det-betyr-sa-mye.png)
 
+Under er noen måter du kan støtte oss på, fra rent økonomisk, til å bruke tiden din på oss
+
+## Hjelp under arrangement 
+Vi ønsker å arrangerer mange hjemme turneringer, dette er fint for spillerne på laget, og for at foreldre skal bli kjent.
+Det gir oss også penger fra kiosk og reduserer påmeldingsavgiften vår til forbundet, så stille opp og være med å arrangere er 
+et tiltak som gir direkte penger i kassa for klubben
+
+## Mat til kiosk under arrangement
+Om du ikke kan være der direkte og hjelpe til under arrangementet så det veldig fint hvis man kan stille med rundstykker, vaffelrøre eller kaker. 
+Vi sender ut spørsmål i spond appen når vi trenger hjelp. 
+
+
+
 ## Støtt Holstad Volley digitalt med Støtte-appen
 
 I denne lille filmsnutten (50 sek.) forklares det geniale Støtte-konseptet som
@@ -13,20 +26,6 @@ Vi oppfordrer derfor alle våre medlemmer til å laste ned appen og at flest mul
 blir støttespillere. Enklere kan det ikke bli!
 
 Se vidoen her: https://hei.stotte.no/v/QAYYW/?preview=true
-
-## Spond Cashback
-
-Cashback er en populær måte å spare penger mens du handler. Når du deltar i et
-Cashback-program, får du en prosentandel av kjøpesummen tilbake. For eksempel,
-hvis du kjøper noe for 1000 kroner i en butikk som tilbyr 5% Cashback, vil du
-tjene 50 kroner tilbake. Denne summen samles opp over tid, og gruppene du
-støtter får utbetalt denne summen når gruppen har nådd 500 kr.
-
-- Helt gratis
-- Ingen ekstra kostnader
-
-Støtt Holstad med Spond Cashback her:
-https://supporter.spond.com/65iaxo8ymyizns3ypq83hb11e9c3
 
 ## Grasrotandelen
 
@@ -60,3 +59,12 @@ https://www.norsk-tipping.no/grasrotandelen
 ### Så mye har vi fått - tusen takk til alle våre givere.
 
 <iframe frameborder="0" height="650" scrolling="yes"  src="https://www.norsk-tipping.no/grasrotandelen/statistikk/iframe/912053997" width="550"> </iframe>
+
+
+## Mat til kiosk 
+
+Vi arrangerer jevnlig turneringer, 
+
+
+
+
