@@ -18,14 +18,18 @@
 - Rett til oppfølgning og veiledning
 
 **Nyttige ressurser for unge arbeidstakere:**
-- [Arbeidstilsynet: Unge arbeidstakere](https://www.arbeidstilsynet.no/tema/ungdom/)
-- [NAV: Dine rettigheter som arbeidstaker](https://www.nav.no/arbeid/ungdom)
-- [LNU: Rettigheter for unge arbeidstakere](https://www.lnu.no/ressurser/rettighetssenteret/arbeid/)
+- [Arbeidstilsynet: Unge arbeidstakere](https://www.arbeidstilsynet.no/arbeidstid-og-organisering/tilrettelegging/ungdom-i-arbeid/)
+- [Skatteetaten : Frikort](https://www.skatteetaten.no/person/skatt/skattekort/frikort/)
+- [LO - jobbhåndboka](https://www.lo.no/hva-vi-mener/jobbhandboka/)
 
 ## Trenerkurs
-- Minivolleyball (6-12 år): Trenerkurs 1
-- Ungdomsvolleyball (13-16 år): Trenerkurs 2
-- Junior/Senior (17+ år): Trenerkurs 3
+- Minivolleyball (6-12 år): [Trener 1 - Modul 1 -Minitreneren ](https://volleyball.no/product/minitrenern/)
+- Ungdomsvolleyball (13-16 år): [Trener 1](https://volleyball.no/product/trener-1/) 
+
+[Kurskalender finner man på NVBF sine side](https://volleyball.no/kursoversikt/)
+
+I tillegg må all gjennomføre [trenerattest](https://trener.nif.no/CoachCertificate) for de gruppene man trener (barn, ungdom og/eller voksne)
+
 
 Påmelding til kurs skjer via [Volleyball.no](https://volleyball.no/utdanning/trenerkurs/) eller direkte gjennom klubbens trenerkoordinator.
 
@@ -39,6 +43,8 @@ Påmelding til kurs skjer via [Volleyball.no](https://volleyball.no/utdanning/tr
 - Send inn timeoversikt innen den 5. hver måned
 - Lønn utbetales den 7. hver måned
 - Husk å oppdatere skattekortet ditt
+
+> **OBS** Har du ikke sendt inn timeliste innen den 5. kan du i værste fall ikke få utbetalt lønn før neste måned. 
 
 ## Oppførsel
 
