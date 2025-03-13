@@ -8,7 +8,7 @@ Her er noen videoer av øvelser eller tips i hvordan man lærer volleyballteknik
 ### Armbevgelse i smash
 {{< youtube LUAHipSJhzM >}}
 {{< youtube u-WhjYYocBs >}}
-bWVWKnB04ho
+{{< youtube bWVWKnB04ho >}}
 
 ### start øvelser relatert til smash 
 {{< youtube xb4AkCcz6z4 >}}
