@@ -2,7 +2,7 @@
 title: Priser
 ---
 
-Holstad støtter de som trenger det se [Betalingsfritak](#Betalingsfritak) for
+Holstad støtter de som trenger det, se [Betalingsfritak](#betalingsfritak) for
 mer informasjon
 
 ## Årskontigent
@@ -14,7 +14,7 @@ mer informasjon
 
 - Treningsavgiften følger sesongen, som et skoleår.
 - For Diamantvolley er det ingen treningsavgift.
-- - For Tullball er det ingen treningsavgift
+- For Tullball er det ingen treningsavgift
 - For Fredagsvolley er det ingen treningsavgift, men en må betale årskontigent.
 - For Mini (2-3. klasse) er den pålydende 400 kr.
 - For Mini (4. klasse) er den pålydende 400 kr.
@@ -93,8 +93,8 @@ generelt for få som ber om Betalingsfritak eller/og støtte, det er vanskelig �
 be om hjelp. Vi oppfordrer til å ta kontakt. Holstad har økonomiske midler til å
 sørge for at sporten er gratis for de som trenger det, og så kan man heller
 støtte opp med å hjelpe til i kiosk eller lignende, hvis man har tid til det. Vi
-kan støtte medlemskontigent, treningsavgift, lisens, egenandeler på turer osv.
-Ta kontakt på post@holstadvolley.com så finner vi en løsning sammen
+kan støtte medlemskontigent, treningsavgift, lisens, egenandeler på turer og
+lignende. Ta kontakt på post@holstadvolley.com så finner vi en løsning sammen.
 
-(eller send melding til Kasserer, Torgeir Solvin - 90145444 hvis du ønsker en
-litt mer diskret behandling)
+Eller send melding til Kasserer, Torgeir Solvin - 90145444 hvis du ønsker en
+litt mer diskret behandling.
