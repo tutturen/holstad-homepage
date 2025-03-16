@@ -6,3 +6,5 @@ resources/
 # Editor
 .vscode/
 .devcontainer
+
+.DS_Store
