@@ -10,6 +10,12 @@ Her er noen videoer av øvelser eller tips i hvordan man lærer volleyballteknik
 {{< youtube u-WhjYYocBs >}}
 {{< youtube bWVWKnB04ho >}}
 
+### Hoftebevegelse i smash 
+
+{{< youtube ehWLxwxMv8g >}}
+
+{{< youtube 4_C8l6Bgy3U >}}
+
 ### start øvelser relatert til smash 
 {{< youtube xb4AkCcz6z4 >}}
 
