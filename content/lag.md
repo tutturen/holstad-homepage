@@ -1,6 +1,8 @@
 ---
-title: Lag og treningstider
+title: Lag og treningstider 24/25
 ---
+
+> **OBS** Treningstidene for 25/26 sesongen er ikke satt enda, under er 24/25 sesongen, treningstidene kommer ikke til å være like.   
 
 Her er informasjon om alle lagene i klubben, og treningstider. Nytt i år er at
 alle treninger foregår i Åsgård Skole. Det er en ny hall med god plass rundt
