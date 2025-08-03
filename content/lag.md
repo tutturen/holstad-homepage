@@ -20,7 +20,7 @@ Her er informasjon om alle lagene i klubben, og treningstider.
 | Tidspunkt     | Bane 1 | Bane 2          | Bane 3            |
 | ------------- | ------ | --------------- | ----------------- |
 | 17:00 - 18:30 | J15    | J15             | Mini 3.-4. klasse |
-| 18:30 - 20:15 | J17    | J17             | J19               |
+| 18:30 - 20:15 | J17    | J17             |                   |
 | 20:15 - 22:00 | H1     | Mosjonistvolley | -                 |
 
 ## Tirsdag, Åsgård Skole
@@ -63,7 +63,7 @@ Her er informasjon om alle lagene i klubben, og treningstider.
       <tr><td>18:15</td></tr>
       <tr>
         <td>18:30</td>
-        <td rowspan="6">Ledig (18:30-20:00)</td>
+        <td rowspan="6">J19 (18:30-20:00)</td>
       </tr>
       <tr><td>18:45</td></tr>
       <tr><td>19:00</td></tr>
@@ -242,8 +242,8 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 
 ### J19 (f. 2006-2008)
 
-- Mandag kl. 20:00-22:00, Åsgård Skole
 - Tirsdag kl. 17:00-19:00, Åsgård Skole
+- Onsdag kl. 18:30-20:00, Åsgård Skole
 - Torsdag kl. 19:30-21:30, Åsgård Skole
 - Trener: NMBUI
 - Lagkontakt: Agnes
