@@ -1,8 +1,10 @@
 ---
-title: Lag og treningstider 24/25
+title: Lag og treningstider 2025/2026
 ---
 
 Her er informasjon om alle lagene i klubben, og treningstider.
+
+**OBS: Treningstidene er ikke 100% spikret enda, kan komme endringer**.
 
 ## Treningshaller
 
