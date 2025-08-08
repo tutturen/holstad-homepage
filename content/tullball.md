@@ -14,7 +14,7 @@ Det er innendørs i Åshallen på tirsdager kl 16-17. Tidspunktet er satt så ti
 
 ## Middag på Tullball
 
-- Dropp å stresse hjem for å lage middagen selv, spise den med oss i steden!
+- Dropp å stresse hjem for å lage middagen selv, spise den med oss i stedet!
 - Barn som går på tullball har inkl middag i prisen, foreldre og søsken kan kjøpe for kostpris, pr nå kr 25. 
 - Meld interesse på tasks i eventene i Spond. Hvis ingen tar ansvar, så blir det ikke servering. Her må vi hjelpe hverandre!
 
