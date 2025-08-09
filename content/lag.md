@@ -280,7 +280,7 @@ Les mer på [tullball sine egne sider](/tullball)
 ### H2 Herrelaget 4. divisjon
 
 - Onsdag kl. 17:00-18:30, Åsgård Skole
-- Torsdag kl. 20:15-22:00, (G19/H2),Åsgård Skole
+- Torsdag kl. 20:15-22:00, (G19/H2), Åsgård Skole
 - Trener: Sindre Svendby
 - Lagkontakt: Ledig oppgave
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
