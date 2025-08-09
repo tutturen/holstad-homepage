@@ -11,7 +11,7 @@ tags:
 
 Vi gjør oss klare for å trene innendørs igjen, sesongestart for de fleste lag er mandag 18.aug, dvs skolestart. Men noen har startet tidlig, så sjekk i spondgruppen.
 
-Oppdatterte treningstider finner du på [lagsiden](/lag).
+Oppdaterte treningstider finner du på [lagsiden](/lag).
 
 ### Nye trenere
 
