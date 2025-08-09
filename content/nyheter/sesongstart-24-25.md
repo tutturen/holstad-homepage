@@ -1,44 +1,32 @@
 ---
-title: Sesongstart 2024/2025!
-date: 2024-08-01
+title: Sesongstart 2025/2026!
+date: 2025-08-09
 authors:
-  - name: Thor Even Tutturen
+  - name: Sindre Øye Svendby
 tags:
   - Volleyball
 ---
 
 ## Velkommen til en ny sesong med innendørs volleyball!
 
-Vi gjør oss klare for å trene innendørs igjen, og her kommer litt praktisk info.
+Vi gjør oss klare for å trene innendørs igjen, sesongestart for de fleste lag er mandag 18.aug, dvs skolestart. Men noen har tjusstarta, så sjekk i spondgruppen.
 
-### Treninger er i Åsgård Flerbrukshall.
+Oppdatterte treningstider finner du på [lagsiden](/lag).
 
-Nytt av året er at alle treninger flyttes til Åsgård Flebrukshall. Der får vi
-trene på tre gode baner, med god plass rundt hver bane, og skillevegger mellom
-banene. Vi har fått gode tilbakemeldinger på Åsgård Flebrukshall fra forrige
-sesong, så vi tror dette fort kan bli veldig bra.
+## Nye trenere
 
-NB! Tullball vil fortsatt være i Åshallen (gammel del), men alt annet flyttes
-til Åsgård.
+Vi har fått inn endel nye trenere, det er alltid kjekt.  2 stk fra NMBUI som skal ta over D1/J19 også. Henning fra H1 tatt på seg oppgaven og være hovedtrener og mentor for G15/17/19.
+I tillegg har Frøya kommet tilbake fra utveksling og tar masse ansvar på mini-siden. 
 
-### Nye treningstider og oppstart
+### Henning Kjemperud Olsen
 
-- Første ordinære trening for sesongen er **mandag 19. august**.
-- **[Oppdaterte treningstider](/lag)** kan du nå finne på hjemmesiden vår.
-- Tullball starter opp **tirsdag 13. august** kl 16:00 (Åshallen).
 
-### Kickoff-turnering
+### Frøya Sigurdssøn
 
-Det blir en kickoff-turnering for hele klubben i september! Mer info kommer om
-det snart.
 
-### Foreldretrening
+### Sofia Gule 
 
-Nytt i år er at vi ønsker å gi et lavterskel tilbud om trening og spill for alle
-foreldre i klubben en gang i uka.
 
-- Trening onsdager kl 20:00-22:00.
-- Meld interesse på post@holstadvolley.com eller send melding til Per-Egil om
-  dette er interessant!
+### Rina Kathinka 
 
-**Vi sees i hallen!**
+
