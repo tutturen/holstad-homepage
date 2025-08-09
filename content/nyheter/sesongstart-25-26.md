@@ -9,7 +9,7 @@ tags:
 
 ## Velkommen til en ny sesong med innendørs volleyball!
 
-Vi gjør oss klare for å trene innendørs igjen, sesongestart for de fleste lag er mandag 18.aug, dvs skolestart. Men noen har tjusstarta, så sjekk i spondgruppen.
+Vi gjør oss klare for å trene innendørs igjen, sesongestart for de fleste lag er mandag 18.aug, dvs skolestart. Men noen har startet tidlig, så sjekk i spondgruppen.
 
 Oppdatterte treningstider finner du på [lagsiden](/lag).
 
