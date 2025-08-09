@@ -15,7 +15,7 @@ Oppdaterte treningstider finner du på [lagsiden](/lag).
 
 ### Nye trenere
 
-Vi har fått inn endel nye trenere, det er alltid kjekt.  2 stk fra NMBUI som skal ta over D1/J19 også. Henning fra H1 tatt på seg oppgaven og være hovedtrener og mentor for G15/17/19.
+Vi har fått inn endel nye trenere, det er alltid kjekt.  2 stk fra NMBUI som skal ta over D1/J19 også. Henning fra H1 har tatt på seg å være hovedtrener og mentor for G15/17/19.
 I tillegg har Frøya kommet tilbake fra utveksling og tar masse ansvar på mini-siden. 
 
 
