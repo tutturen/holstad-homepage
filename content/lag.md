@@ -4,7 +4,7 @@ title: Lag og treningstider 2025/2026
 
 Her er informasjon om alle lagene i klubben, og treningstider.
 
-**OBS: Treningstidene er oppdattert 9.aug. Mindre endringer kan forekommer framover**.
+**OBS: Treningstidene er oppdatert 9.aug. Mindre endringer kan forekomme framover**.
 
 ## Treningshaller
 
