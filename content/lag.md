@@ -4,7 +4,7 @@ title: Lag og treningstider 2025/2026
 
 Her er informasjon om alle lagene i klubben, og treningstider.
 
-**OBS: Treningstidene er ikke 100% spikret enda, kan komme endringer**.
+**OBS: Treningstidene er oppdattert 9.aug. Mindre endringer kan forekommer framover**.
 
 ## Treningshaller
 
@@ -20,16 +20,16 @@ Her er informasjon om alle lagene i klubben, og treningstider.
 | Tidspunkt     | Bane 1 | Bane 2          | Bane 3            |
 | ------------- | ------ | --------------- | ----------------- |
 | 17:00 - 18:30 | J15    | J15             | Mini 3.-4. klasse |
-| 18:30 - 20:15 | J17    | J17             |                   |
-| 20:15 - 22:00 | H1     | Mosjonistvolley | -                 |
+| 18:30 - 20:15 | J17    | J17             | -                 |
+| 20:15 - 22:00 | H1     | Mosjonistvolley | D1                |
 
 ## Tirsdag, Åsgård Skole
 
 | Tidspunkt     | Bane 1 | Bane 2         | Bane 3            |
 | ------------- | ------ | -------------- | ----------------- |
-| 17:00 - 18:30 | G15    | Mini 5. klasse | -                 |
+| 17:00 - 18:30 | G15    | J19            | Mini 5. klasse    |
 | 18:30 - 20:15 | G17    | G19            | Mini 6.-7. klasse |
-| 20:15 - 22:00 | D1     | -              | -                 |
+| 20:15 - 22:00 | -      | -              | -                 |
 
 ## Tirsdag, Åshallen
 
@@ -51,7 +51,7 @@ Her er informasjon om alle lagene i klubben, og treningstider.
     <tbody>
       <tr>
         <td>17:00</td>
-        <td rowspan="6">H2 / G19 (17:00-18:30)</td>
+        <td rowspan="6">H2  (17:00-18:30)</td>
         <td rowspan="4" colspan="2" style="text-align:center;">Ås IL (17:00-18:00)</td>
       </tr>
       <tr><td>17:15</td></tr>
@@ -63,7 +63,7 @@ Her er informasjon om alle lagene i klubben, og treningstider.
       <tr><td>18:15</td></tr>
       <tr>
         <td>18:30</td>
-        <td rowspan="6">J19 (18:30-20:00)</td>
+        <td rowspan="7">-</td>
       </tr>
       <tr><td>18:45</td></tr>
       <tr><td>19:00</td></tr>
@@ -73,11 +73,11 @@ Her er informasjon om alle lagene i klubben, og treningstider.
         <td rowspan="6" colspan="2" style="text-align:center;">J17 (19:30-21:00)</td>
       </tr>
       <tr><td>19:45</td></tr>
+      <tr><td>20:00</td></tr>
       <tr>
-        <td>20:00</td>
-        <td rowspan="8">Mosjonistene (20:00-22:00)</td>
+          <td>20:15</td>
+          <td rowspan="7">D1/J19 (20:15-22:00)</td>
       </tr>
-      <tr><td>20:15</td></tr>
       <tr><td>20:30</td></tr>
       <tr><td>20:45</td></tr>
       <tr>
@@ -134,7 +134,7 @@ Her er informasjon om alle lagene i klubben, og treningstider.
         <td>20:15</td>
         <td rowspan="7">H1 (20:15-22:00)</td>
         <td rowspan="7">G19 / H2 (20:15-22:00)</td>
-        <td rowspan="7">J19 / D1 (20:15-22:00)</td>
+        <td rowspan="7">Mosjonistvolley (20:15-22:00)</td>
       </tr>
       <tr><td>20:30</td></tr>
       <tr><td>20:45</td></tr>
@@ -165,7 +165,7 @@ Her er informasjon om alle lagene i klubben, og treningstider.
       </tr>
       <tr>
         <td>18:00-20:00</td>
-        <td colspan="3" style="text-align:center;">ÅPEN HALL / Treningssamling / Diverse<br>Se Spond for program</td>
+        <td colspan="3" style="text-align:center;">ÅPEN HALL / Treningssamling / Diverse</td>
       <tr>
         <td>20:00-22:00</td>
         <td colspan="3" style="text-align:center;">Opptatt</td>
@@ -173,10 +173,6 @@ Her er informasjon om alle lagene i klubben, og treningstider.
     </tbody>
 </table>
 
-På fredager har vi vanligvis åpen trening og spill - vi kaller det
-FredagsVolley. Dette er et tilbud for alle som ønsker å prøve volleyball.
-
-Noen fredager kjører vi mixturneringer og spill. Følg med på Spond.
 
 ## Treningstider Åshallen
 
@@ -193,12 +189,12 @@ Noen fredager kjører vi mixturneringer og spill. Følg med på Spond.
 
 Tullball arrangeres både i Åshallen 1 og Åshallen 2. I Åshallen 2 er det fri lek
 for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
+Les mer på [tullball sine egne sider](/tullball)
 
 - 0-4 år: Tirsdager 16:00 - 17:00, Åshallen, gammel del
 - 4-7 år: Tirsdager 16:00 - 17:00, Åshallen, ny del
 - Aldersinndelingen er veiledende
-- Hovedtrener: Sindre Øye Svendby
-- Lagkontakter: Mia (Ebbes mamma) og Edvard (Hedvigs Far)
+- Lagkontakter: Sindre Øye Svendby
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### Mini 3.-4. klasse
@@ -209,29 +205,29 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 
 ### Mini 5. klasse
 
-- Tirsdag kl 16:00-17:00, Åshallen, ny del
+- Tirsdag kl 17:00-18:30, Åsgård Skole
 - Trener: Sindre Svendby
 - lagleder: Hanne Malde
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### Mini 6.-7. klasse
 
-- Tirsdag kl. 17:00-18:30, Åsgård Skole
+- Tirsdag kl 18:30-20:15, Åsgård Skole
 - Torsdag kl 17:00-18:30, Åsgård Skole
 - Trener: Frøya
 - Lagkontakt: Meld interesse
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
-### J15 (f. 2010-2011)
+### J15 (f. 2011-2012)
 
 - Mandag kl. 17:00-18:30, Åsgård Skole
 - Onsdag kl. 18:00-20:00, Åsgård Skole
-- Torsdag kl. 18:00-19:30, Åsgård Skole
+- Torsdag kl. 17:00-18:30, Åsgård Skole
 - Trener: Geir Åge Michelsen
 - Lagkontakt: Morten og Marta
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
-### J17 (f. 2009)
+### J17 (f. 2009-2010)
 
 - Mandag kl. 18:30-20:00, Åsgård Skole
 - Onsdag kl. 18:00-20:00, Åsgård Skole
@@ -240,52 +236,51 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Lagkontakt: Geir og Pål
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
-### J19 (f. 2006-2008)
+### J19 (f. 2007-2008)
 
-- Tirsdag kl. 17:00-19:00, Åsgård Skole
-- Onsdag kl. 18:30-20:00, Åsgård Skole
+- Tirsdag kl. 17:00-18:30, Åsgård Skole
+- Onsdag kl. 18:30-20:00 (J19/D1), Åsgård Skole
 - Torsdag kl. 19:30-21:30, Åsgård Skole
-- Trener: NMBUI
+- Trener: Rina Kathinka Olsen Hollfjord
 - Lagkontakt: Agnes
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### D1 Damelaget (5. divisjon)
 
-- Tirsdag kl. 20:15-22:00, Åsgård Skole
-- Torsdag kl 20:15-22:00, Åsgård Skole
-- Trener: NMBUI
+- Mandag kl. 20:15-22:00, Åsgård Skole
+- Onsdag kl. 18:30-20:00 (J19/D1), Åsgård Skole
+- Trener: Sofia Gule
 - Lagkontakt: Marta Søndenfor
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
-### G15
+### G15 (f. 2011-2012)
 
 - Tirsdag kl. 17:00-18:30, Åsgård Skole
 - Torsdag 18:30-20:15, Åsgård Skole
-- Hovedtrener: Henning
-- Lagkontakt:
+- Hovedtrener: Henning Kjemperud Olsen
+- Lagkontakt: Nora K. Nordhaug og Ane Bergum
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
-### G17
+### G17 (f. 2009-2010)
 
 - Tirsdag 18:30-20:15, Åsgård Skole
 - Torsdag 18:30-20:15, Åsgård Skole
-- Hovedtrener: Henning
-- Lagkontakt:
+- Hovedtrener: Henning Kjemperud Olsen
+- Lagkontakt: Jon Anders Næsset
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
-### G19
+### G19 (f. 2007-2008)
 
 - Tirsdag kl. 18:30-20:15, Åsgård Skole
-- Onsdag kl. 17:00-18:30, Åsgård Skole
-- Torsdag kl. 20:15-22:00, Åsgård Skole
-- Hovedtrener: Henning
-- Lagkontakt:
+- Torsdag kl. 20:15-22:00, (G19/H2), Åsgård Skole
+- Hovedtrener: Henning Kjemperud Olsen
+- Lagkontakt: Amund Kvalbein  
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### H2 Herrelaget 4. divisjon
 
 - Onsdag kl. 17:00-18:30, Åsgård Skole
-- Torsdag kl. 20:15-22:00, Åsgård Skole
+- Torsdag kl. 20:15-22:00, (G19/H2),Åsgård Skole
 - Trener: Sindre Svendby
 - Lagkontakt: Ledig oppgave
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
@@ -297,17 +292,6 @@ for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 - Trener: Ledig stilling!
 - Lagkontakt: Rune Reiling
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
-
-## Annet
-
-### FredagsVolley / Mix
-
-- Lavterskel fredagstilbud, åpent for alle som ønsker å prøve volleyball, i alle
-  aldre.
-- Fredag 18:00-20:00, Åsgård Skole
-- Spondgruppe: https://spond.com/landing/group/LBEAX
-- Ingen treningsavgift, kun årskontigent
-- Kontakt: Geir Michelsen
 
 ### Mosjonistvolley
 
