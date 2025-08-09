@@ -16,8 +16,7 @@ I det skjemaet velger du også gruppe, se
 
 Når du er lagt til gruppen, vil vi (manuelt) generere opp en bekreftlsesmail fra
 NIF om at du ønsker medlemskap i Holstad. Dette kan ta noen dager før du får
-mailen, da dette er noe vi gjør manuelt. Når du får mailen har man dessverre kun
-24 timer på å bekrefte medlemskapet før vi evt. må sende den på nytt.
+mailen, da dette er noe vi gjør manuelt. Når du får mailen har man dessverre kun 72 timer på å bekrefte medlemskapet før vi evt. må sende den på nytt.
 
 ### Betale medlemskontigent og treningsavgift
 
