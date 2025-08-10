@@ -299,4 +299,5 @@ Les mer på [tullball sine egne sider](/tullball)
 - Ingen krav til volleyball-erfaring.
 - Lagkontakt: Espen Langass
 - Mandag kl 20:15-22:00, Åsgård Skole
+- Torsdag kl. 20:15-22:00, Åsgård Skole
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
