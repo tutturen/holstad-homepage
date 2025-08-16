@@ -67,6 +67,13 @@ Diamantvolleyball.
     title="Dommerkurs"
     subtitle="Vi ønsker å utdanne våre spillere som dommere. Se når neste dommerkurs er."
   >}}
+{{< hextra/feature-card
+    title="Kalender"
+    link="kalender"
+    subtitle="All aktivitet er inne i kalendere, få oversikt med en gang"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(0, 255, 98, 0.15),hsla(0,0%,100%,0));"
+  >}}
+
 {{< /hextra/feature-grid >}}
 
 
