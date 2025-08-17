@@ -81,6 +81,13 @@ Diamantvolleyball.
 
 {{< cards >}}
  {{< card link="klubbtoy" title="Bestill klubbtøy" icon="shopping-cart" >}}
+ {{< card link="lagleder" title="Lagleder i Holstad" icon="user" >}}
+ {{< card link="lagmøte" title="Lagmøte" icon="user-group" >}}
+ {{< card link="styret" title="Styret i Holstad" icon="user-group" >}}
+ {{< card link="oppgaver" title="Oppgaver" icon="badge-check" >}}
+{{< card link="stotte" title="Måter å støtte klubben" icon="cash" >}}
+ {{< card link="trener" title="For Trenere" icon="thumb-up" >}}
+ {{< card link="teknikk-og-tips-videoer" title="Teknikk og Tips Videoer" icon="video-camera" >}}
  {{< card link="vaffelrore" title="Hildegunns Vaffelrøre" icon="heart" >}}
 
 {{< /cards >}}
