@@ -7,8 +7,7 @@ title: Klubbtøy
 Klubben har inngått en avtale med Idé om kjøp av drakter og annet egnet
 volleyballtøy.
 
-Klubben krever kun at man har drakt til bruk på kamper. Idé organiserer
-nummerering av draktene.
+Klubben krever kun at man har drakt til bruk på kamper. Skriv i kommentaren ønsket draktnummer. Organiser dette sammen med laget ditt
 
 ## Bestillingsrutine:
 
