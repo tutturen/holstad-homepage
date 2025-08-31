@@ -24,8 +24,8 @@ mer informasjon
 - For 3. divisjon og høyere divisjoner er den pålydende 1500 kr.
 - For Foreldretrening/Mosjonist er treningsavgiften pålydende 700 kr.
 
-Barn av lagledere gis halv pris.
-Styret og barn av medlemmer i styret trener gratis.
+Barn av lagledere gis halv pris. Styret og barn av medlemmer i styret trener
+gratis.
 
 **Merk**
 
@@ -34,7 +34,7 @@ Styret og barn av medlemmer i styret trener gratis.
   faktura for (halv) treningsavgift for vårsesongen.
 - Treningsavgiften dekker påmelding til alle turneringer og lønn til trenere.
 
-## Spillerlisens - lisensen for sesongen 2024/2025
+## Spillerlisens - lisensen for sesongen 2025/2026
 
 Alle som deltar i trening og/eller konkurranseaktivitet i regi av Norges
 Volleyballforbund, forbundets regioner og klubber skal betale lisens.
@@ -62,20 +62,22 @@ plusslisens gir i forsikringsavtalen.
 
 | Lisenskategori                                    | Pris   | Pluss (+) | Engangslisens | Gjelder for                                               |
 | ------------------------------------------------- | ------ | --------- | ------------- | --------------------------------------------------------- |
-| Elite                                             | 1900,- | 2300,-    |               | Mizunoligaen og 1. divisjon - uavhengig av alder          |
-| Senior                                            | 1200,- | 1700,-    | 600,-         | Født 2004 eller tidligere                                 |
-| Eldre junior                                      | 1000,- | 1400,-    | 500,-         | Født fra 2005 til 2008                                    |
-| Yngre junior                                      | 420,-  | 840,-     | 210,-         | Født fra 2009 og 2010                                     |
-| U13                                               | 315,-  |           | 160,-         | Født 2011 og senere                                       |
-| Trygg på trening, dommer, trener, sittevolleyball | 315,-  |           |               |                                                           |
-| Trygg på trening, sittevolleyball, trener, dommer | 315,-  |           |               |                                                           |
-| Lag mini/teen                                     | 1300,- |           |               | Mini - inntil 8 lag, teen - inntil 8 spillere             |
+| Elite                                             | 2100,- | 2500,-    |               | Mizunoligaen og 1. divisjon - uavhengig av alder          |
+| Senior                                            | 1300,- | 1900,-    | 650,-         | Født 2006 eller tidligere                                 |
+| Eldre junior                                      | 1100,- | 1575,-    | 550,-         | Født fra 2007 til 2010                                    |
+| Yngre junior                                      | 460,-  | 900,-     | 230,-         | Født fra 2011 og 2012                                     |
+| U13                                               | 350,-  |           | 180,-         | Født 2013 og senere                                       |
+| Trygg på trening, dommer, trener, sittevolleyball | 350,-  |           |               |                                                           |
 | Barn under 13                                     | 0      |           |               | Alle barn under 13 er dekket av NIF's forsikringsordning. |
 
 #### Lag mini/teen
 
-Laglisens kan benyttes i minivolleyball og i Teenvolley. Laglisens løses av
-klubb.
+Lag mini: Alle barn som er medlem av lag tilsluttet Norges Idrettsforbund eller
+deltar i organisert aktivitet i klubbes regi er forsikret gjennom Gjensidige
+barneidrettsforsikring til den dato de fyller 13 år. Dersom en deltar på mini
+etter fylte 13 år, må en løse individuell lisens.
+
+Lag teen: Lisens for teenspillere er innbakt i påmeldingsavgiften.
 
 ### Betaling
 
@@ -86,7 +88,7 @@ klubb.
   lignende – ta kontakt med NIF IT Support på tlf. 21029090 eller e-post
   support@idrettsforbundet.no
 - Finner du ikke en lisens under din bruker på Min Idrett, kontakt oss på
-  post@holstadvolley.com (hvis det haster send sms til 99402123 )
+  post@holstadvolley.com (hvis det haster send sms til 99402123)
 
 ### Betalingsfritak
 
