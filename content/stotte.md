@@ -1,3 +1,7 @@
+---
+title: Hvordan støtte Holstad Volley
+---
+
 # Ønsker du å hjelpe Holstad IL? Det er mange måter å gjøre det på.
 
 ![Støtt Holstad Volleyball](det-betyr-sa-mye.png)

@@ -240,7 +240,6 @@ Les mer på [tullball sine egne sider](/tullball)
 
 - Tirsdag kl. 17:00-18:30, Åsgård Skole
 - Onsdag kl. 18:30-20:00 (J19/D1), Åsgård Skole
-- Torsdag kl. 19:30-21:30, Åsgård Skole
 - Trener: Rina Kathinka Olsen Hollfjord
 - Lagkontakt: Agnes
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
