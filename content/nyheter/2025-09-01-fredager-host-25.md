@@ -9,7 +9,7 @@ tags:
 
 ## Årets kalender for fredager er klar. 
 
-Vi videreutvikler fredagene våre, med 3 nye konsepter + foredrag.
+Vi videreutvikler fredagene våre, med 3 nye konsepter og foredrag.
 
 
 ### Kalenderen 
