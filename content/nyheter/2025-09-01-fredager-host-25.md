@@ -77,7 +77,7 @@ Fri bruk av hallen. Her kan du spille kamper, trene på egne ferdigheter, eller 
 
 ### Work-up
 
-Vi lager mange baner og fordeler lag etter alder og nivå som en slags første seeding. Så spiller vi mange korte kamper. Går det bra rykker du opp og møter bedre motstand, taper man går man ned og man møter jevnerer motstand. 
+Vi lager mange baner og fordeler lag etter alder og nivå som en slags første seeding. Så spiller vi mange korte kamper. Går det bra rykker du opp og møter bedre motstand, taper man går man ned og man møter jevnere motstand. 
 
 
 Ganske fort møter du folk som du spiller jevnt med og man får mange jevne morsomme kamper. Her spiller man mot de man spiller jevnt mot, uavhengi av alder og kjønn. 
