@@ -57,7 +57,7 @@ I tillegg presenteres mottaksøvelser man kan ta med seg tilbake til trening.
 ### Vinh Vo-Ma
 Tidligere trener for klubben sitt herrelag, nå trener for NMBUI sitt damelag i 1.div, tar for tiden NVBF sitt trener 3 program, den nest høyeste trenerutdannelsen du kan ta i Norge. 
 
-**Økten:** «Serv og servemottak - med splitsteg» - introduuserer slitsteg for å reagerer raskere og bli bedre i servemottak.
+**Økten:** «Serv og servemottak - med splitsteg» - introduserer slitsteg for å reagerer raskere og bli bedre i servemottak.
 
 
 ### Per-Egil Gran Jakobsen
