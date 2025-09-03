@@ -18,18 +18,6 @@ Kontaktperson mellom klubben og leverandør av klubbtøy (IDÉ).
 Dette er en forutsigbar jobb, arbeidsmengden er stor sett jevn ut over året.
 Ingen hast, kan sette av tid i kalenderen og følge opp når det passer deg.
 
-### Lisens- og overgangsansvarlig
-
-Nye spillere trenger lisens, og dette må skrives ut av klubben.
-
-- Dette gjøres online, stort sett på 3 min per spiller.
-- Det kan komme en del av de rett før turneringer.
-- Hver ting er enkel og håntere, men forespørsel kan komme fredag kveld eller
-  lignende.
-
-Tar du ting på stark arm, og fikser ting via mobilen så er dette en smal sak,
-men ikke en oppgave man kan legge til side og gjøre hver 14. dag.
-
 ### Alt-mulig-person
 
 Med 300 personer i arbeid er det stadig noen småting som må gjøres. Det kan være
