@@ -78,7 +78,7 @@ miksturnering, work-up og foredrag + økt med noen av landets beste trenere.
 I tillegg beholder vi åpen hall, hvor man kan ta med venner og kjente til
 hallen.
 
-Se detaljer her - [Fredager – Høsten 25](/nyheter/2025-09-01-fredager-host-25/)
+Se detaljer her - [Fredager – Høsten 25](/nyheter/2025-09-01-fredager-host-25/) eller bare join [Spondgruppa for fredager](https://spond.com/invite/LBEAX)
 
 ## Kalender
 

@@ -11,7 +11,6 @@ tags:
 
 Vi videreutvikler fredagene våre, med 3 nye konsepter og foredrag.
 
-
 ### Kalenderen 
 | Uke | Dato       |   |
 | --- | ---------- | - |
@@ -33,6 +32,11 @@ Vi videreutvikler fredagene våre, med 3 nye konsepter og foredrag.
 | 51  | 19.12.2025 |  Åpen Hall |
 | 52  | 26.12.2025 |  STENGT |
 
+<div style="border-left:4px solid #1e90ff; background:#f0f8ff; padding:0.75em 1em; border-radius:4px; margin:1em 0;">
+
+**NB:** Vi har en egen [spond-gruppe for Fredager](https://spond.com/invite/LBEAX) (kode: LBEAX). I år kommer det til å skje masse, så bli med
+
+</div>
 
 
 
@@ -89,3 +93,8 @@ Fokus på spesifikke ferdigheter som baggerslag, fingerslag. For de som vil bli 
 ### Miksturnering 
 Sosial turneringsform hvor vi setter sammen lag på tvers av alder, kjønn og nivå. Perfekt for å teste ferdighetene i kamp og bli kjent med flere.
 
+<div style="border-left:4px solid #1e90ff; background:#f0f8ff; padding:0.75em 1em; border-radius:4px; margin:1em 0;">
+
+**HUSK:** Vi har en egen [spond-gruppe for Fredager](https://spond.com/invite/LBEAX) (kode: LBEAX)
+
+</div>
