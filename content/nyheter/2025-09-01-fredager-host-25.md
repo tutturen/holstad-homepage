@@ -65,7 +65,7 @@ Tidligere trener for klubben sitt herrelag, nå trener for NMBUI sitt damelag i 
 
 
 ### Per-Egil Gran Jakobsen
-Spillende trener for herrelaget (2. divisjon) de siste årene. Har i tillegg ledet OSI sitt førstelag for kvinner til flere 1.plasser.
+Spillende trener for herrelaget (2. divisjon) de siste årene. Har i tillegg ledet OSI sitt førstelag for kvinner til flere 1.plasser i 1.div.
 I 2016 var han assistenttrener for det norske damelandslaget i volleyball. Kjent for å få ut det maksimalet fra det laget han har. 
 
 **Økten:** «Hvordan jobber man sammen som et lag?» - her vil man lære om lagfølelse, hvordan man som spillergruppe hjelper hverandre opp eller river hverandre ned. 
@@ -75,19 +75,16 @@ I 2016 var han assistenttrener for det norske damelandslaget i volleyball. Kjent
 ### Åpen Hall 
 
 Åpent for folk som ikke er medlem i klubben også, men bare vil prøve seg. Ta med en venn eller to. 
-
-
 Fri bruk av hallen. Her kan du spille kamper, trene på egne ferdigheter, eller bare være sosial og prøve volleyball i ditt tempo. 
 
 ### Work-up
 
 Vi lager mange baner og fordeler lag etter alder og nivå som en slags første seeding. Så spiller vi mange korte kamper. Går det bra rykker du opp og møter bedre motstand, taper man går man ned og man møter jevnere motstand. 
-
-
 Ganske fort møter du folk som du spiller jevnt med og man får mange jevne morsomme kamper. Her spiller man mot de man spiller jevnt mot, uavhengi av alder og kjønn. 
 
 ### Teknikktrening
-Fokus på spesifikke ferdigheter som baggerslag, fingerslag. For de som vil bli bedre. Tilpasset slik at øvelsene funker både for J15 og G19.
+Fokus på spesifikke ferdigheter som baggerslag, fingerslag. Tilpasset slik at øvelsene funker både for J15 og de beste herrespillerne - og alle i mellom. 
+For de som har et sterkt ønske og bli bedre, uavhenig av nivået man er på nå. 
 
 
 ### Miksturnering 

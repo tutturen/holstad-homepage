@@ -27,9 +27,9 @@ Her er informasjon om alle lagene i klubben, og treningstider.
 
 | Tidspunkt     | Bane 1 | Bane 2         | Bane 3            |
 | ------------- | ------ | -------------- | ----------------- |
-| 17:00 - 18:30 | G15    | J19            | Mini 5. klasse    |
-| 18:30 - 20:15 | G17    | G19            | Mini 6.-7. klasse |
-| 20:15 - 22:00 | -      | -              | -                 |
+| 17:00 - 18:30 | G15    | -              | Mini 5. klasse    |
+| 18:30 - 20:15 | G17    | Unge Voksne    | Mini 6.-7. klasse |
+| 20:15 - 22:00 | G19    | -              | -                 |
 
 ## Tirsdag, Åshallen
 
@@ -51,8 +51,7 @@ Her er informasjon om alle lagene i klubben, og treningstider.
     <tbody>
       <tr>
         <td>17:00</td>
-        <td rowspan="6">H2  (17:00-18:30)</td>
-        <td rowspan="4" colspan="2" style="text-align:center;">Ås IL (17:00-18:00)</td>
+        <td rowspan="4" colspan="3" style="text-align:center;">Ås IL (17:00-18:00)</td>
       </tr>
       <tr><td>17:15</td></tr>
       <tr><td>17:30</td></tr>
@@ -60,11 +59,13 @@ Her er informasjon om alle lagene i klubben, og treningstider.
       <tr>
         <td>18:00</td>
         <td rowspan="6" colspan="2" style="text-align:center;">J15 (18:00-19:30)</td>
+        <td rowspan="2">Oppvarming</td>
+      </tr>
       <tr><td>18:15</td></tr>
       <tr>
         <td>18:30</td>
-        <td rowspan="7">-</td>
-      </tr>
+        <td rowspan="6">G19 (18:30-20.15) </td>
+      </tr>    
       <tr><td>18:45</td></tr>
       <tr><td>19:00</td></tr>
       <tr><td>19:15</td></tr>
@@ -76,7 +77,7 @@ Her er informasjon om alle lagene i klubben, og treningstider.
       <tr><td>20:00</td></tr>
       <tr>
           <td>20:15</td>
-          <td rowspan="7">D1/J19 (20:15-22:00)</td>
+          <td rowspan="7">D1 (20:15-22:00)</td>
       </tr>
       <tr><td>20:30</td></tr>
       <tr><td>20:45</td></tr>
@@ -133,7 +134,7 @@ Her er informasjon om alle lagene i klubben, og treningstider.
       <tr>
         <td>20:15</td>
         <td rowspan="7">H1 (20:15-22:00)</td>
-        <td rowspan="7">G19 / H2 (20:15-22:00)</td>
+        <td rowspan="7">H2 (20:15-22:00)</td>
         <td rowspan="7">Mosjonistvolley (20:15-22:00)</td>
       </tr>
       <tr><td>20:30</td></tr>
@@ -158,18 +159,8 @@ Her er informasjon om alle lagene i klubben, og treningstider.
     </thead>
     <tbody>
       <tr>
-        <td>17:00-18:00</td>
-        <td>ÅS IL - Basket (17:00-18:00)</td>
-        <td>Ledig (17:00-18:00)</td>
-        <td>Mini 1.-2. klasse (17:00-18:00)</td>
-      </tr>
-      <tr>
         <td>18:00-20:00</td>
         <td colspan="3" style="text-align:center;">ÅPEN HALL / Treningssamling / Diverse</td>
-      <tr>
-        <td>20:00-22:00</td>
-        <td colspan="3" style="text-align:center;">Opptatt</td>
-      </tr>
     </tbody>
 </table>
 
@@ -191,8 +182,8 @@ Tullball arrangeres både i Åshallen 1 og Åshallen 2. I Åshallen 2 er det fri
 for de minste, og i Åshallen 1 er det organisert lek med ball med trener.
 Les mer på [tullball sine egne sider](/tullball)
 
-- 0-4 år: Tirsdager 16:00 - 17:00, Åshallen, gammel del
-- 4-7 år: Tirsdager 16:00 - 17:00, Åshallen, ny del
+- 0-5 år: Tirsdager 16:00 - 17:00, Åshallen, gammel del
+- 5-8 år: Tirsdager 16:00 - 17:00, Åshallen, ny del
 - Aldersinndelingen er veiledende
 - Lagkontakter: Sindre Øye Svendby
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
@@ -233,21 +224,14 @@ Les mer på [tullball sine egne sider](/tullball)
 - Onsdag kl. 18:00-20:00, Åsgård Skole
 - Torsdag kl. 18:30-20:00, Åsgård Skole
 - Trener: Geir Åge Michelsen
-- Lagkontakt: Geir og Pål
+- Lagkontakt: Geir
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
-### J19 (f. 2007-2008)
-
-- Tirsdag kl. 17:00-18:30, Åsgård Skole
-- Onsdag kl. 18:30-20:00 (J19/D1), Åsgård Skole
-- Trener: Rina Kathinka Olsen Hollfjord
-- Lagkontakt: Agnes
-- [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### D1 Damelaget (5. divisjon)
 
 - Mandag kl. 20:15-22:00, Åsgård Skole
-- Onsdag kl. 18:30-20:00 (J19/D1), Åsgård Skole
+- Onsdag kl. 18:30-20:00 , Åsgård Skole
 - Trener: Sofia Gule
 - Lagkontakt: Marta Søndenfor
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)

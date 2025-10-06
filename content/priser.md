@@ -14,11 +14,11 @@ mer informasjon
 
 - Treningsavgiften følger sesongen, som et skoleår.
 - For Diamantvolley er det ingen treningsavgift, men en må betale årskontigent
-- For Tullball er det ingen treningsavgift, men en må betale årskontigent.
+- For Tullball (inkl ballsidighet) er det ingen treningsavgift, men en må betale årskontigent. Middag for barnet er inkl i prisen
 - For Fredagsvolley er det ingen treningsavgift, men en må betale årskontigent.
-- For Mini (2.-3. klasse) er den pålydende 500 kr.
-- For Mini (4. klasse) er den pålydende 500 kr.
-- For Mini (5.-7. klasse) er den pålydende 900 kr.
+- For Mini (3.-4. klasse) er den pålydende 500 kr.
+- For Mini (5. klasse) er den pålydende 500 kr.
+- For Mini (6.-7. klasse) er den pålydende 900 kr.
 - For aldersbestemte fra U15 til U19 og 5. og 4. divisjon er den pålydende 1300
   kr.
 - For 3. divisjon og høyere divisjoner er den pålydende 1500 kr.
@@ -36,8 +36,9 @@ gratis.
 
 ## Spillerlisens - lisensen for sesongen 2025/2026
 
-Alle som deltar i trening og/eller konkurranseaktivitet i regi av Norges
+Alle som er over 13 år og deltar i trening og/eller konkurranseaktivitet i regi av Norges
 Volleyballforbund, forbundets regioner og klubber skal betale lisens.
+Er man under 13, men deltar i Ungdomserie, Teen eller lignende, må man også betale lisens.
 
 https://volleyball.no/lisens-og-forsikring/
 
