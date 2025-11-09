@@ -1,5 +1,5 @@
 ---
-title: Bli medlem
+title: Ny i klubben
 ---
 
 # Organisering
