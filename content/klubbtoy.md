@@ -4,15 +4,14 @@ title: Klubbtøy
 
 # Bestilling av klubbtøy
 
-Klubben har inngått en avtale med Idé om kjøp av drakter og annet egnet
-volleyballtøy.
+**Klubben er i prosess med å skaffe ny leverandør for klubbtøy, og lenke til ny nettbutikk kommer om ikke lenge.**.
 
 Klubben krever kun at man har drakt til bruk på kamper. Skriv i kommentaren ønsket draktnummer. Organiser dette sammen med laget ditt
 
 ## Bestillingsrutine:
 
 1. Velg produkter og legg dem i handlekurv og fullfør bestillingen. Link til
-   bestilling av klubbtøy: https://holstadvolley.ourwear.shop/Products
+   bestilling av klubbtøy: (LENKE KOMMER)
 2. Bestillingen er utført, så skal forhåndsbetaling gjøres til Holstad
    Idrettslag med VIPPS til 10697.
 3. Merk betalingen med spillerens navn og lag.
