@@ -4,7 +4,6 @@ title: Lag og treningstider 2025/2026
 
 Her er informasjon om alle lagene i klubben, og treningstider.
 
-**OBS: Treningstidene er oppdatert 9.aug. Mindre endringer kan forekomme framover**.
 
 ## Treningshaller
 
@@ -20,16 +19,16 @@ Her er informasjon om alle lagene i klubben, og treningstider.
 | Tidspunkt     | Bane 1 | Bane 2          | Bane 3            |
 | ------------- | ------ | --------------- | ----------------- |
 | 17:00 - 18:30 | J15    | J15             | Mini 3.-4. klasse |
-| 18:30 - 20:15 | J17    | J17             | -                 |
+| 18:30 - 20:15 | J17    | J17             | Mini 6.-7. klasse |
 | 20:15 - 22:00 | H1     | Mosjonistvolley | D1                |
 
 ## Tirsdag, Åsgård Skole
 
-| Tidspunkt     | Bane 1 | Bane 2         | Bane 3            |
-| ------------- | ------ | -------------- | ----------------- |
-| 17:00 - 18:30 | G15    | -              | Mini 5. klasse    |
-| 18:30 - 20:15 | G17    | Unge Voksne    | Mini 6.-7. klasse |
-| 20:15 - 22:00 | G19    | -              | -                 |
+| Tidspunkt     | Bane 1 | Bane 2            | Bane 3            |
+| ------------- | ------ | --------------    | ----------------- |
+| 17:00 - 18:30 | G15    | -                 | Mini 5. klasse    |
+| 18:30 - 20:15 | G17    | Mini 6.-7. klasse | Mini 6.-7. klasse |
+| 20:15 - 22:00 | G19    | -                 | -                 |
 
 ## Tirsdag, Åshallen
 
