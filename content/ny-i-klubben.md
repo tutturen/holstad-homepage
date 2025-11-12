@@ -7,7 +7,7 @@ title: Ny i klubben
 Under kommer en kjapp innføring om volleyball og Holstad. Målgruppen er nye foreldre eller spillere som ikke har spilt volleyball før.
 
 Holstad Volleyball har i dag over 300 spillere, fordelt på Tullball (barnehage), Minivolley (barneskole), ungdomslagene U15, U17, U19, damelag, herrelag og mosjonist.  
-I tillegg tilbyr vi diamantvolley (utøvere med utviklingshemning).  
+I tillegg tilbyr vi diamantvolley (utøvere med funksjonsnedsettelser).  
 
 Vi er organisert med et operativt styre bestående av 8–9 personer.
 Det sportslige arbeidet utføres av trenere, ungdomstrenere og lagledere som alle rapporterer til sportslig leder i styret.  
