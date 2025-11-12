@@ -60,6 +60,22 @@ Ida, Marta og Knut-Henrik i styret har laget en fin introduksjon til klubben for
 
 ---
 
+---
+
+## **Internt Dommerkurs** 🧑‍⚖️🏐
+Vi arrangerer internt dommerkurs med praksis **lørdag 6. desember** for alle US-spillere. Teoridelen gjennomføres en ettermiddag i forkant (ukedag annonseres til de påmeldte).
+
+Å ta dommergrad betyr at du får **betalt** for å dømme i US-rundene – runder som spillere uansett må bidra på. Dette er derfor en perfekt mulighet til å gå fra **ulønnet slit til lønnet arbeid** 💸🏐
+
+Kurset krever ingen forkunnskaper, og passer for alle som ønsker å bli flinkere 
+📧 **Påmelding:**  
+Send e-post til [post@holstadvolley.com](mailto:post@holstadvolley.com)  
+**Emne:** *Dommerkurs desember 2025*  
+Husk å skrive navn og hvilket lag du spiller på.
+
+---
+
+
 ## **Volleyballnorges store fest** 🎉🏐🇳🇴
 I forbindelse med cupfinalen lørdag **17. januar** arrangerer NVBF en hel uke med aktiviteter:  
 toballturnering, mixturnering, optimistsamling, skoleturnering for 9. klasse – og til slutt cupfinalene der Norges beste lag spiller (såvidt bedre enn Holstads beste menn 😉).
