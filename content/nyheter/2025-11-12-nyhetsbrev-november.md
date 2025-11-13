@@ -1,5 +1,4 @@
 ---
-title: Fredager - Høsten 25 
 date: 2025-11-12
 authors:
   - name: Sindre Øye Svendby
@@ -12,10 +11,10 @@ Da er sesongen godt i gang!
 
 
 ## **FredagsVolley** 🏐✨
-På fredag hadde vi besøk av Bendik Huus, og alle lagene fra U15 til H1 var godt representert. Vi fikk også besøk av en gjeng fra NMBU. Totalt var vi over 40 stk som hørte på en av Norges beste trenere snakke om mottak. Vi håper alle var fornøyd med økten – og vi hører *1–2–3!* når mottakene skal tas fremover 😉
+Sist fredag hadde vi besøk av Bendik Huus, og alle lagene fra U15 til H1 var godt representert. Vi fikk også besøk av en gjeng fra NMBU. Totalt var vi over 40 stk som hørte på en av Norges beste trenere snakke om mottak. Vi håper alle var fornøyd med økten – og vi hører *1–2–3!* når mottakene skal tas fremover 😉
 
 Vi har også hentet inn **Jarle Fornes** til en Juleøkt fredag 19. desember for alle som er interessert i å høre om ToppVolley Norge og se en typisk økt derfra.
-Ta gjerne med Foreldre hvis du er seriøs på å søke, enten nå eller senere.
+Ta gjerne med Foreldre hvis du er seriøs på å søke.
 
 🔗 [ToppVolley Norge](https://www.toppvolley.no/)
 🔗 [FredagsVolley-gruppa](https://spond.com/invite/LBEAX)
@@ -29,7 +28,6 @@ Tror du dette er deg/dere? ✨
 📧 **Send e-post til:**  
 [post@holstadvolley.com](mailto:post@holstadvolley.com)
 
----
 
 ## **Arrangementer og Kamper** 🏆🔥
 Siden forrige nyhetsbrev har **G17 arrangert to(!) US-turneringer** i Åsgård.  
@@ -50,7 +48,6 @@ Er du usikker på hva som skjer framover for ditt lag eller andre, sjekk ut kale
 🔗 **Kommende kamper og arrangementer:**  
 [Holstad Kalender](https://holstadvolley.com/kalender/)
 
----
 
 ## **Ny i Klubben** 🙌📘
 Ida, Marta og Knut-Henrik i styret har laget en fin introduksjon til klubben for alle som er nye og vil forstå Holstad og hvordan volleyball  norge fungerer generelt 
@@ -58,22 +55,16 @@ Ida, Marta og Knut-Henrik i styret har laget en fin introduksjon til klubben for
 🔗 **Ny i klubben:**  
 [holstadvolley.com/ny-i-klubben](https://holstadvolley.com/ny-i-klubben/)
 
----
 
----
 
 ## **Internt Dommerkurs** 🧑‍⚖️🏐
-Vi arrangerer internt dommerkurs med praksis **lørdag 6. desember** for alle US-spillere. Teoridelen gjennomføres en ettermiddag i forkant (ukedag annonseres til de påmeldte).
+Vi arrangerer internt dommerkurs for alle US-spillere. Teoridelen gjennomføres ettermiddag 2/12 fra 17-21. også blir det praksis i forbindels med J17 sin US runde på lørdag. 
 
-Å ta dommergrad betyr at du får **betalt** for å dømme i US-rundene – runder som spillere uansett må bidra på. Dette er derfor en perfekt mulighet til å gå fra **ulønnet slit til lønnet arbeid** 💸🏐
+Å ta dommergrad betyr at du får **betalt** for å dømme i US-rundene – runder som spillere uansett må bidra på. Dette er derfor en perfekt mulighet til å gå fra **ulønnet "slit" til lønnet arbeid** 💸🏐
 
-Kurset krever ingen forkunnskaper, og passer for alle som ønsker å bli flinkere 
-📧 **Påmelding:**  
-Send e-post til [post@holstadvolley.com](mailto:post@holstadvolley.com)  
-**Emne:** *Dommerkurs desember 2025*  
-Husk å skrive navn og hvilket lag du spiller på.
-
----
+Kurset krever ingen forkunnskaper, og passer for alle som ønsker å være dommere
+ **Påmelding:**  
+[Holstad Volleyball - Intern Dommer 1 kurs](https://club.spond.com/landing/courses/holstadvolleybal/8453D169AAD44DB2833ABCD56F7BE964)
 
 
 ## **Volleyballnorges store fest** 🎉🏐🇳🇴
@@ -85,7 +76,6 @@ toballturnering, mixturnering, optimistsamling, skoleturnering for 9. klasse –
 
 Snakk med laget ditt og bli med på moroa!
 
----
 
 ## **Valgkomiteen starter sitt arbeid** 🗳️💡
 Valgkomiteen er i gang med rekrutteringen til nytt styre.  
@@ -95,3 +85,11 @@ Vi har oppgaver både foran PC-en, i hallen og alt imellom.
 Hjelp oss å lage en enda bedre klubb!
 
 📧 **post@holstadvolley.com**  
+
+
+## **Medlemmer og betaling** 👥💳
+Klubben er stadig i vekst, og vi ligger an til å rapportere **ny medlemsrekord til NIF også i år** 🎉  
+Kan du ikke huske og ha betalt medlemskontigent eller treningsavgift? 
+Sjekk at det ikke ligger ubehandlede betalinger i Spond. Hvis du mener du ikke har fått noe betalingskrav,  **ta kontakt**
+
+📧 [post@holstadvolley.com](mailto:post@holstadvolley.com)
