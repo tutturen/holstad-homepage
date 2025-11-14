@@ -4,7 +4,6 @@ title: Lag og treningstider 2025/2026
 
 Her er informasjon om alle lagene i klubben, og treningstider.
 
-
 ## Treningshaller
 
 - Vi trener hovedsakelig på
@@ -25,7 +24,7 @@ Her er informasjon om alle lagene i klubben, og treningstider.
 ## Tirsdag, Åsgård Skole
 
 | Tidspunkt     | Bane 1 | Bane 2            | Bane 3            |
-| ------------- | ------ | --------------    | ----------------- |
+| ------------- | ------ | ----------------- | ----------------- |
 | 17:00 - 18:30 | G15    | -                 | Mini 5. klasse    |
 | 18:30 - 20:15 | G17    | Mini 6.-7. klasse | Mini 6.-7. klasse |
 | 20:15 - 22:00 | G19    | -                 | -                 |
@@ -163,7 +162,6 @@ Her er informasjon om alle lagene i klubben, og treningstider.
     </tbody>
 </table>
 
-
 ## Treningstider Åshallen
 
 # Lag
@@ -226,7 +224,6 @@ Les mer på [tullball sine egne sider](/tullball)
 - Lagkontakt: Geir
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
-
 ### D1 Damelaget (5. divisjon)
 
 - Mandag kl. 20:15-22:00, Åsgård Skole
@@ -256,7 +253,7 @@ Les mer på [tullball sine egne sider](/tullball)
 - Tirsdag kl. 18:30-20:15, Åsgård Skole
 - Torsdag kl. 20:15-22:00, (G19/H2), Åsgård Skole
 - Hovedtrener: Henning Kjemperud Olsen
-- Lagkontakt: Amund Kvalbein  
+- Lagkontakt: Amund Kvalbein
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### H2 Herrelaget 4. divisjon
@@ -271,8 +268,8 @@ Les mer på [tullball sine egne sider](/tullball)
 
 - Mandag kl. 20:15-22:00, Åsgård Skole
 - Torsdag kl. 20:15-22:00, Åsgård Skole
-- Trener: Ledig stilling!
-- Lagkontakt: Rune Reiling
+- Trener: Vitor Pina og Arjan Festøy
+- Lagkontakt: Magnus Hushovd
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### Mosjonistvolley
