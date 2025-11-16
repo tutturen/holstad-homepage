@@ -62,7 +62,10 @@ Vi arrangerer internt dommerkurs for alle US-spillere. Teoridelen gjennomføres 
 
 Å ta dommergrad betyr at du får **betalt** for å dømme i US-rundene – runder som spillere uansett må bidra på. Dette er derfor en perfekt mulighet til å gå fra **ulønnet "slit" til lønnet arbeid** 💸🏐
 
-Kurset krever ingen forkunnskaper, og passer for alle som ønsker å være dommere
+Kurset krever ingen forkunnskaper, og passer for alle som ønsker å være dommere.
+
+**NB: Påmeldingsfrist 20. november.**
+
  **Påmelding:**  
 [Holstad Volleyball - Intern Dommer 1 kurs](https://club.spond.com/landing/courses/holstadvolleybal/8453D169AAD44DB2833ABCD56F7BE964)
 
