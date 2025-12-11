@@ -2,9 +2,7 @@
 title: Klubbtøy
 ---
 
-# Bestilling av klubbtøy
-
-## Bestillingsrutine:
+## Bestillingsrutine
 
 1. Merk bestillingen med navn i kommentarfeltet i handlekurven.
 2. Merk betalingen med spillerens navn og lag.
@@ -12,11 +10,17 @@ title: Klubbtøy
 4. Ved kjøp av spillerdrakt; undersøk med lagleder hvilke nummer som er tilgjenglige. Skriv draktnummer på draktbestilling.
 5. Produktene blir utlevert på trening.
 
-**NB! Det må være registrert betaling før bestillingen trer i kraft. Det må være registrert betaling før bestillingen trer i kraft.**
+## Betaling
 
-### Bestill klubbtøy her: [Holstad Volley Klubbshop](https://holstadvolley.mikroshop.no/)
+**VIPPS til 33153, Evensen Moss**
 
-### Betaling: VIPPS til 33153, Evensen Moss
+**NB! Det må være registrert betaling før bestillingen trer i kraft.**
+
+## Bestill klubbtøy
+
+{{< cards >}}
+{{< card link="https://holstadvolley.mikroshop.no/" title="Holstad Klubbshop" icon="shopping-cart" >}}
+{{< /cards >}}
 
 ### Tips:
 
