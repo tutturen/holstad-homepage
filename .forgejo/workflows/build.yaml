@@ -1,0 +1,24 @@
+name: Build Hugo site
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+concurrency:
+  group: "build"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: hugomods/hugo:go-git-0.146.0
+    steps:
+      - name: Checkout
+        uses: https://data.forgejo.org/actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+      - name: Build with Hugo
+        run: hugo --gc --minify --baseURL "https://holstadvolley.com/"
