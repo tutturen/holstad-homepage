@@ -1,4 +1,4 @@
-FROM hugomods/hugo:go-git-0.141.0 AS builder
+FROM hugomods/hugo:go-git-0.146.0 AS builder
 WORKDIR /src
 COPY . .
 RUN hugo --minify
