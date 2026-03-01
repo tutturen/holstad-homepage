@@ -11,5 +11,4 @@ title: Styret
     {{< card link="/" title="Sindre Øye Svendby" image="/styret/sindre.jpg" subtitle="Sportslig Leder" method="Crop" options="600x q80 webp" >}}
     {{< card link="/" title="Vinh Vo-Ma" image="/styret/vinh.jpeg" subtitle="Dommeransvarlig" method="Crop" options="600x600 q80 webp" >}}
     {{< card link="/" title="Torgeir Sundvor Solvin" subtitle="Kasserer" style="background: radial-gradient(ellipse at 50% 80%,rgba(0,97,254,0.15),hsla(0,0%,100%,0));">}}
-    {{< card link="/" title="Knut-Henrik Sivertsen" image="/styret/knut-henrik.png" subtitle="Medlemsansvarlig" method="Crop" options="600x600 q80 webp" >}}
 {{< /cards >}}
