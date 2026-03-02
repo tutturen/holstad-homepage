@@ -12,7 +12,7 @@ title: Klubbtøy
 
 ## Betaling
 
-**VIPPS til 33153, Evensen Moss**
+**VIPPS til 35153, Evensen Moss**
 
 **NB! Det må være registrert betaling før bestillingen trer i kraft.**
 
