@@ -67,3 +67,23 @@ Påmelding til kurs skjer via [Volleyball.no](https://volleyball.no/utdanning/tr
   - Gi hyppige tilbakemeldinger
   - Gjenta viktige poenger
   - Bekreft positiv utvikling. Når en spiller forsøker å gjøre endringene du har foreslått, gi umiddelbar positiv respons - selv om resultatet ikke er perfekt ennå. Dette oppmuntrer til videre utvikling.
+
+## Holdninger
+
+### Fair play
+- Vis respekt for motstandere, dommere og medspillere
+- Lær spillerne å vinne med ydmykhet og tape med verdighet
+- Fremhev innsats og god sportsånd fremfor resultater
+- Gå foran som et godt eksempel ved å oppføre deg respektfullt mot dommere og motstanderlag
+
+### Doping
+- Gjør deg kjent med [antidopingreglene](https://www.antidoping.no/) og hva som er forbudt
+- Som trener har du et ansvar for å informere spillerne om rent idrettsliv
+- Snakk åpent med spillerne om hvorfor doping er skadelig og uforenlig med fair play
+- Vær oppmerksom på at kosttilskudd kan inneholde forbudte stoffer – bruk [sjekklisten til Antidoping Norge](https://www.antidoping.no/regler/dopinglisten)
+
+### Juks
+- Ikke oppfordre til eller aksepter juks i noen form
+- Lær spillerne å spille ærlig – også når dommeren ikke ser
+- Sørg for at spillerne forstår at juks undergraver idretten og respekten for medspillere og motstandere
+- Vær tydelig på at fair play og ærlighet alltid kommer foran det å vinne
