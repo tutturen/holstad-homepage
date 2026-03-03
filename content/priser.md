@@ -2,7 +2,7 @@
 title: Priser
 ---
 
-Holstad støtter de som trenger det se [Betalingsfritak](#Betalingsfritak) for
+Holstad støtter de som trenger det, se [Betalingsfritak](#betalingsfritak) for
 mer informasjon
 
 ## Årskontigent
@@ -13,16 +13,19 @@ mer informasjon
 ## Treningsavgift, halvårlig
 
 - Treningsavgiften følger sesongen, som et skoleår.
-- For Diamantvolley er det ingen treningsavgift.
-- - For Tullball er det ingen treningsavgift
+- For Diamantvolley er det ingen treningsavgift, men en må betale årskontigent
+- For Tullball (inkl ballsidighet) er det ingen treningsavgift, men en må betale årskontigent. Middag for barnet er inkl i prisen
 - For Fredagsvolley er det ingen treningsavgift, men en må betale årskontigent.
-- For Mini (2-3. klasse) er den pålydende 400 kr.
-- For Mini (4. klasse) er den pålydende 400 kr.
-- For Mini (5.-7. klasse) er den pålydende 800 kr.
-- For aldersbestemte fra U15 til U19 og 5. og 4. divisjon er den pålydende 1100
+- For Mini (3.-4. klasse) er den pålydende 500 kr.
+- For Mini (5. klasse) er den pålydende 500 kr.
+- For Mini (6.-7. klasse) er den pålydende 900 kr.
+- For aldersbestemte fra U15 til U19 og 5. og 4. divisjon er den pålydende 1300
   kr.
-- For 3. divisjon og høyere divisjoner er den pålydende 1300 kr.
-- For Foreldretrening er treningsavgiften pålydende 600 kr.
+- For 3. divisjon og høyere divisjoner er den pålydende 1500 kr.
+- For Foreldretrening/Mosjonist er treningsavgiften pålydende 700 kr.
+
+Barn av lagledere gis halv pris. Styret og barn av medlemmer i styret trener
+gratis.
 
 **Merk**
 
@@ -31,10 +34,11 @@ mer informasjon
   faktura for (halv) treningsavgift for vårsesongen.
 - Treningsavgiften dekker påmelding til alle turneringer og lønn til trenere.
 
-## Spillerlisens - lisensen for sesongen 2024/2025
+## Spillerlisens - lisensen for sesongen 2025/2026
 
-Alle som deltar i trening og/eller konkurranseaktivitet i regi av Norges
+Alle som er over 13 år og deltar i trening og/eller konkurranseaktivitet i regi av Norges
 Volleyballforbund, forbundets regioner og klubber skal betale lisens.
+Er man under 13, men deltar i Ungdomserie, Teen eller lignende, må man også betale lisens.
 
 https://volleyball.no/lisens-og-forsikring/
 
@@ -59,20 +63,22 @@ plusslisens gir i forsikringsavtalen.
 
 | Lisenskategori                                    | Pris   | Pluss (+) | Engangslisens | Gjelder for                                               |
 | ------------------------------------------------- | ------ | --------- | ------------- | --------------------------------------------------------- |
-| Elite                                             | 1900,- | 2300,-    |               | Mizunoligaen og 1. divisjon - uavhengig av alder          |
-| Senior                                            | 1200,- | 1700,-    | 600,-         | Født 2004 eller tidligere                                 |
-| Eldre junior                                      | 1000,- | 1400,-    | 500,-         | Født fra 2005 til 2008                                    |
-| Yngre junior                                      | 420,-  | 840,-     | 210,-         | Født fra 2009 og 2010                                     |
-| U13                                               | 315,-  |           | 160,-         | Født 2011 og senere                                       |
-| Trygg på trening, dommer, trener, sittevolleyball | 315,-  |           |               |                                                           |
-| Trygg på trening, sittevolleyball, trener, dommer | 315,-  |           |               |                                                           |
-| Lag mini/teen                                     | 1300,- |           |               | Mini - inntil 8 lag, teen - inntil 8 spillere             |
+| Elite                                             | 2100,- | 2500,-    |               | Mizunoligaen og 1. divisjon - uavhengig av alder          |
+| Senior                                            | 1300,- | 1900,-    | 650,-         | Født 2006 eller tidligere                                 |
+| Eldre junior                                      | 1100,- | 1575,-    | 550,-         | Født fra 2007 til 2010                                    |
+| Yngre junior                                      | 460,-  | 900,-     | 230,-         | Født fra 2011 og 2012                                     |
+| U13                                               | 350,-  |           | 180,-         | Født 2013 og senere                                       |
+| Trygg på trening, dommer, trener, sittevolleyball | 350,-  |           |               |                                                           |
 | Barn under 13                                     | 0      |           |               | Alle barn under 13 er dekket av NIF's forsikringsordning. |
 
 #### Lag mini/teen
 
-Laglisens kan benyttes i minivolleyball og i Teenvolley. Laglisens løses av
-klubb.
+Lag mini: Alle barn som er medlem av lag tilsluttet Norges Idrettsforbund eller
+deltar i organisert aktivitet i klubbes regi er forsikret gjennom Gjensidige
+barneidrettsforsikring til den dato de fyller 13 år. Dersom en deltar på mini
+etter fylte 13 år, må en løse individuell lisens.
+
+Lag teen: Lisens for teenspillere er innbakt i påmeldingsavgiften.
 
 ### Betaling
 
@@ -83,7 +89,7 @@ klubb.
   lignende – ta kontakt med NIF IT Support på tlf. 21029090 eller e-post
   support@idrettsforbundet.no
 - Finner du ikke en lisens under din bruker på Min Idrett, kontakt oss på
-  post@holstadvolley.com (hvis det haster send sms til 99402123 )
+  post@holstadvolley.com (hvis det haster send sms til 99402123)
 
 ### Betalingsfritak
 
@@ -93,8 +99,8 @@ generelt for få som ber om Betalingsfritak eller/og støtte, det er vanskelig �
 be om hjelp. Vi oppfordrer til å ta kontakt. Holstad har økonomiske midler til å
 sørge for at sporten er gratis for de som trenger det, og så kan man heller
 støtte opp med å hjelpe til i kiosk eller lignende, hvis man har tid til det. Vi
-kan støtte medlemskontigent, treningsavgift, lisens, egenandeler på turer osv.
-Ta kontakt på post@holstadvolley.com så finner vi en løsning sammen
+kan støtte medlemskontigent, treningsavgift, lisens, egenandeler på turer og
+lignende. Ta kontakt på post@holstadvolley.com så finner vi en løsning sammen.
 
-(eller send melding til Kasserer, Torgeir Solvin - 90145444 hvis du ønsker en
-litt mer diskret behandling)
+Eller send melding til Kasserer, Torgeir Solvin - 90145444 hvis du ønsker en
+litt mer diskret behandling.

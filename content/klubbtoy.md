@@ -2,25 +2,25 @@
 title: Klubbtøy
 ---
 
-# Bestilling av klubbtøy
+## Bestillingsrutine
 
-Klubben har inngått en avtale med Idé om kjøp av drakter og annet egnet
-volleyballtøy.
-
-Klubben krever kun at man har drakt til bruk på kamper. Idé organiserer
-nummerering av draktene.
-
-## Bestillingsrutine:
-
-1. Velg produkter og legg dem i handlekurv og fullfør bestillingen. Link til
-   bestilling av klubbtøy: https://holstadvolley.ourwear.shop/Products
-2. Bestillingen er utført, så skal forhåndsbetaling gjøres til Holstad
-   Idrettslag med VIPPS til 10697.
-3. Merk betalingen med spillerens navn og lag.
-4. Bestilling skjer hver 14. dag. Bestill innen den 2. og 4. torsdagen måneden.
+1. Merk bestillingen med navn i kommentarfeltet i handlekurven.
+2. Merk betalingen med spillerens navn og lag.
+3. **NÅR BESTILLINGEN ER UTFØRT, SKAL FORHÅNDSBETALING GJØRES TIL EVENSEN MOSS MED VIPPS TIL 35153.**
+4. Ved kjøp av spillerdrakt; undersøk med lagleder hvilke nummer som er tilgjenglige. Skriv draktnummer på draktbestilling.
 5. Produktene blir utlevert på trening.
 
-Det må være registrert betaling før bestillingen trer i kraft.
+## Betaling
+
+**VIPPS til 33153, Evensen Moss**
+
+**NB! Det må være registrert betaling før bestillingen trer i kraft.**
+
+## Bestill klubbtøy
+
+{{< cards >}}
+{{< card link="https://holstadvolley.mikroshop.no/" title="Holstad Klubbshop" icon="shopping-cart" >}}
+{{< /cards >}}
 
 ### Tips:
 

@@ -1,0 +1,4 @@
+:{$PORT:80}
+
+file_server
+root * /usr/share/caddy

@@ -64,16 +64,35 @@ Diamantvolleyball.
     subtitle="Se hvem som sitter i styret og hva de jobber med."
   >}}-->
   {{< hextra/feature-card
-    title="Dommerkurs"
-    subtitle="Vi ønsker å utdanne våre spillere som dommere. Se når neste dommerkurs er."
+    title="Ny i klubben"
+    icon="user"
+    link="ny-i-klubben"
+    subtitle="hva betyr det å være spiller og foresatt i Holstad?"
+     style="background: radial-gradient(ellipse at 50% 80%,rgba(255,150,0,0.15),hsla(0,0%,100%,0));"
   >}}
+{{< hextra/feature-card
+    title="Kalender"
+    link="kalender"
+    subtitle="All aktivitet er inne i kalendere, få oversikt med en gang"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(0, 255, 98, 0.15),hsla(0,0%,100%,0));"
+  >}}
+
 {{< /hextra/feature-grid >}}
 
 
 ### Nyttige lenker
 
 {{< cards >}}
+
  {{< card link="klubbtoy" title="Bestill klubbtøy" icon="shopping-cart" >}}
+ {{< card link="dommerkurs" title="Bli Dommer!" icon="flag" >}}
+ {{< card link="lagleder" title="Lagleder i Holstad" icon="user" >}}
+ {{< card link="lagmøte" title="Lagmøte" icon="user-group" >}}
+ {{< card link="styret" title="Styret i Holstad" icon="user-group" >}}
+ {{< card link="oppgaver" title="Oppgaver" icon="badge-check" >}}
+{{< card link="stotte" title="Måter å støtte klubben" icon="cash" >}}
+ {{< card link="trener" title="For Trenere" icon="thumb-up" >}}
+ {{< card link="teknikk-og-tips-videoer" title="Teknikk og Tips Videoer" icon="video-camera" >}}
  {{< card link="vaffelrore" title="Hildegunns Vaffelrøre" icon="heart" >}}
 
 {{< /cards >}}

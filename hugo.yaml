@@ -62,3 +62,6 @@ params:
 
   editURL:
     enable: false
+
+outputs:
+  home: [html, llms]
