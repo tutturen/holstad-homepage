@@ -23,5 +23,22 @@ Hjelpe folk til å foredele utgifter til bil - [Vi pleier bruke 3.50kr pr kilome
 ###  Ansvarlig for hjemmeturneringer  
 Koordinere med arrangementansvarlig og kioskansvarlig om oppgaver 
 
-###  Dugnadsansvarlig   
-Lage og adminstere dugnadsarbeid sånn laget har penger  
+###  Dugnadsansvarlig
+Lage og adminstere dugnadsarbeid sånn laget har penger
+
+## Holdninger i laget
+
+Det er lurt å bruke lagmøtet til å snakke om hvilke holdninger man ønsker i laget. Dette skaper et felles grunnlag og gjør det lettere å ta opp ting senere i sesongen.
+
+### Forslag til tema å diskutere
+- **Treningskultur** – Hva forventer vi av hverandre på trening? Hvordan ønsker vi å ha det?
+- **Turnering og kamp** – Hvordan oppfører vi oss mot dommere, motstandere og hverandre under kamp?
+- **Kommunikasjon** – Hvordan snakker vi til og om hverandre, både på og utenfor banen?
+- **Inkludering** – Hvordan sørger vi for at alle føler seg velkomne og sett?
+- **Innsats og utvikling** – Hva betyr det å gjøre sitt beste, uavhengig av nivå?
+
+### Tips til gjennomføring
+- La spillerne selv komme med forslag til holdninger de synes er viktige.
+- Skriv ned det laget blir enige om, slik at man kan ta det frem igjen ved behov.
+- Hold det enkelt – velg gjerne 3–5 holdninger laget vil stå for.
+- Heng opp holdningene i garderobene eller del dem i lagets chat.
