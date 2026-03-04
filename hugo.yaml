@@ -39,7 +39,6 @@ menu:
     - name: Klubbtøy ↗
       url: "/klubbtoy"
       weight: 3
-      weight: 2
     - name: Søk
       weight: 4
       params:
