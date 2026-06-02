@@ -228,8 +228,8 @@ Les mer på [tullball sine egne sider](/tullball)
 
 - Mandag kl. 20:15-22:00, Åsgård Skole
 - Onsdag kl. 18:30-20:00 , Åsgård Skole
-- Trener: Sofia Gule
-- Lagkontakt: Marta Søndenfor
+- Trener: Rina Katinka
+- Lagkontakt: Herdis Gunnarstorp (herdis_gunnarstorp@hotmail.com)
 - [Bli medlem](https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB)
 
 ### G15 (f. 2011-2012)
