@@ -5,10 +5,12 @@
 # internal-only holstad-homepage.sindres.no alias (tls internal in Caddy),
 # purely so this can be smoke-tested the same way Dokku's copy is.
 #
-# The image tag/pull policy here is a one-time bootstrap so the Deployment
-# exists before the first CI-driven rollout -- .forgejo/workflows/deploy-main.yaml
+# The image tag here is a floating bootstrap reference -- deploy-main.yaml
 # takes over the image field on every push to main via `kubectl set image`
-# (see infra-self-hosted/scripts/k3s-deploy-webhook.py).
+# (see infra-self-hosted/scripts/k3s-deploy-webhook.py), pinning it to a
+# specific main-<sha> tag. imagePullPolicy must stay IfNotPresent/Always
+# (not Never) or kubectl set image's rollout will hang forever on
+# ErrImageNeverPull once it points at a registry tag not yet cached locally.
 #
 # The `forgejo-registry` imagePullSecret is created out-of-band with kubectl
 # (not committed here, since it holds a credential).
@@ -36,8 +38,8 @@ spec:
         - name: forgejo-registry
       containers:
         - name: holstad-homepage
-          image: docker.io/library/holstad-homepage:k3s-test
-          imagePullPolicy: Never
+          image: forgejo.sindres.no/holstad/holstad-homepage:main
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
 ---
