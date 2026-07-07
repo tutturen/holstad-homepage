@@ -1,9 +1,9 @@
 # Production k3s deployment for holstad-homepage, running on the `production`
 # host's own k3s cluster (see ~/dev/sindre/infra-self-hosted's k3s notes).
-# NOT yet wired into live traffic -- Caddy's real holstadvolley.com route
-# still points at the Dokku app. Ingress host below matches Dokku's existing
-# internal-only holstad-homepage.sindres.no alias (tls internal in Caddy),
-# purely so this can be smoke-tested the same way Dokku's copy is.
+# Live traffic: Caddy's holstadvolley.com/.sindres.no/www. block and the
+# internal holstad-homepage.sindres.no alias both reverse_proxy here now
+# (see infra-self-hosted Caddyfile) -- this Ingress must keep every hostname
+# Caddy forwards, or ingress-nginx 404s them.
 #
 # The image tag here is a floating bootstrap reference -- deploy-main.yaml
 # takes over the image field on every push to main via `kubectl set image`
@@ -66,6 +66,36 @@ spec:
   ingressClassName: nginx
   rules:
     - host: holstad-homepage.sindres.no
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: holstad-homepage
+                port:
+                  number: 80
+    - host: holstadvolley.sindres.no
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: holstad-homepage
+                port:
+                  number: 80
+    - host: holstadvolley.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: holstad-homepage
+                port:
+                  number: 80
+    - host: www.holstadvolley.com
       http:
         paths:
           - path: /
