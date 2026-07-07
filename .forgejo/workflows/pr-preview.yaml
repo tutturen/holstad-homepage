@@ -16,8 +16,10 @@ jobs:
       REPO: holstad/holstad-homepage
       PR: ${{ github.event.pull_request.number }}
     steps:
+      # Always checked out, even on `closed` -- the notify step below needs
+      # .forgejo/scripts/notify-preview.mjs to exist in the workspace
+      # regardless of action type. Only the image build is skipped on closed.
       - name: Checkout
-        if: ${{ github.event.action != 'closed' }}
         uses: https://data.forgejo.org/actions/checkout@v4
         with:
           fetch-depth: 0
