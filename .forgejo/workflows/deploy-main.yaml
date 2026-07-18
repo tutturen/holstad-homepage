@@ -20,6 +20,15 @@ jobs:
           fetch-depth: 0
           submodules: recursive
 
+      # No separate test suite for a Hugo site -- a clean `hugo --minify`
+      # build (same image/version as the Dockerfile's own builder stage)
+      # is the meaningful gate here, and fails fast before a full Kaniko
+      # build if content/templates are broken.
+      - name: Run tests
+        uses: docker://hugomods/hugo:go-git-0.146.0
+        with:
+          args: hugo --minify
+
       - name: Write registry auth for Kaniko
         run: |
           mkdir -p "${{ github.workspace }}/.docker-config"
