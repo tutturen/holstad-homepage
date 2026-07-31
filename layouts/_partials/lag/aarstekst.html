@@ -1,0 +1,45 @@
+{{- /*
+  Lager lesbar årgangstekst fra fodselsaarFra/Til. Delt mellom lagvelger og
+  lagliste så begge flatene formaterer likt.
+
+  Parametre:
+    fra, til    fødselsårgrenser. 1900 = åpen nedad, 2100 = åpen oppad
+    lang        true  -> "For jenter født 2012-2013"  (lagvelger)
+                false -> "f. 2012-2013"               (overskrifter på /lag)
+    kjonn       liste, brukes til å utlede målgruppe når lang=true
+    malgruppe   overstyrer utledet målgruppe, f.eks. "damer" på seniorlag
+
+  Tomt svar når laget ikke har årgangsgrenser i det hele tatt.
+*/ -}}
+{{- $fra := .fra | default 1900 -}}
+{{- $til := .til | default 2100 -}}
+
+{{- $aar := "" -}}
+{{- if and (gt $fra 1900) (lt $til 2100) -}}
+  {{- if eq $fra $til -}}
+    {{- $aar = printf "%d" $fra -}}
+  {{- else -}}
+    {{- $aar = printf "%d-%d" $fra $til -}}
+  {{- end -}}
+{{- else if gt $fra 1900 -}}
+  {{- $aar = printf "%d og senere" $fra -}}
+{{- else if lt $til 2100 -}}
+  {{- $aar = printf "%d og tidligere" $til -}}
+{{- end -}}
+
+{{- $ut := "" -}}
+{{- if $aar -}}
+  {{- if .lang -}}
+    {{- $mg := .malgruppe | default "" -}}
+    {{- if not $mg -}}
+      {{- $kjonn := .kjonn | default (slice "jente" "gutt") -}}
+      {{- $jente := in $kjonn "jente" -}}
+      {{- $gutt := in $kjonn "gutt" -}}
+      {{- $mg = cond (and $jente $gutt) "jenter og gutter" (cond $jente "jenter" "gutter") -}}
+    {{- end -}}
+    {{- $ut = printf "For %s født %s" $mg $aar -}}
+  {{- else -}}
+    {{- $ut = printf "f. %s" $aar -}}
+  {{- end -}}
+{{- end -}}
+{{- return $ut -}}

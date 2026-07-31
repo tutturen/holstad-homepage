@@ -1,0 +1,233 @@
+{{- /*
+  lagvelger — interaktiv "hvilket lag passer for meg / mitt barn?"
+
+  Leser data/lag.yaml. Bruk: {{< lagvelger >}}
+  Valgfrie parametre:
+    tittel     overskrift (default "Finn laget ditt")
+    ingress    tekst over skjemaet
+*/ -}}
+{{- /* hugo.Data krever Hugo >= 0.156 (site.Data er deprecated der). Versjonen
+       er pinnet til 0.164.0 i Dockerfile og .forgejo/workflows/. */ -}}
+{{- $d := hugo.Data.lag -}}
+{{- $spond := $d.spondUrl -}}
+{{- $sesong := $d.sesong | default "" -}}
+{{- /* tittel="" skjuler overskriften (bruk når siden alt har en egen overskrift) */ -}}
+{{- $tittel := "Finn laget ditt" -}}
+{{- if isset .Params "tittel" -}}{{- $tittel = .Get "tittel" -}}{{- end -}}
+{{- $ingress := "Fyll inn fødselsår og kjønn, og vi viser hvilket lag som passer, når de trener og hvordan du melder deg på." -}}
+{{- if isset .Params "ingress" -}}{{- $ingress = .Get "ingress" -}}{{- end -}}
+{{- $id := printf "lagvelger-%d" .Ordinal -}}
+{{- /* Siste valg i fødselsår-lista: "<år> og tidligere". Alle årganger fra og
+       med dette året treffer de samme lagene, så resten sløyfes. */ -}}
+{{- $samleAar := 2005 -}}
+
+{{- /* Lag med tilrettelagt: true holdes utenfor alder/kjønn-matchingen og
+       vises i stedet som en egen lenke under resultatet. */ -}}
+{{- $tilrettelagt := slice -}}
+{{- range where $d.lag "tilrettelagt" true -}}
+  {{- $tilrettelagt = $tilrettelagt | append (dict
+    "navn" .navn
+    "anker" (printf "%s#%s" ("lag" | relURL) (.navn | anchorize))
+  ) -}}
+{{- end -}}
+
+{{- $teams := slice -}}
+{{- range where $d.lag "tilrettelagt" "!=" true -}}
+  {{- /* Snudde årsgrenser gir et lag som aldri kan matche, og som da forsvinner
+         lydløst fra velgeren. Stopp bygget i stedet. */ -}}
+  {{- if gt (.fodselsaarFra | default 1900) (.fodselsaarTil | default 2100) -}}
+    {{- errorf "data/lag.yaml: laget %q har fodselsaarFra (%d) høyere enn fodselsaarTil (%d). Fra = eldste årgang, Til = yngste. Laget ville aldri gitt treff i lagvelgeren." .navn .fodselsaarFra .fodselsaarTil -}}
+  {{- end -}}
+  {{- $teams = $teams | append (dict
+    "navn" .navn
+    "niva" (.niva | default "")
+    "trinn" (.trinn | default "")
+    "aarstekst" (partial "lag/aarstekst.html" (dict
+      "fra" .fodselsaarFra "til" .fodselsaarTil "lang" true
+      "kjonn" .kjonn "malgruppe" (.malgruppe | default "")))
+    "fra" (.fodselsaarFra | default 1900)
+    "til" (.fodselsaarTil | default 2100)
+    "kjonn" (.kjonn | default (slice "jente" "gutt"))
+    "sekundaer" (.sekundaer | default false)
+    "beskrivelse" (.beskrivelse | default "")
+    "merknad" (.merknad | default "")
+    "treninger" (.treninger | default (slice))
+    "trener" (.trener | default "")
+    "lagkontakt" (.lagkontakt | default "")
+    "lenke" (.lenke | default "")
+    "lenketekst" (.lenketekst | default "")
+    "spond" (.spond | default $spond)
+  ) -}}
+{{- end -}}
+
+<div class="lagvelger" id="{{ $id }}" data-sesong="{{ $sesong }}">
+  {{- with $tittel }}
+  <h3 class="lagvelger-tittel">{{ . }}</h3>
+  {{- end }}
+  {{- with $ingress }}
+  <p class="lagvelger-ingress">{{ . }}</p>
+  {{- end }}
+
+  <div class="lagvelger-skjema">
+    <div class="lagvelger-felt">
+      <label for="{{ $id }}-aar">Fødselsår</label>
+      <select id="{{ $id }}-aar" class="lagvelger-aar">
+        <option value="">Velg år …</option>
+        {{- /* Alle årganger til og med $samleAar treffer de samme (senior)lagene,
+               så de samles i ett valg i stedet for én rad per år. */ -}}
+        {{- range seq now.Year (add $samleAar 1) -}}
+        <option value="{{ . }}">{{ . }}</option>
+        {{- end }}
+        <option value="{{ $samleAar }}">{{ $samleAar }} og tidligere</option>
+      </select>
+    </div>
+
+    <fieldset class="lagvelger-felt lagvelger-fieldset">
+      <legend class="lagvelger-label">Kjønn</legend>
+      <div class="lagvelger-kjonn">
+        <label><input type="radio" name="{{ $id }}-kjonn" value="jente"> <span>Jente / kvinne</span></label>
+        <label><input type="radio" name="{{ $id }}-kjonn" value="gutt"> <span>Gutt / mann</span></label>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="lagvelger-resultat" aria-live="polite"></div>
+
+  {{- with $tilrettelagt }}
+  <p class="lagvelger-tilrettelagt">
+    Trenger du eller barnet ditt tilrettelagt trening?
+    {{- range . }} <a href="{{ .anker }}">Se {{ .navn }} →</a>{{ end }}
+  </p>
+  {{- end }}
+
+  <noscript>
+    <p>Denne modulen krever JavaScript. Du finner alle lag og treningstider på
+      <a href="{{ "lag" | relURL }}">Lag og treningstider</a>.</p>
+  </noscript>
+</div>
+
+<script>
+(function () {
+  /* Hugo serialiserer verdiene som JSON-literaler i JS-kontekst */
+  var teams = {{ $teams }};
+  var lagUrl = {{ "lag" | relURL }};
+  var samleAar = {{ $samleAar }};
+
+  var root = document.getElementById({{ $id }});
+  if (!root) return;
+
+  var out = root.querySelector('.lagvelger-resultat');
+  var aarEl = root.querySelector('.lagvelger-aar');
+  var kjonnEls = root.querySelectorAll('.lagvelger-kjonn input');
+  var sesong = root.dataset.sesong || '';
+  var sesongStart = parseInt(sesong.slice(0, 4), 10);
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text) n.textContent = text;
+    return n;
+  }
+
+  function kort(t, sekundaer) {
+    var card = el('div', 'lagvelger-kort' + (sekundaer ? ' lagvelger-kort--sekundaer' : ''));
+
+    var h = el('h4', 'lagvelger-kort-navn', t.navn);
+    if (t.niva) h.appendChild(el('span', 'lagvelger-badge', t.niva));
+    card.appendChild(h);
+
+    /* Målgruppe og årganger — viser hvem som spiller på laget */
+    if (t.aarstekst) card.appendChild(el('p', 'lagvelger-aargang', t.aarstekst));
+    if (t.trinn) card.appendChild(el('p', 'lagvelger-trinn', t.trinn));
+    if (t.beskrivelse) card.appendChild(el('p', 'lagvelger-beskrivelse', t.beskrivelse));
+
+    if (t.treninger && t.treninger.length) {
+      card.appendChild(el('p', 'lagvelger-seksjon', 'Treningstider'));
+      var ul = el('ul', 'lagvelger-treninger');
+      t.treninger.forEach(function (tr) {
+        var parts = [tr.dag, tr.tid, tr.sted].filter(Boolean);
+        ul.appendChild(el('li', null, parts.join(' · ')));
+      });
+      card.appendChild(ul);
+    }
+
+    var folk = [];
+    if (t.trener) folk.push('Trener: ' + t.trener);
+    if (t.lagkontakt) folk.push('Lagkontakt: ' + t.lagkontakt);
+    if (folk.length) card.appendChild(el('p', 'lagvelger-folk', folk.join(' — ')));
+
+    if (t.merknad) card.appendChild(el('p', 'lagvelger-merknad', t.merknad));
+
+    var knapper = el('div', 'holstad-knapper');
+    var a = el('a', 'holstad-knapp', 'Meld deg på ' + t.navn);
+    a.href = t.spond;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    knapper.appendChild(a);
+    if (t.lenke) {
+      var b = el('a', 'holstad-knapp holstad-knapp--sekundaer', t.lenketekst || 'Les mer');
+      b.href = t.lenke;
+      knapper.appendChild(b);
+    }
+    card.appendChild(knapper);
+
+    return card;
+  }
+
+  function render() {
+    var aar = parseInt(aarEl.value, 10);
+    var kjonn = '';
+    kjonnEls.forEach(function (r) { if (r.checked) kjonn = r.value; });
+
+    out.innerHTML = '';
+    if (!aar || !kjonn) return;
+
+    var treff = teams.filter(function (t) {
+      return aar >= t.fra && aar <= t.til && t.kjonn.indexOf(kjonn) !== -1;
+    });
+    var primaer = treff.filter(function (t) { return !t.sekundaer; });
+    var sekundaer = treff.filter(function (t) { return t.sekundaer; });
+
+    var alder = sesongStart ? sesongStart - aar : null;
+    var innledning;
+    if (aar === samleAar) {
+      /* Samlevalget dekker flere årganger, så alder blir meningsløs */
+      innledning = 'Født ' + aar + ' eller tidligere';
+    } else {
+      innledning = 'Født ' + aar;
+      if (alder !== null && alder >= 0) innledning += ' (' + alder + ' år i sesongen ' + sesong + ')';
+    }
+
+    if (!primaer.length && !sekundaer.length) {
+      out.appendChild(el('p', 'lagvelger-ingen',
+        'Vi fant ingen lag som matcher automatisk. Ta kontakt, vi finner et tilbud som passer!'));
+      var lenke = el('div', 'holstad-knapper');
+      var la = el('a', 'holstad-knapp', 'Se alle lag');
+      la.href = lagUrl;
+      lenke.appendChild(la);
+      out.appendChild(lenke);
+      return;
+    }
+
+    out.appendChild(el('p', 'lagvelger-innledning', innledning));
+
+    if (primaer.length) {
+      out.appendChild(el('p', 'lagvelger-seksjon lagvelger-seksjon--stor',
+        primaer.length === 1 ? 'Dette laget passer for deg' : 'Disse lagene passer for deg'));
+      var grid = el('div', 'lagvelger-grid');
+      primaer.forEach(function (t) { grid.appendChild(kort(t, false)); });
+      out.appendChild(grid);
+    }
+
+    if (sekundaer.length) {
+      out.appendChild(el('p', 'lagvelger-seksjon lagvelger-seksjon--stor', 'Andre tilbud som kan passe'));
+      var grid2 = el('div', 'lagvelger-grid');
+      sekundaer.forEach(function (t) { grid2.appendChild(kort(t, true)); });
+      out.appendChild(grid2);
+    }
+  }
+
+  aarEl.addEventListener('change', render);
+  kjonnEls.forEach(function (r) { r.addEventListener('change', render); });
+})();
+</script>

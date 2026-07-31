@@ -40,6 +40,21 @@ hugo --gc --minify --baseURL "https://holstadvolley.com/"
   - `styret/` - Board member photos
 - `public/` - Generated site output (ignored in git)
 
+### Teams data (single source of truth)
+- `data/lag.yaml` holds every team: hardcoded birth-year range, gender, training
+  times, coach/contact, Spond signup URL
+- Rendered by two shortcodes in `layouts/_shortcodes/`:
+  - `lagvelger.html` — interactive "which team fits me?" module (front page)
+  - `lagliste.html` — the team list on `/lag`. Emits **markdown**, so it must be
+    called with the percent form (`{{%` … `%}}`); the angle form produces raw HTML
+    and the team headings then vanish from Hextra's TOC sidebar
+- `tilrettelagt: true` keeps a team (Diamantvolley) out of the age/gender matching
+  and surfaces it as a separate link under the result instead
+- Styling lives in `assets/css/custom.css` (plain CSS — Hextra's Tailwind CSS is
+  precompiled, so new `hx:` classes do not exist in the build)
+- New season: bump `sesong` plus every `fodselsaarFra`/`fodselsaarTil` by one, and
+  update the per-hall training tables in `content/lag.md`
+
 ### Configuration
 - `hugo.yaml` - Main Hugo configuration with menu structure and theme settings
 - `go.mod` - Hugo module dependencies (primarily Hextra theme v0.8.0)

@@ -1,37 +1,38 @@
 ---
-toc: true
+# TOC-en er skrudd av her; custom.css skjuler også den tomme TOC-kolonnen og
+# sidebar-plassholderen på denne sida, så bildet får full bredde og står i senter
+toc: false
 ---
 
 
-<div class="hx-mt-6 hx-mb-6">
+<div class="forside-hero">
 
+![Holstad Volleyball](holstad-forside-2026.jpg)
+
+</div>
+
+<div class="forside-tittel">
 
 {{< hextra/hero-headline >}}
-  Bli med på moroa i&nbsp;<br class="sm:hx-block hx-hidden" />Holstad Volleyball!
+  Holstad Volleyball
 {{< /hextra/hero-headline >}}
+
 </div>
 
-![Holstad Volleyball](holstad-homepage.jpg)
+<div class="forside-ingress">
 
-
-<div class="hx-mb-8 hx-max-w-[100px]">
 {{< hextra/hero-subtitle >}}
-  Holstad Idrettslag er et idrettslag fra Holstad i Ås kommune som driver med
-  volleyball og sandvolleyball. Vi har ca 300 medlemmer i dag.
+  Holstad Idrettslag er et idrettslag i Ås kommune, og vi har som mål å tilby volleyball på alle nivåer, til alle alderstrinn. Fra spill på seniornivå i høyere divisjoner og juniorlag med store ambisjoner, til nybegynnerspill i alle aldersklasser. Vi arrangerer også Diamantvolleyball.
 {{< /hextra/hero-subtitle >}}
+
 </div>
 
-<div class="hx-mt-6"></div>
 
+## Hvilket lag passer for deg?
 
-Holstad Idrettslag har som mål å tilby volleyball på alle nivåer, til alle
-alderstrinn. Fra spill på seniornivå i høyere divisjoner og juniorlag med store
-ambisjoner, til nybegynnerspill i alle aldersklasser. Vi arrangerer også
-Diamantvolleyball.
+{{< lagvelger tittel="" >}}
 
 ## Kom i gang
-
-<div class="hx-mt-6"></div>
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
@@ -39,25 +40,28 @@ Diamantvolleyball.
     link="bli-medlem"
     icon="plus"
     subtitle="Vi ønsker alle velkommen. Se hvordan du blir medlem her."
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(0,97,254,0.15),hsla(0,0%,100%,0));"
+    style="--kort-accent: #2563eb;"
   >}}
   {{< hextra/feature-card
     title="Lag og treningstider"
     link="lag"
     icon="user-group"
     subtitle="Se hvilke lag vi har i klubben, og når og hvor vi trener."
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(255,0,0,0.15),hsla(0,0%,100%,0));"
+    style="--kort-accent: #e11d48;"
   >}}
   {{< hextra/feature-card
     title="Nyheter"
     link="nyheter"
     icon="newspaper"
     subtitle="Siste nytt fra Holstad Volleyball."
+    style="--kort-accent: #7c3aed;"
   >}}
   {{< hextra/feature-card
     title="Priser"
     link="priser"
+    icon="cash"
     subtitle="Se hvor mye det koster for medlemskontigent, treningsavgift og lisens."
+    style="--kort-accent: #0891b2;"
   >}}
   <!--{{< hextra/feature-card
     title="Styret"
@@ -65,18 +69,18 @@ Diamantvolleyball.
   >}}-->
   {{< hextra/feature-card
     title="Ny i klubben"
-    icon="user"
     link="ny-i-klubben"
-    subtitle="hva betyr det å være spiller og foresatt i Holstad?"
-     style="background: radial-gradient(ellipse at 50% 80%,rgba(255,150,0,0.15),hsla(0,0%,100%,0));"
+    icon="user"
+    subtitle="Hva betyr det å være spiller og foresatt i Holstad?"
+    style="--kort-accent: #ea580c;"
   >}}
-{{< hextra/feature-card
+  {{< hextra/feature-card
     title="Kalender"
     link="kalender"
-    subtitle="All aktivitet er inne i kalendere, få oversikt med en gang"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(0, 255, 98, 0.15),hsla(0,0%,100%,0));"
+    icon="calendar"
+    subtitle="All aktivitet er inne i kalendere, få oversikt med en gang."
+    style="--kort-accent: #16a34a;"
   >}}
-
 {{< /hextra/feature-grid >}}
 
 

@@ -25,7 +25,7 @@ jobs:
       # is the meaningful gate here, and fails fast before a full Kaniko
       # build if content/templates are broken.
       - name: Run tests
-        uses: docker://hugomods/hugo:go-git-0.146.0
+        uses: docker://hugomods/hugo:go-git-0.164.0
         with:
           args: hugo --minify
 

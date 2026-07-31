@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.146.0
+      HUGO_VERSION: 0.164.0
     steps:
       - name: Checkout
         uses: https://data.forgejo.org/actions/checkout@v4

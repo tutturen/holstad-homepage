@@ -1,0 +1,261 @@
+# Single source of truth for lagene i klubben.
+#
+# Brukes av:
+#   - lagvelger (interaktiv "hvilket lag passer for meg?" på forsiden)
+#   - lagliste (lag-oversikten på /lag, kalles med prosent-form)
+#
+# ---------------------------------------------------------------------------
+# VEDLIKEHOLD VED NY SESONG
+# Fødselsårene er hardkodet. Når ny sesong starter må hvert lag flyttes ett år:
+# fodselsaarFra/Til økes med 1 (f.eks. J15 2011-2012 -> 2012-2013).
+# Husk også å oppdatere `sesong` under, og treningstidene i content/lag.md.
+#
+# Klassetrinn -> fødselsår for sesongen 2026/2027 (1. klasse = født 2020):
+#   1.kl 2020 | 2.kl 2019 | 3.kl 2018 | 4.kl 2017
+#   5.kl 2016 | 6.kl 2015 | 7.kl 2014 | 8.kl 2013 | 9.kl 2012
+# ---------------------------------------------------------------------------
+
+sesong: "2026/2027"
+
+# Fallback for Spond-påmelding: brukes av lag som ikke har eget skjema.
+# Lag med eget skjema setter `spond: "<url>"` på seg selv (se Tullball).
+spondUrl: "https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB"
+
+# Felt per lag:
+#   navn            påkrevd
+#   niva            valgfri, f.eks. "5. divisjon"
+#   trinn           valgfri, vises som "Barnehage opp til 2. klasse"
+#   fodselsaarFra   eldste fødselsår som matcher (default 1900)
+#   fodselsaarTil   yngste fødselsår som matcher (default 2100)
+#   kjonn           [jente, gutt] - hvilke valg i velgeren som treffer laget
+#   malgruppe       overstyrer ordet i "For <malgruppe> født ..." i lagvelgeren.
+#                   Utledes fra kjonn (jenter / gutter / jenter og gutter) hvis
+#                   den ikke er satt - sett den på seniorlag: damer, herrer
+#   sekundaer       true = vises som "passer også" i velgeren, aldri som hovedtreff
+#   tilrettelagt    true = holdes helt utenfor alder/kjønn-matchingen. Vises i stedet
+#                   som en egen lenke under resultatet ("tilrettelagt trening")
+#   beskrivelse     valgfri fritekst
+#   merknad         valgfri liten note (vises kursivt)
+#   treninger       liste av {dag, tid, sted}
+#   trener, lagkontakt
+#   lenke, lenketekst  valgfri lenke til egen side
+
+lag:
+  - navn: "Diamantvolley"
+    kjonn: [jente, gutt]
+    tilrettelagt: true
+    beskrivelse: "Diamantvolley er trening for spillere med utviklingshemning."
+    treninger:
+      - dag: "Torsdag"
+        tid: "17:00 - 18:00"
+        sted: "Åsgård Skole"
+    trener: "Informasjon kommer"
+
+  - navn: "Tullball"
+    trinn: "Barnehage opp til 2. klasse"
+    fodselsaarFra: 2019
+    fodselsaarTil: 2100
+    kjonn: [jente, gutt]
+    beskrivelse: >-
+      Tullball arrangeres både i Åshallen 1 og Åshallen 2. I Åshallen 2 er det
+      fri lek for de minste, og i Åshallen 1 er det organisert lek med ball med
+      trener.
+    merknad: "Aldersinndelingen er veiledende"
+    treninger:
+      - dag: "Tirsdag"
+        tid: "16:00 - 17:00"
+        sted: "Åshallen, gammel del (0-5 år)"
+      - dag: "Tirsdag"
+        tid: "16:00 - 17:00"
+        sted: "Åshallen, ny del (5-8 år)"
+    lagkontakt: "Sindre Øye Svendby"
+    spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/A6D5E6ADAC1944988E13FD0BB09AED01"
+    lenke: "/tullball"
+    lenketekst: "Les mer på tullball sine egne sider"
+
+  - navn: "Mini 4.-5. klasse"
+    fodselsaarFra: 2016
+    fodselsaarTil: 2017
+    kjonn: [jente, gutt]
+    treninger:
+      - dag: "Mandag"
+        tid: "17:15 - 18:30"
+        sted: "Åsgård Skole"
+    trener: "Per Egil Gran Jakobsen"
+    lagkontakt: "Per Egil Gran Jakobsen"
+    spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/B44432D1F6F04CD186EDC585C7E014E8"
+
+  - navn: "Mini 6.-7. klasse"
+    fodselsaarFra: 2014
+    fodselsaarTil: 2015
+    kjonn: [jente, gutt]
+    treninger:
+      - dag: "Tirsdag"
+        tid: "17:00 - 18:30"
+        sted: "Åsgård Skole"
+      - dag: "Torsdag"
+        tid: "17:00 - 18:30"
+        sted: "Åsgård Skole"
+    trener: "Informasjon kommer"
+    lagkontakt: "Hanne Malde (lagleder)"
+    spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/AF7266FCA98F4ACAAD0CAFBFA23EF162"
+
+  - navn: "J15"
+    fodselsaarFra: 2012
+    fodselsaarTil: 2013
+    kjonn: [jente]
+    treninger:
+      - dag: "Tirsdag"
+        tid: "17:00 - 18:30"
+        sted: "Åsgård Skole"
+      - dag: "Onsdag"
+        tid: "18:00 - 19:30"
+        sted: "Åsgård Skole"
+      - dag: "Torsdag"
+        tid: "17:00 - 18:30"
+        sted: "Åsgård Skole"
+    trener: "Vinh Vo-Ma"
+    lagkontakt: "Vinh Vo-Ma"
+    spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/25870C82D89545BDBC430B7BF3F2F71F"
+
+  - navn: "J17"
+    fodselsaarFra: 2010
+    fodselsaarTil: 2011
+    kjonn: [jente]
+    treninger:
+      - dag: "Mandag"
+        tid: "17:30 - 18:30"
+        sted: "Åsgård Skole"
+      - dag: "Onsdag"
+        tid: "18:30 - 19:30"
+        sted: "Åsgård Skole"
+      - dag: "Torsdag"
+        tid: "18:00 - 19:30"
+        sted: "Åsgård Skole"
+    trener: "Geir Åge Michelsen"
+    lagkontakt: "Geir Åge Michelsen"
+    spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/6148F80A90F74A328FDFCEE16077105C"
+
+  - navn: "J19"
+    fodselsaarFra: 2008
+    fodselsaarTil: 2009
+    kjonn: [jente]
+    treninger:
+      - dag: "Mandag"
+        tid: "18:30 - 20:00"
+        sted: "Åsgård Skole"
+      - dag: "Onsdag"
+        tid: "18:30 - 20:00"
+        sted: "Åsgård Skole"
+      - dag: "Torsdag"
+        tid: "19:30 - 21:15"
+        sted: "Åsgård Skole"
+    trener: "Geir Åge Michelsen"
+    lagkontakt: "Geir Åge Michelsen"
+    spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/DDBE2A3CB2504F3E9E905F4B80BD0052"
+
+  - navn: "D1 Damelaget"
+    malgruppe: "damer"
+    niva: "5. divisjon"
+    fodselsaarFra: 1900
+    fodselsaarTil: 2007
+    kjonn: [jente]
+    treninger:
+      - dag: "Mandag"
+        tid: "20:00 - 22:00"
+        sted: "Åsgård Skole"
+      - dag: "Onsdag"
+        tid: "20:00 - 22:00"
+        sted: "Åsgård Skole"
+    trener: "Informasjon kommer"
+    lagkontakt: "Herdis Gunnarstorp (herdis_gunnarstorp@hotmail.com)"
+    spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/4AA9512732C24F3BB4218AB108082B3E"
+
+  - navn: "G15"
+    fodselsaarFra: 2012
+    fodselsaarTil: 2013
+    kjonn: [gutt]
+    treninger:
+      - dag: "Mandag"
+        tid: "17:00 - 18:30"
+        sted: "Åsgård Skole"
+      - dag: "Torsdag"
+        tid: "18:30 - 20:00"
+        sted: "Åsgård Skole"
+    trener: "Informasjon kommer"
+    lagkontakt: "Nora K. Nordhaug og Ane Bergum"
+    spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/78C13402C7E34650B3652B0B47606EE9"
+
+  - navn: "G17"
+    fodselsaarFra: 2010
+    fodselsaarTil: 2011
+    kjonn: [gutt]
+    treninger:
+      - dag: "Mandag"
+        tid: "18:30 - 20:15"
+        sted: "Åsgård Skole"
+      - dag: "Torsdag"
+        tid: "18:30 - 20:15"
+        sted: "Åsgård Skole"
+    trener: "Informasjon kommer"
+    lagkontakt: "Jon Anders Næsset"
+    spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/8A6D62EF577D4B4BA110375FF0AF1B22"
+
+  - navn: "G19"
+    fodselsaarFra: 2008
+    fodselsaarTil: 2009
+    kjonn: [gutt]
+    treninger:
+      - dag: "Mandag"
+        tid: "18:30 - 20:00"
+        sted: "Åsgård Skole"
+      - dag: "Onsdag"
+        tid: "20:00 - 22:00"
+        sted: "Åsgård Skole"
+      - dag: "Torsdag"
+        tid: "20:00 - 22:00"
+        sted: "Åsgård Skole (G19/H1)"
+    trener: "Informasjon kommer"
+    lagkontakt: "Amund Kvalbein"
+    spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/979A8DEF23924C62ADBFFFA8B5D2D0A2"
+
+
+  - navn: "H1 Herrelaget"
+    malgruppe: "herrer"
+    niva: "2. divisjon"
+    fodselsaarFra: 1900
+    fodselsaarTil: 2007
+    kjonn: [gutt]
+    treninger:
+      - dag: "Mandag"
+        tid: "20:00 - 22:00"
+        sted: "Åsgård Skole"
+      - dag: "Torsdag"
+        tid: "20:00 - 22:00"
+        sted: "Åsgård Skole"
+    trener: "Informasjon kommer"
+    lagkontakt: "Magnus Hushovd"
+    spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/FEEFA0DE5E1440EEA799E252397FC717"
+
+  # Fra 2026/2027 er mosjonistgjengen og det gamle H2 samme lag: lavterskel
+  # trening som også stiller i serie. Åpent for både damer og herrer.
+  - navn: "Mosjonistene"
+    malgruppe: "damer og herrer"
+    niva: "5. divisjon"
+    fodselsaarFra: 1900
+    fodselsaarTil: 2007
+    kjonn: [jente, gutt]
+    beskrivelse: >-
+      Lavterskel trening og spill for foreldre eller andre mosjonister, ingen krav til
+      volleyball-erfaring. Laget stiller også i 5. divisjon, og både damer og
+      herrer kan spille.
+    treninger:
+      - dag: "Mandag"
+        tid: "20:00 - 22:00"
+        sted: "Åsgård Skole"
+      - dag: "Torsdag"
+        tid: "20:00 - 22:00"
+        sted: "Åsgård Skole"
+    trener: "Espen Langaas"
+    lagkontakt: "Espen Langaas"
+    spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/65FDFBA01EC942A981EDD68570C5E43C"
