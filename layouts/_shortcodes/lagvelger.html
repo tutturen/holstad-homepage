@@ -38,6 +38,14 @@
   {{- if gt (.fodselsaarFra | default 1900) (.fodselsaarTil | default 2100) -}}
     {{- errorf "data/lag.yaml: laget %q har fodselsaarFra (%d) høyere enn fodselsaarTil (%d). Fra = eldste årgang, Til = yngste. Laget ville aldri gitt treff i lagvelgeren." .navn .fodselsaarFra .fodselsaarTil -}}
   {{- end -}}
+  {{- /* Treningene lagres strukturert (fra/til/bane) for timeplanen. JS-en her
+         vil bare ha ferdig tekst, så den settes sammen server-side — samme
+         partial som lagkortene bruker. */ -}}
+  {{- $treninger := slice -}}
+  {{- range .treninger -}}
+    {{- $tt := partial "lag/treningstekst.html" . -}}
+    {{- $treninger = $treninger | append (dict "dag" .dag "tid" $tt.tid "sted" $tt.sted) -}}
+  {{- end -}}
   {{- $teams = $teams | append (dict
     "navn" .navn
     "niva" (.niva | default "")
@@ -51,7 +59,7 @@
     "sekundaer" (.sekundaer | default false)
     "beskrivelse" (.beskrivelse | default "")
     "merknad" (.merknad | default "")
-    "treninger" (.treninger | default (slice))
+    "treninger" $treninger
     "trener" (.trener | default "")
     "lagkontakt" (.lagkontakt | default "")
     "lenke" (.lenke | default "")

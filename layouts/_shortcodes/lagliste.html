@@ -17,6 +17,8 @@
        er pinnet til 0.164.0 i Dockerfile og .forgejo/workflows/. */ -}}
 {{- $d := hugo.Data.lag -}}
 {{- $spond := $d.spondUrl -}}
+{{- /* Samme fargetone som lagets blokker i timeplanen */ -}}
+{{- $farger := partial "lag/farger.html" $d.lag -}}
 {{- $ut := slice -}}
 
 {{- range $d.lag -}}
@@ -54,8 +56,9 @@
   {{- with .treninger -}}
     {{- $rader := "" -}}
     {{- range . -}}
+      {{- $tt := partial "lag/treningstekst.html" . -}}
       {{- $rader = printf `%s<li><span class="lagliste-dag">%s</span> %s<span class="lagliste-sted">%s</span></li>`
-          $rader .dag .tid (printf " · %s" .sted) -}}
+          $rader .dag $tt.tid (printf " · %s" $tt.sted) -}}
     {{- end -}}
     {{- $kropp = printf `%s<ul class="lagliste-treninger">%s</ul>` $kropp $rader -}}
   {{- end -}}
@@ -87,7 +90,7 @@
   {{- $ut = $ut | append
       (printf "### %s" .navn)
       ""
-      (printf `<div class="lagliste-kort">%s</div>` $kropp)
+      (printf `<div class="lagliste-kort" style="--tp-h:%d">%s</div>` (index $farger .navn) $kropp)
       "" -}}
 {{- end -}}
 

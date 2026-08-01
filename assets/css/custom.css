@@ -262,10 +262,13 @@ body:has(.forside-hero) .hextra-toc {
   margin-bottom: 0.625rem;
 }
 
+/* Venstrekanten har lagets egen farge, den samme som blokkene i timeplanen
+   lenger opp på sida. Da kobler man kortet til øktene uten å lese navnet. */
 .lagliste-kort {
   margin: 0 0 2rem;
   padding: 1.125rem 1.25rem 1.25rem;
   border: 1px solid var(--h-border);
+  border-left: 4px solid hsl(var(--tp-h) var(--tp-kant-s) var(--tp-kant-l));
   border-radius: 0.875rem;
   background: var(--h-flate);
   box-shadow: var(--h-skygge);
@@ -628,4 +631,207 @@ body:has(.forside-hero) .hextra-toc {
   color: var(--lv-accent-tekst);
   font-weight: 600;
   white-space: nowrap;
+}
+
+/* ------------------------------------------------------------------ */
+/* timeplan — kalenderen over treningstider på /lag                    */
+/* ------------------------------------------------------------------ */
+
+/* Hvert lag har sin egen farge. Shortcoden setter bare fargetonen (--tp-h) på
+   blokka; metning og lyshet ligger her, én gang for lys og én for mørk modus.
+   Da kan et lag bytte farge ved å endre ett tall i data/lag.yaml, uten at noen
+   trenger å plukke ut fire hex-verdier som funker i begge modusene. */
+:root {
+  --tp-flate-s: 72%;
+  --tp-flate-l: 95%;
+  --tp-kant-s: 45%;
+  --tp-kant-l: 58%;
+  --tp-tekst-s: 55%;
+  --tp-tekst-l: 30%;
+
+  --tp-annen-flate: #f3f4f6;
+  --tp-annen-kant: #cbd0d8;
+  --tp-annen-tekst: #4b5563;
+
+  /* 5 minutter. 90 min = 18 rader = 6.3rem, en time = 4.2rem. */
+  --tp-rad: 0.35rem;
+}
+
+.dark {
+  --tp-flate-s: 32%;
+  --tp-flate-l: 13%;
+  --tp-kant-s: 32%;
+  --tp-kant-l: 40%;
+  --tp-tekst-s: 60%;
+  --tp-tekst-l: 74%;
+
+  --tp-annen-flate: #1c1c1c;
+  --tp-annen-kant: #383838;
+  --tp-annen-tekst: #9ca3af;
+}
+
+/* Rutenettet: kolonne 1 er klokka, resten er banene. Én rad per 5 minutter,
+   pluss en auto-rad øverst til banenavnene. Da blir høyden på en blokk
+   proporsjonal med varigheten — det en tabell ikke får til. */
+.timeplan {
+  display: grid;
+  grid-template-columns: 3.25rem repeat(var(--baner), minmax(0, 1fr));
+  grid-template-rows: auto repeat(var(--rader), var(--tp-rad));
+  gap: 0 0.375rem;
+  margin: 0.75rem 0 2rem;
+}
+
+.timeplan-hode {
+  grid-row: 1;
+  padding-bottom: 0.375rem;
+  color: var(--h-dempet);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Klokkeslettet står oppå sin egen hjelpelinje, ikke i midten av halvtimen */
+.timeplan-klokke {
+  grid-column: 1;
+  align-self: start;
+  transform: translateY(-0.45em);
+  padding-right: 0.5rem;
+  color: var(--h-dempet);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.timeplan-linje {
+  align-self: start;
+  border-top: 1px solid var(--h-border);
+}
+
+.timeplan-blokk {
+  display: flex;
+  flex-direction: column;
+  gap: 0.0625rem;
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  padding: 0.3125rem 0.5rem;
+  border: 1px solid var(--tp-kant);
+  border-left: 3px solid var(--tp-kant);
+  border-radius: 0.375rem;
+  background: var(--tp-flate);
+  color: var(--tp-tekst) !important;
+  font-size: 0.8125rem;
+  line-height: 1.25;
+  text-decoration: none !important;
+}
+
+a.timeplan-blokk:hover {
+  border-color: var(--tp-tekst);
+  box-shadow: var(--h-skygge-hover);
+}
+
+a.timeplan-blokk:focus-visible {
+  outline: 2px solid var(--h-accent);
+  outline-offset: 2px;
+}
+
+/* --tp-h settes per blokk av timeplan-shortcoden, én tone per lag */
+.timeplan-blokk--lag {
+  --tp-flate: hsl(var(--tp-h) var(--tp-flate-s) var(--tp-flate-l));
+  --tp-kant: hsl(var(--tp-h) var(--tp-kant-s) var(--tp-kant-l));
+  --tp-tekst: hsl(var(--tp-h) var(--tp-tekst-s) var(--tp-tekst-l));
+}
+
+/* Andre bookinger er stripet, så det synes at hallen er opptatt uten at de
+   konkurrerer visuelt med lagene */
+.timeplan-blokk--annen {
+  --tp-flate: var(--tp-annen-flate);
+  --tp-kant: var(--tp-annen-kant);
+  --tp-tekst: var(--tp-annen-tekst);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent 0 6px,
+    color-mix(in srgb, var(--tp-annen-kant) 30%, transparent) 6px 7px
+  );
+}
+
+/* Åpen hall er derimot et tilbud folk kan møte opp på — den skal ses */
+/* Åpen hall og arrangementer er tilbud folk kan møte opp på, så de skal ses —
+   men uten egen farge: fargene tilhører lagene. Skiller seg med kraftig
+   kontursvart kant og halvfet tekst i stedet. */
+.timeplan-blokk--apen {
+  --tp-flate: var(--h-flate);
+  --tp-kant: var(--h-tekst);
+  --tp-tekst: var(--h-tekst);
+  background-image: none;
+  font-weight: 600;
+}
+
+/* Delt bane: to økter på samme bane samtidig legges side om side i kolonnen */
+.timeplan-blokk--delt {
+  width: calc((100% - (var(--del) - 1) * 0.25rem) / var(--del));
+  margin-left: calc(var(--delnr) * (100% + 0.25rem) / var(--del));
+}
+
+.timeplan-navn {
+  font-weight: 600;
+}
+
+.timeplan-tid,
+.timeplan-notat {
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+/* Oppvarming tegnes som et stripet felt i toppen av lagets egen blokk */
+.timeplan-oppvarming {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px dashed var(--tp-kant);
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent 0 5px,
+    color-mix(in srgb, var(--tp-kant) 35%, transparent) 5px 6px
+  );
+}
+
+/* Banen står i kolonneoverskriften på desktop, så den er ren støy der */
+.timeplan-bane {
+  display: none;
+}
+
+/* Under 640px har tre banekolonner ikke plass. Rutenettet skrus av og
+   blokkene faller ut i DOM-rekkefølge, som shortcoden sorterer på starttid. */
+@media (max-width: 400px) {
+  .timeplan {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .timeplan-hode,
+  .timeplan-klokke,
+  .timeplan-linje {
+    display: none;
+  }
+
+  .timeplan-blokk {
+    width: auto;
+    margin-left: 0;
+    padding: 0.5rem 0.625rem;
+  }
+
+  .timeplan-oppvarming {
+    display: none;
+  }
+
+  .timeplan-bane {
+    display: block;
+    font-size: 0.75rem;
+    opacity: 0.75;
+  }
 }

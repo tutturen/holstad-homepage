@@ -1,0 +1,31 @@
+{{- /*
+  Én trening -> tekstlig form, brukt av lagkortene (lagliste) og lagvelgeren.
+
+  Treningene lagres strukturert (fra/til/sted/bane) for timeplanen, mens
+  kortene vil ha "18:30 - 20:15" og "Åsgård Skole, bane 1". Sammensettingen
+  ligger her, så de to visningene aldri kan formulere seg ulikt.
+
+  Returnerer dict med "tid" og "sted".
+*/ -}}
+{{- $t := . -}}
+
+{{- $baner := $t.bane -}}
+{{- if not (reflect.IsSlice $baner) -}}
+  {{- $baner = slice $baner -}}
+{{- end -}}
+
+{{- /* "Bane 1" -> "bane 1", så det leses som en fortsettelse av stedsnavnet */ -}}
+{{- $sma := slice -}}
+{{- range $baner -}}
+  {{- $sma = $sma | append (lower .) -}}
+{{- end -}}
+
+{{- $sted := $t.sted -}}
+{{- with $sma -}}
+  {{- $sted = printf "%s, %s" $sted (delimit . ", " " og ") -}}
+{{- end -}}
+{{- with $t.notat -}}
+  {{- $sted = printf "%s (%s)" $sted . -}}
+{{- end -}}
+
+{{- return dict "tid" (printf "%s - %s" $t.fra $t.til) "sted" $sted -}}
