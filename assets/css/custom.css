@@ -433,6 +433,12 @@ body:has(.forside-hero) .hextra-toc {
     flex-direction: column;
     gap: 0;
   }
+
+  /* flex-basis gjelder hovedaksen, så 5.25rem ble 84px HØYDE da raden ble en
+     kolonne — det var det store tomrommet under dagen */
+  .lagkort-dag {
+    flex: 0 0 auto;
+  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -798,9 +804,56 @@ a.timeplan-blokk:focus-visible {
   display: none;
 }
 
-/* Under 640px har tre banekolonner ikke plass. Rutenettet skrus av og
-   blokkene faller ut i DOM-rekkefølge, som shortcoden sorterer på starttid. */
-@media (max-width: 400px) {
+/* Mobil: stram inn alle målene så tre banekolonner får plass ved siden av
+   hverandre helt ned til ~350px. Regnestykket på en iPhone SE (375px):
+   375 - 32 sidepadding - 40 tidskolonne - 8 kolonnegap = 295px / 3 = 98px per
+   bane. Det holder til "Mosjonistene" på én linje ved 12px skrift. */
+@media (max-width: 40rem) {
+  .timeplan {
+    grid-template-columns: 2.5rem repeat(var(--baner), minmax(0, 1fr));
+    gap: 0 0.25rem;
+  }
+
+  .timeplan-hode {
+    font-size: 0.6875rem;
+  }
+
+  .timeplan-klokke {
+    padding-right: 0.25rem;
+    font-size: 0.6875rem;
+  }
+
+  .timeplan-blokk {
+    padding: 0.25rem 0.375rem;
+    border-left-width: 2px;
+    font-size: 0.75rem;
+    /* Siste utvei hvis et lagnavn er lengre enn kolonnen er bred. Skal
+       normalt ikke slå inn — se .timeplan-navn under. */
+    overflow-wrap: break-word;
+  }
+
+  /* Et hakk mindre enn resten av blokka, så det lengste lagnavnet
+     ("Diamantvolley") får plass på én linje i en 98px bred kolonne */
+  .timeplan-navn {
+    font-size: 0.6875rem;
+  }
+
+  .timeplan-tid,
+  .timeplan-notat {
+    font-size: 0.6875rem;
+  }
+
+  .timeplan-blokk--delt {
+    width: calc((100% - (var(--del) - 1) * 0.125rem) / var(--del));
+    margin-left: calc(var(--delnr) * (100% + 0.125rem) / var(--del));
+  }
+}
+
+/* Under 336px blir banekolonnene for smale til å lese. Da skrus rutenettet av
+   og blokkene faller ut i DOM-rekkefølge, som shortcoden sorterer på starttid.
+   Grensa er satt slik at 360px-Androider og iPhone SE (375px) beholder
+   rutenettet, mens de eldste 320px-skjermene får lista. */
+@media (max-width: 21rem) {
   .timeplan {
     display: flex;
     flex-direction: column;
@@ -827,5 +880,23 @@ a.timeplan-blokk:focus-visible {
     display: block;
     font-size: 0.75rem;
     opacity: 0.75;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Sidepadding på mobil                                                */
+/* ------------------------------------------------------------------ */
+
+/* Hextra gir <main> hx:px-6 (1.5rem) under md, og bytter til px-12 fra 768px.
+   1.5rem på hver side er mye på en 375px-skjerm — de 16 pikslene vi sparer her
+   er det som gjør at timeplanen får plass til tre banekolonner ved siden av
+   hverandre i stedet for å falle ned i liste.
+
+   Attributt-selektoren er nødvendig: `main` alene er spesifisitet 0,0,1 og
+   taper mot utility-klassen 0,1,0 uansett rekkefølge i fila. */
+@media (max-width: 47.99rem) {
+  main[class~="hx:px-6"] {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

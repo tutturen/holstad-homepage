@@ -2,8 +2,6 @@
 title: Lag og treningstider 2026/2027
 ---
 
-Her er informasjon om alle lagene i klubben, og treningstider.
-
 ## Treningshaller
 
 - Vi trener hovedsakelig på

@@ -62,7 +62,9 @@ hugo --gc --minify --baseURL "https://holstadvolley.com/"
   - `lagliste.html` — the team list on `/lag`
   - `timeplan.html` — the schedule calendar on `/lag`: one CSS grid per
     (day, hall), courts as columns, one grid row per 5 minutes, so block height
-    is proportional to duration. Below 400px the grid is switched off and the
+    is proportional to duration. Mobile metrics tighten below 640px so three
+    courts still fit side by side on a 375px phone; below 336px the grid is
+    switched off and the
     blocks fall out as a chronological list, so the template emits them sorted
     by start time
 - `lagliste` and `timeplan` emit **markdown**, so they must be called with the
@@ -79,7 +81,10 @@ hugo --gc --minify --baseURL "https://holstadvolley.com/"
 - Shared helpers in `layouts/_partials/lag/`: `kort.html` (the team card),
   `minutter.html` / `klokke.html` (HH:MM ↔ minutes), `booking.html` (normalises
   + validates one booking), `treningstekst.html` (structured booking →
-  "18:30 - 20:15" / "Åsgård Skole, bane 1"), `farger.html` (team → hue),
+  "18:30 - 20:15" / "Åshallen, gammel del" — the court is only named when the
+  hall sets `visBaneIKort: true`, since Åsgård's court split is tentative and
+  belongs in the schedule, while Åshallen's halves are what tell Tullball's two
+  sessions apart), `farger.html` (team → hue),
   `aarstekst.html` ("For jenter født 2012-2013")
 - Bad schedule data fails the build (`errorf`), so CI's `hugo --minify` step
   catches it. Two sessions on the same court at the *same* times means a shared

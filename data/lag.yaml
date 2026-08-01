@@ -31,12 +31,20 @@ spondUrl: "https://club.spond.com/landing/signup/holstadvolleybal/form/CA8744863
 # Rekkefølgen her styrer både kolonnerekkefølgen i timeplanen og hvilken hall
 # som vises først. `bane` på en trening må matche et av navnene under, ellers
 # feiler bygget.
+#
+# visBaneIKort styrer om banen nevnes på lagkortene (på /lag og på forsiden).
+# I timeplanen vises banen uansett — det er hele poenget der. På Åsgård er
+# fordelingen mellom banene tentativ, så den holdes utenfor kortene. I Åshallen
+# er "gammel del" / "ny del" det eneste som skiller Tullballs to økter, så der
+# må den med.
 # ---------------------------------------------------------------------------
 haller:
   - navn: "Åsgård Skole"
     baner: ["Bane 1", "Bane 2", "Bane 3"]
+    visBaneIKort: false
   - navn: "Åshallen"
     baner: ["Gammel del", "Ny del"]
+    visBaneIKort: true
 
 # Ukedagene i visningsrekkefølge. `dag` på en trening må matche en av disse.
 dager: ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"]
