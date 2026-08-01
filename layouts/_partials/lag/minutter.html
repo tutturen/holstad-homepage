@@ -1,0 +1,10 @@
+{{- /*
+  "HH:MM" -> minutter siden midnatt. Timeplanen regner all posisjonering i
+  minutter, så all parsing av klokkeslett skjer her.
+*/ -}}
+{{- $t := . -}}
+{{- $deler := split $t ":" -}}
+{{- if ne (len $deler) 2 -}}
+  {{- errorf "data/lag.yaml: %q er ikke et gyldig klokkeslett. Bruk HH:MM, f.eks. 18:30." $t -}}
+{{- end -}}
+{{- return add (mul 60 (int (index $deler 0))) (int (index $deler 1)) -}}

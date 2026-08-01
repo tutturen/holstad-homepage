@@ -1,0 +1,104 @@
+{{- /*
+  lagkort — ett lag som kort. Delt av lagvelgeren (forsiden) og lagliste (/lag).
+
+  Dette er ENESTE stedet et lagkort bygges. Tidligere fantes kortet to ganger,
+  én gang i Hugo for /lag og én gang som DOM-bygging i JavaScript for
+  lagvelgeren, og de to versjonene drev fra hverandre: ulik knappetekst, ulik
+  oppstilling av treningstidene, ulikt sett med CSS-klasser.
+
+  Returnerer HTML som ÉN linje uten linjeskift. Det er et krav, ikke stil:
+  lagliste kalles med prosent-form så overskriftene havner i Hextras TOC, og da
+  går output gjennom goldmark — en blank linje inni HTML-blokka ville avsluttet
+  blokka og resten hadde blitt tolket som markdown.
+
+  Inn (dict):
+    lag        oppføringa fra data/lag.yaml
+    spond      fallback-URL for påmelding
+    tone       lagets fargetone (se lag/farger.html)
+    tittel     true = lagnavnet vises som overskrift inne i kortet (forsiden).
+               false = navnet står som markdown-overskrift utenfor kortet, slik
+               /lag trenger for TOC-sidebaren
+    sekundaer  true = dempet variant ("passer også" i lagvelgeren)
+    attr       valgfrie ekstra HTML-attributter på kortet (lagvelgeren henger
+               filterdata der)
+*/ -}}
+{{- $l := .lag -}}
+{{- $tone := .tone | default 0 -}}
+
+{{- $k := "" -}}
+
+{{- /* Overskrift med nivå som merkelapp. Uten overskrift (på /lag) vises nivå
+       og trinn i stedet som merkelapper øverst, siden de ellers ville falt
+       bort helt. */ -}}
+{{- if .tittel -}}
+  {{- $navn := $l.navn -}}
+  {{- with $l.niva -}}
+    {{- $navn = printf `%s<span class="lagkort-badge">%s</span>` $navn . -}}
+  {{- end -}}
+  {{- $k = printf `%s<h4 class="lagkort-navn">%s</h4>` $k $navn -}}
+{{- else -}}
+  {{- $merker := slice -}}
+  {{- with $l.niva -}}{{- $merker = $merker | append . -}}{{- end -}}
+  {{- with $l.trinn -}}{{- $merker = $merker | append . -}}{{- end -}}
+  {{- with $merker -}}
+    {{- $m := "" -}}
+    {{- range . -}}{{- $m = printf `%s<span class="lagkort-merke">%s</span>` $m . -}}{{- end -}}
+    {{- $k = printf `%s<p class="lagkort-merker">%s</p>` $k $m -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* "For jenter født 2012-2013" — samme formulering begge steder */ -}}
+{{- $malgruppe := partial "lag/aarstekst.html" (dict
+    "fra" $l.fodselsaarFra "til" $l.fodselsaarTil "lang" true
+    "kjonn" $l.kjonn "malgruppe" ($l.malgruppe | default "")) -}}
+{{- with $malgruppe -}}
+  {{- $k = printf `%s<p class="lagkort-malgruppe">%s</p>` $k . -}}
+{{- end -}}
+
+{{- if and .tittel $l.trinn -}}
+  {{- $k = printf `%s<p class="lagkort-trinn">%s</p>` $k $l.trinn -}}
+{{- end -}}
+
+{{- with $l.beskrivelse -}}
+  {{- $k = printf `%s<p class="lagkort-tekst">%s</p>` $k . -}}
+{{- end -}}
+
+{{- with $l.treninger -}}
+  {{- $rader := "" -}}
+  {{- range . -}}
+    {{- $t := partial "lag/treningstekst.html" . -}}
+    {{- $rader = printf `%s<li><span class="lagkort-dag">%s</span><span class="lagkort-nar">%s<span class="lagkort-sted"> · %s</span></span></li>`
+        $rader .dag $t.tid $t.sted -}}
+  {{- end -}}
+  {{- $k = printf `%s<p class="lagkort-seksjon">Treningstider</p><ul class="lagkort-treninger">%s</ul>` $k $rader -}}
+{{- end -}}
+
+{{- /* Trener og lagkontakt er ofte samme person — da er to linjer bare støy */ -}}
+{{- $folk := slice -}}
+{{- if and $l.trener $l.lagkontakt (eq $l.trener $l.lagkontakt) -}}
+  {{- $folk = $folk | append (printf "Trener og lagkontakt: %s" $l.trener) -}}
+{{- else -}}
+  {{- with $l.trener -}}{{- $folk = $folk | append (printf "Trener: %s" .) -}}{{- end -}}
+  {{- with $l.lagkontakt -}}{{- $folk = $folk | append (printf "Lagkontakt: %s" .) -}}{{- end -}}
+{{- end -}}
+{{- with $folk -}}
+  {{- $k = printf `%s<p class="lagkort-folk">%s</p>` $k (delimit . " — ") -}}
+{{- end -}}
+
+{{- with $l.merknad -}}
+  {{- $k = printf `%s<p class="lagkort-merknad">%s</p>` $k . -}}
+{{- end -}}
+
+{{- $knapper := printf `<a class="holstad-knapp" href="%s" target="_blank" rel="noopener">Bli medlem i %s</a>`
+    ($l.spond | default .spond) $l.navn -}}
+{{- with $l.lenke -}}
+  {{- $knapper = printf `%s<a class="holstad-knapp holstad-knapp--sekundaer" href="%s">%s</a>`
+      $knapper (. | relURL) ($l.lenketekst | default "Les mer") -}}
+{{- end -}}
+{{- $k = printf `%s<div class="holstad-knapper">%s</div>` $k $knapper -}}
+
+{{- $klasse := "lagkort" -}}
+{{- if .sekundaer -}}{{- $klasse = printf "%s lagkort--sekundaer" $klasse -}}{{- end -}}
+
+{{- return printf `<div class="%s" style="--tp-h:%d"%s>%s</div>`
+    $klasse $tone (.attr | default "") $k -}}

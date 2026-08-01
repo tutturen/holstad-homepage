@@ -1,0 +1,72 @@
+{{- /*
+  Normaliserer én booking — enten en trening under et lag, eller en oppføring
+  under `andreBookinger` — til den formen timeplanen tegner fra.
+
+  Inn (dict):
+    t          rå oppføring fra data/lag.yaml
+    navn       visningsnavn
+    notat      valgfri undertekst
+    tone       lagets fargetone (se lag/farger.html), tom for andre bookinger
+    anker      anker til lagkortet, tomt for andre bookinger
+    type       fri streng for andre bookinger, f.eks. "apen"
+    banerPer   dict hall -> liste av banenavn
+    dager      lovlige ukedager
+
+  Ut (dict): som over, men med `baner` alltid som liste og `fra`/`til` som
+  minutter siden midnatt (`fratxt`/`tiltxt` beholder klokkeslettet).
+
+  All validering av treningsdata ligger her. Feil stopper bygget i stedet for å
+  gi en time som stille forsvinner fra planen — CI kjører `hugo --minify`, så en
+  skrivefeil i lag.yaml fanges før den når produksjon.
+*/ -}}
+{{- $t := .t -}}
+{{- $navn := .navn -}}
+{{- $banerPer := .banerPer -}}
+
+{{- range $felt := slice "dag" "fra" "til" "sted" "bane" -}}
+  {{- if not (index $t $felt) -}}
+    {{- errorf "data/lag.yaml: økta til %q mangler %q. Alle av dag/fra/til/sted/bane er påkrevd." $navn $felt -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not (in $.dager $t.dag) -}}
+  {{- errorf "data/lag.yaml: %q har ukedagen %q, som ikke finnes i `dager`." $navn $t.dag -}}
+{{- end -}}
+
+{{- $baner := index $banerPer $t.sted -}}
+{{- if not $baner -}}
+  {{- errorf "data/lag.yaml: %q trener i %q, som ikke finnes under `haller`." $navn $t.sted -}}
+{{- end -}}
+
+{{- $mine := $t.bane -}}
+{{- if not (reflect.IsSlice $mine) -}}
+  {{- $mine = slice $mine -}}
+{{- end -}}
+{{- range $mine -}}
+  {{- if not (in $baner .) -}}
+    {{- errorf "data/lag.yaml: %q er satt på bane %q i %s, men hallen har bare %s." $navn . $t.sted (delimit $baner ", " " og ") -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $fra := partial "lag/minutter.html" $t.fra -}}
+{{- $til := partial "lag/minutter.html" $t.til -}}
+{{- if ge $fra $til -}}
+  {{- errorf "data/lag.yaml: %q har økt %s-%s på %s, der slutt ikke er etter start." $navn $t.fra $t.til $t.dag -}}
+{{- end -}}
+
+{{- return dict
+    "navn" $navn
+    "notat" (or (index $t "notat") .notat | default "")
+    "tone" (.tone | default 0)
+    "anker" (.anker | default "")
+    "type" (or (index $t "type") .type | default "")
+    "annen" (eq (.anker | default "") "")
+    "dag" $t.dag
+    "sted" $t.sted
+    "baner" $mine
+    "fra" $fra
+    "til" $til
+    "fratxt" $t.fra
+    "tiltxt" $t.til
+    "oppvarming" (int (index $t "oppvarming" | default 0))
+-}}

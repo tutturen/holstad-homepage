@@ -1,0 +1,42 @@
+{{- /*
+  Lagnavn -> fargetone (HSL-hue, 0-359).
+
+  Hvert lag har sin egen farge i timeplanen, så du finner ditt eget lag på tvers
+  av dager uten å lese teksten. Bare tonen lagres — metning og lyshet regnes ut
+  i CSS, slik at samme tone gir en lys flate i lys modus og en mørk i mørk
+  modus (se .timeplan-blokk--lag i custom.css).
+
+  `farge` på et lag kan være et tall (0-359) eller et av navnene under. Lag uten
+  `farge` får en tone automatisk, spredt med den gylne vinkelen (137°) etter
+  posisjon i lista. Da får et nytt lag på slutten av lista en ledig farge uten
+  at de andre flytter seg.
+
+  Inn: lista med lag (hugo.Data.lag.lag). Ut: dict lagnavn -> tone.
+*/ -}}
+{{- $navngitt := dict
+    "rød" 0 "oransje" 28 "gul" 52 "lime" 83 "eplegrønn" 111 "grønn" 138
+    "teal" 172 "cyan" 194 "blå" 222 "indigo" 249 "lilla" 277 "magenta" 305
+    "rosa" 332 -}}
+{{- /* Egen liste bare til feilmeldinga — Hugo har ingen `keys` */ -}}
+{{- $navneliste := "rød, oransje, gul, lime, eplegrønn, grønn, teal, cyan, blå, indigo, lilla, magenta, rosa" -}}
+
+{{- $ut := dict -}}
+{{- range $i, $l := . -}}
+  {{- $tone := mod (mul $i 137) 360 -}}
+  {{- with $l.farge -}}
+    {{- if reflect.IsMap . -}}
+      {{- errorf "data/lag.yaml: `farge` på %q må være et tall (0-359) eller et fargenavn." $l.navn -}}
+    {{- else if eq (printf "%T" .) "string" -}}
+      {{- $slag := index $navngitt . -}}
+      {{- if not (isset $navngitt .) -}}
+        {{- errorf "data/lag.yaml: %q har farge %q, som ikke finnes. Gyldige navn: %s. Du kan også bruke et tall 0-359."
+            $l.navn . $navneliste -}}
+      {{- end -}}
+      {{- $tone = $slag -}}
+    {{- else -}}
+      {{- $tone = mod (int .) 360 -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $ut = merge $ut (dict $l.navn $tone) -}}
+{{- end -}}
+{{- return $ut -}}

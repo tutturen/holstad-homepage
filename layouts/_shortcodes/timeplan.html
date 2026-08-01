@@ -1,0 +1,178 @@
+{{- /*
+  timeplan — kalender over treningstidene, generert fra data/lag.yaml
+
+  MÅ kalles med prosent-form, altså krøllparentes-prosent, ikke krøllparentes-
+  vinkel. Samme grunn som i lagliste: dagoverskriftene skal være ekte markdown
+  slik at de havner i Hextra sin TOC-sidebar. HTML-blokka under hver overskrift
+  må stå på egen linje, med blank linje foran og bak og ingen blanke linjer
+  inni — ellers svelger goldmark overskriften.
+
+  Layout: én CSS-grid per (dag, hall). Kolonne 1 er klokka, resten er banene.
+  Hver rad er 5 minutter, så en økt på 90 minutter blir dobbelt så høy som en på
+  45. Det er hele poenget med å ikke bruke tabell: radhøyden i en tabell følger
+  antall rader, ikke antall minutter, så en kort økt så like lang ut som en lang.
+
+  Mobil: grid-oppsettet slås av under 400px (se custom.css) og blokkene faller
+  ut som en kronologisk liste. Derfor tegnes blokkene i stigende starttid —
+  DOM-rekkefølgen er lese-rekkefølgen på telefon.
+
+  Ingen JavaScript. Blokkene for klubbens egne lag er lenker til lagkortet
+  lenger ned på samme side.
+*/ -}}
+{{- $d := hugo.Data.lag -}}
+{{- $dager := $d.dager -}}
+{{- $haller := $d.haller -}}
+{{- if not $haller -}}
+  {{- errorf "data/lag.yaml mangler `haller`. Timeplanen trenger den for å vite hvilke baner hver hall har." -}}
+{{- end -}}
+
+{{- /* hall -> baner, brukt til validering og til kolonnerekkefølgen */ -}}
+{{- $banerPer := dict -}}
+{{- range $haller -}}
+  {{- $banerPer = merge $banerPer (dict .navn .baner) -}}
+{{- end -}}
+
+{{- /* Hvert lag har sin egen farge, så man finner sitt eget lag på tvers av
+       dager uten å lese teksten. Derfor ingen tegnforklaring: navnet står i
+       blokka, og fargen er bare en gjenkjennings-hjelp. */ -}}
+{{- $farger := partial "lag/farger.html" $d.lag -}}
+
+{{- /* Alle bookinger flatet ut til én liste, lag og andre om hverandre */ -}}
+{{- $alle := slice -}}
+{{- range $d.lag -}}
+  {{- $lag := . -}}
+  {{- range .treninger -}}
+    {{- $alle = $alle | append (partial "lag/booking.html" (dict
+        "t" . "navn" $lag.navn "tone" (index $farger $lag.navn)
+        "anker" (anchorize $lag.navn) "banerPer" $banerPer "dager" $dager)) -}}
+  {{- end -}}
+{{- end -}}
+{{- range $d.andreBookinger -}}
+  {{- $alle = $alle | append (partial "lag/booking.html" (dict
+      "t" . "navn" .tekst "notat" (.notat | default "") "type" (.type | default "")
+      "banerPer" $banerPer "dager" $dager)) -}}
+{{- end -}}
+
+{{- $ut := slice -}}
+
+{{- /* Dag-major: alle haller for mandag, så alle for tirsdag, ... */ -}}
+{{- range $dag := $dager -}}
+  {{- range $hall := $haller -}}
+    {{- $bd := where (where $alle "dag" $dag) "sted" $hall.navn -}}
+    {{- if $bd -}}
+      {{- /* Sorter på starttid, så bane. Rekkefølgen er ren kosmetikk på
+             desktop (posisjonen ligger i grid-style), men den ER lese-
+             rekkefølgen på mobil, der grid-oppsettet er skrudd av. */ -}}
+      {{- $sortert := slice -}}
+      {{- range $bd -}}
+        {{- $sortert = $sortert | append (merge . (dict "nokkel" (printf "%04d %s" .fra (index .baner 0)))) -}}
+      {{- end -}}
+      {{- $bd = sort $sortert "nokkel" -}}
+      {{- $nbaner := len $hall.baner -}}
+
+      {{- /* Tidsaksen rundes ut til hele halvtimer, så etikettene blir pene */ -}}
+      {{- $start := 1440 -}}
+      {{- $slutt := 0 -}}
+      {{- range $bd -}}
+        {{- $s := sub .fra .oppvarming -}}
+        {{- if lt $s $start -}}{{- $start = $s -}}{{- end -}}
+        {{- if gt .til $slutt -}}{{- $slutt = .til -}}{{- end -}}
+      {{- end -}}
+      {{- $start = mul 30 (div $start 30) -}}
+      {{- $slutt = mul 30 (div (add $slutt 29) 30) -}}
+      {{- $rader := div (sub $slutt $start) 5 -}}
+
+      {{- $celler := "" -}}
+
+      {{- /* Kolonneoverskrifter */ -}}
+      {{- range $bi, $bn := $hall.baner -}}
+        {{- $celler = printf `%s<div class="timeplan-hode" style="grid-column:%d">%s</div>` $celler (add $bi 2) $bn -}}
+      {{- end -}}
+
+      {{- /* Klokkeslett og hjelpelinjer hver halvtime */ -}}
+      {{- range $off := seq 0 30 (sub $slutt $start) -}}
+        {{- $rad := add 2 (div $off 5) -}}
+        {{- $celler = printf `%s<div class="timeplan-klokke" style="grid-row:%d">%s</div><div class="timeplan-linje" style="grid-row:%d;grid-column:2/span %d"></div>`
+            $celler $rad (partial "lag/klokke.html" (add $start $off)) $rad $nbaner -}}
+      {{- end -}}
+
+      {{- /* Blokkene */ -}}
+      {{- range $i, $bk := $bd -}}
+        {{- /* Kolonne: første og siste bane laget disponerer */ -}}
+        {{- $fra_kol := $nbaner -}}
+        {{- $til_kol := 0 -}}
+        {{- range $bi, $bn := $hall.baner -}}
+          {{- if in $bk.baner $bn -}}
+            {{- if lt $bi $fra_kol -}}{{- $fra_kol = $bi -}}{{- end -}}
+            {{- if gt $bi $til_kol -}}{{- $til_kol = $bi -}}{{- end -}}
+          {{- end -}}
+        {{- end -}}
+
+        {{- /* To økter på samme bane til samme tid deler kolonnen. Helt like
+               tider = avtalt delt bane. Delvis overlapp er en kollisjon i
+               dataene, og skal ropes ut i byggeloggen. */ -}}
+        {{- $deler := 1 -}}
+        {{- $delnr := 0 -}}
+        {{- range $j, $an := $bd -}}
+          {{- if ne $i $j -}}
+            {{- if and (gt (len (intersect $bk.baner $an.baner)) 0) (and (lt $an.fra $bk.til) (gt $an.til $bk.fra)) -}}
+              {{- $deler = add $deler 1 -}}
+              {{- if or (lt $an.fra $bk.fra) (and (eq $an.fra $bk.fra) (lt $an.navn $bk.navn)) -}}
+                {{- $delnr = add $delnr 1 -}}
+              {{- end -}}
+              {{- if and (lt $bk.navn $an.navn) (not (and (eq $an.fra $bk.fra) (eq $an.til $bk.til))) -}}
+                {{- warnf "data/lag.yaml: %s (%s-%s) og %s (%s-%s) overlapper delvis på samme bane %s. Tegnes side om side — sjekk om tidene stemmer."
+                    $bk.navn $bk.fratxt $bk.tiltxt $an.navn $an.fratxt $an.tiltxt $dag -}}
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+
+        {{- $topp := sub $bk.fra $bk.oppvarming -}}
+        {{- $stil := printf "grid-column:%d/span %d;grid-row:%d/span %d"
+            (add $fra_kol 2) (add (sub $til_kol $fra_kol) 1)
+            (add 2 (div (sub $topp $start) 5)) (div (sub $bk.til $topp) 5) -}}
+        {{- if gt $deler 1 -}}
+          {{- $stil = printf "%s;--del:%d;--delnr:%d" $stil $deler $delnr -}}
+        {{- end -}}
+
+        {{- $klasser := "timeplan-blokk" -}}
+        {{- if $bk.annen -}}
+          {{- $klasser = printf "%s timeplan-blokk--annen" $klasser -}}
+          {{- with $bk.type -}}{{- $klasser = printf "%s timeplan-blokk--%s" $klasser . -}}{{- end -}}
+        {{- else -}}
+          {{- $klasser = printf "%s timeplan-blokk--lag" $klasser -}}
+          {{- $stil = printf "%s;--tp-h:%d" $stil $bk.tone -}}
+        {{- end -}}
+        {{- if gt $deler 1 -}}{{- $klasser = printf "%s timeplan-blokk--delt" $klasser -}}{{- end -}}
+
+        {{- $innhold := "" -}}
+        {{- if $bk.oppvarming -}}
+          {{- $pst := div (mul 100.0 $bk.oppvarming) (sub $bk.til $topp) -}}
+          {{- $innhold = printf `<span class="timeplan-oppvarming" style="height:%.1f%%" title="Oppvarming"></span>` $pst -}}
+        {{- end -}}
+        {{- $innhold = printf `%s<span class="timeplan-navn">%s</span><span class="timeplan-tid">%s–%s</span>`
+            $innhold $bk.navn $bk.fratxt $bk.tiltxt -}}
+        {{- with $bk.notat -}}
+          {{- $innhold = printf `%s<span class="timeplan-notat">%s</span>` $innhold . -}}
+        {{- end -}}
+        {{- /* Bane vises bare på mobil, der kolonnene forsvinner */ -}}
+        {{- $innhold = printf `%s<span class="timeplan-bane">%s</span>` $innhold (delimit $bk.baner ", " " og ") -}}
+
+        {{- if $bk.anker -}}
+          {{- $celler = printf `%s<a class="%s" style="%s" href="#%s">%s</a>` $celler $klasser $stil $bk.anker $innhold -}}
+        {{- else -}}
+          {{- $celler = printf `%s<div class="%s" style="%s">%s</div>` $celler $klasser $stil $innhold -}}
+        {{- end -}}
+      {{- end -}}
+
+      {{- $ut = $ut | append
+          (printf "### %s, %s" $dag $hall.navn)
+          ""
+          (printf `<div class="timeplan" style="--baner:%d;--rader:%d">%s</div>` $nbaner $rader $celler)
+          "" -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{ delimit $ut "\n" | safeHTML }}

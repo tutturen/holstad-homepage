@@ -1,14 +1,18 @@
-# Single source of truth for lagene i klubben.
+# Single source of truth for lagene i klubben OG for treningstidene.
 #
 # Brukes av:
 #   - lagvelger (interaktiv "hvilket lag passer for meg?" på forsiden)
 #   - lagliste (lag-oversikten på /lag, kalles med prosent-form)
+#   - timeplan (kalenderen over treningstider på /lag, kalles med prosent-form)
 #
 # ---------------------------------------------------------------------------
 # VEDLIKEHOLD VED NY SESONG
 # Fødselsårene er hardkodet. Når ny sesong starter må hvert lag flyttes ett år:
 # fodselsaarFra/Til økes med 1 (f.eks. J15 2011-2012 -> 2012-2013).
-# Husk også å oppdatere `sesong` under, og treningstidene i content/lag.md.
+# Husk også å oppdatere `sesong` under.
+#
+# Treningstidene vedlikeholdes KUN her — content/lag.md har ingen egne tabeller
+# lenger, den kaller bare timeplan-shortcoden.
 #
 # Klassetrinn -> fødselsår for sesongen 2026/2027 (1. klasse = født 2020):
 #   1.kl 2020 | 2.kl 2019 | 3.kl 2018 | 4.kl 2017
@@ -21,10 +25,71 @@ sesong: "2026/2027"
 # Lag med eget skjema setter `spond: "<url>"` på seg selv (se Tullball).
 spondUrl: "https://club.spond.com/landing/signup/holstadvolleybal/form/CA87448637DC410784B95B47C69735EB"
 
+# ---------------------------------------------------------------------------
+# Haller og baner
+#
+# Rekkefølgen her styrer både kolonnerekkefølgen i timeplanen og hvilken hall
+# som vises først. `bane` på en trening må matche et av navnene under, ellers
+# feiler bygget.
+# ---------------------------------------------------------------------------
+haller:
+  - navn: "Åsgård Skole"
+    baner: ["Bane 1", "Bane 2", "Bane 3"]
+  - navn: "Åshallen"
+    baner: ["Gammel del", "Ny del"]
+
+# Ukedagene i visningsrekkefølge. `dag` på en trening må matche en av disse.
+dager: ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"]
+
+# ---------------------------------------------------------------------------
+# Bookinger som ikke er et av klubbens lag. Vises dempet i timeplanen, slik at
+# hullene i planen er forklart. `type: apen` fremhever blokka i stedet
+# (åpen hall er et tilbud folk kan møte opp på).
+# ---------------------------------------------------------------------------
+andreBookinger:
+  - tekst: "Arrangement / Intern-turnering"
+    dag: "Tirsdag"
+    type: apen
+    fra: "18:30"
+    til: "20:00"
+    sted: "Åsgård Skole"
+    bane: ["Bane 1", "Bane 2"]
+
+  - tekst: "Tirsdagstrimmen 25+"
+    dag: "Tirsdag"
+    type: apen
+    fra: "20:00"
+    til: "22:00"
+    sted: "Åsgård Skole"
+    bane: ["Bane 3"]
+
+  - tekst: "Ås IL"
+    dag: "Onsdag"
+    fra: "17:00"
+    til: "18:00"
+    sted: "Åsgård Skole"
+    bane: ["Bane 1", "Bane 2", "Bane 3"]
+
+  - tekst: "Åpen hall"
+    notat: "Treningssamling / diverse"
+    type: apen
+    dag: "Fredag"
+    fra: "18:00"
+    til: "20:00"
+    sted: "Åsgård Skole"
+    bane: ["Bane 1", "Bane 2", "Bane 3"]
+
 # Felt per lag:
 #   navn            påkrevd
 #   niva            valgfri, f.eks. "5. divisjon"
 #   trinn           valgfri, vises som "Barnehage opp til 2. klasse"
+#   farge           lagets egen farge, brukt på blokkene i timeplanen og på
+#                   venstrekanten av lagkortet. Enten et tall 0-359 (HSL-
+#                   fargetone) eller et navn:
+#                     rød oransje gul lime eplegrønn grønn teal cyan blå
+#                     indigo lilla magenta rosa
+#                   Utelates den, får laget en ledig tone automatisk.
+#
 #   fodselsaarFra   eldste fødselsår som matcher (default 1900)
 #   fodselsaarTil   yngste fødselsår som matcher (default 2100)
 #   kjonn           [jente, gutt] - hvilke valg i velgeren som treffer laget
@@ -36,19 +101,35 @@ spondUrl: "https://club.spond.com/landing/signup/holstadvolleybal/form/CA8744863
 #                   som en egen lenke under resultatet ("tilrettelagt trening")
 #   beskrivelse     valgfri fritekst
 #   merknad         valgfri liten note (vises kursivt)
-#   treninger       liste av {dag, tid, sted}
 #   trener, lagkontakt
 #   lenke, lenketekst  valgfri lenke til egen side
+#
+#   treninger       liste av økter:
+#     dag           påkrevd, må finnes i `dager`
+#     fra, til      påkrevd, "HH:MM"
+#     sted          påkrevd, må matche en hall i `haller`
+#     bane          påkrevd, ett banenavn eller en liste av banenavn (laget
+#                   disponerer flere baner samtidig)
+#     oppvarming    valgfrie minutter FØR `fra` som laget disponerer banen til
+#                   oppvarming. Tegnes som et stripet felt i toppen av blokka
+#     notat         valgfri kort presisering, f.eks. aldersgruppe
+#
+#   To lag på samme bane til nøyaktig samme tid tolkes som delt bane og tegnes
+#   side om side. Delvis overlapp er derimot en kollisjon, og gir en advarsel i
+#   bygget (se `hugo` sin logg) i tillegg til at blokkene deles.
 
 lag:
   - navn: "Diamantvolley"
     kjonn: [jente, gutt]
+    farge: 115  # blandet: gressgrønn
     tilrettelagt: true
     beskrivelse: "Diamantvolley er trening for spillere med utviklingshemning."
     treninger:
       - dag: "Torsdag"
-        tid: "17:00 - 18:00"
+        fra: "17:00"
+        til: "18:00"
         sted: "Åsgård Skole"
+        bane: "Bane 3"
     trener: "Informasjon kommer"
 
   - navn: "Tullball"
@@ -56,6 +137,7 @@ lag:
     fodselsaarFra: 2019
     fodselsaarTil: 2100
     kjonn: [jente, gutt]
+    farge: 35  # blandet: oransje
     beskrivelse: >-
       Tullball arrangeres både i Åshallen 1 og Åshallen 2. I Åshallen 2 er det
       fri lek for de minste, og i Åshallen 1 er det organisert lek med ball med
@@ -63,11 +145,17 @@ lag:
     merknad: "Aldersinndelingen er veiledende"
     treninger:
       - dag: "Tirsdag"
-        tid: "16:00 - 17:00"
-        sted: "Åshallen, gammel del (0-5 år)"
+        fra: "16:00"
+        til: "17:00"
+        sted: "Åshallen"
+        bane: "Gammel del"
+        notat: "0-5 år"
       - dag: "Tirsdag"
-        tid: "16:00 - 17:00"
-        sted: "Åshallen, ny del (5-8 år)"
+        fra: "16:00"
+        til: "17:00"
+        sted: "Åshallen"
+        bane: "Ny del"
+        notat: "5-8 år"
     lagkontakt: "Sindre Øye Svendby"
     spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/A6D5E6ADAC1944988E13FD0BB09AED01"
     lenke: "/tullball"
@@ -77,10 +165,13 @@ lag:
     fodselsaarFra: 2016
     fodselsaarTil: 2017
     kjonn: [jente, gutt]
+    farge: 95  # blandet: lime
     treninger:
       - dag: "Mandag"
-        tid: "17:15 - 18:30"
+        fra: "17:00"
+        til: "18:30"
         sted: "Åsgård Skole"
+        bane: "Bane 1"
     trener: "Per Egil Gran Jakobsen"
     lagkontakt: "Per Egil Gran Jakobsen"
     spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/B44432D1F6F04CD186EDC585C7E014E8"
@@ -89,13 +180,18 @@ lag:
     fodselsaarFra: 2014
     fodselsaarTil: 2015
     kjonn: [jente, gutt]
+    farge: 55  # blandet: gyllen
     treninger:
       - dag: "Tirsdag"
-        tid: "17:00 - 18:30"
+        fra: "17:00"
+        til: "18:30"
         sted: "Åsgård Skole"
+        bane: ["Bane 1", "Bane 2"]
       - dag: "Torsdag"
-        tid: "17:00 - 18:30"
+        fra: "17:00"
+        til: "18:30"
         sted: "Åsgård Skole"
+        bane: "Bane 2"
     trener: "Informasjon kommer"
     lagkontakt: "Hanne Malde (lagleder)"
     spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/AF7266FCA98F4ACAAD0CAFBFA23EF162"
@@ -104,16 +200,23 @@ lag:
     fodselsaarFra: 2012
     fodselsaarTil: 2013
     kjonn: [jente]
+    farge: 355  # jente: rosa
     treninger:
       - dag: "Tirsdag"
-        tid: "17:00 - 18:30"
+        fra: "17:00"
+        til: "18:30"
         sted: "Åsgård Skole"
+        bane: "Bane 3"
       - dag: "Onsdag"
-        tid: "18:00 - 19:30"
+        fra: "18:00"
+        til: "19:30"
         sted: "Åsgård Skole"
+        bane: "Bane 2"
       - dag: "Torsdag"
-        tid: "17:00 - 18:30"
+        fra: "17:00"
+        til: "18:30"
         sted: "Åsgård Skole"
+        bane: "Bane 1"
     trener: "Vinh Vo-Ma"
     lagkontakt: "Vinh Vo-Ma"
     spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/25870C82D89545BDBC430B7BF3F2F71F"
@@ -122,16 +225,23 @@ lag:
     fodselsaarFra: 2010
     fodselsaarTil: 2011
     kjonn: [jente]
+    farge: 285  # jente: fiolett
     treninger:
       - dag: "Mandag"
-        tid: "17:30 - 18:30"
+        fra: "17:00"
+        til: "18:30"
         sted: "Åsgård Skole"
+        bane: "Bane 3"
       - dag: "Onsdag"
-        tid: "18:30 - 19:30"
+        fra: "18:00"
+        til: "19:30"
         sted: "Åsgård Skole"
+        bane: "Bane 3"
       - dag: "Torsdag"
-        tid: "18:00 - 19:30"
+        fra: "18:00"
+        til: "20:00"
         sted: "Åsgård Skole"
+        bane: "Bane 3"
     trener: "Geir Åge Michelsen"
     lagkontakt: "Geir Åge Michelsen"
     spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/6148F80A90F74A328FDFCEE16077105C"
@@ -140,16 +250,23 @@ lag:
     fodselsaarFra: 2008
     fodselsaarTil: 2009
     kjonn: [jente]
+    farge: 25  # jente: korall
     treninger:
       - dag: "Mandag"
-        tid: "18:30 - 20:00"
+        fra: "18:30"
+        til: "20:00"
         sted: "Åsgård Skole"
+        bane: "Bane 3"
+      - dag: "Tirsdag"
+        fra: "18:30"
+        til: "20:00"
+        sted: "Åsgård Skole"
+        bane: "Bane 3"
       - dag: "Onsdag"
-        tid: "18:30 - 20:00"
+        fra: "19:30"
+        til: "21:15"
         sted: "Åsgård Skole"
-      - dag: "Torsdag"
-        tid: "19:30 - 21:15"
-        sted: "Åsgård Skole"
+        bane: "Bane 3"
     trener: "Geir Åge Michelsen"
     lagkontakt: "Geir Åge Michelsen"
     spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/DDBE2A3CB2504F3E9E905F4B80BD0052"
@@ -160,13 +277,18 @@ lag:
     fodselsaarFra: 1900
     fodselsaarTil: 2007
     kjonn: [jente]
+    farge: 320  # jente: magenta
     treninger:
       - dag: "Mandag"
-        tid: "20:00 - 22:00"
+        fra: "20:00"
+        til: "22:00"
         sted: "Åsgård Skole"
+        bane: "Bane 3"
       - dag: "Onsdag"
-        tid: "20:00 - 22:00"
+        fra: "20:00"
+        til: "22:00"
         sted: "Åsgård Skole"
+        bane: "Bane 1"
     trener: "Informasjon kommer"
     lagkontakt: "Herdis Gunnarstorp (herdis_gunnarstorp@hotmail.com)"
     spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/4AA9512732C24F3BB4218AB108082B3E"
@@ -175,13 +297,18 @@ lag:
     fodselsaarFra: 2012
     fodselsaarTil: 2013
     kjonn: [gutt]
+    farge: 223  # gutt: blå
     treninger:
       - dag: "Mandag"
-        tid: "17:00 - 18:30"
+        fra: "17:00"
+        til: "18:30"
         sted: "Åsgård Skole"
+        bane: "Bane 2"
       - dag: "Torsdag"
-        tid: "18:30 - 20:00"
+        fra: "18:30"
+        til: "20:00"
         sted: "Åsgård Skole"
+        bane: "Bane 1"
     trener: "Informasjon kommer"
     lagkontakt: "Nora K. Nordhaug og Ane Bergum"
     spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/78C13402C7E34650B3652B0B47606EE9"
@@ -190,13 +317,18 @@ lag:
     fodselsaarFra: 2010
     fodselsaarTil: 2011
     kjonn: [gutt]
+    farge: 181  # gutt: cyan
     treninger:
       - dag: "Mandag"
-        tid: "18:30 - 20:15"
+        fra: "18:30"
+        til: "20:00"
         sted: "Åsgård Skole"
+        bane: "Bane 1"
       - dag: "Torsdag"
-        tid: "18:30 - 20:15"
+        fra: "18:30"
+        til: "20:00"
         sted: "Åsgård Skole"
+        bane: "Bane 2"
     trener: "Informasjon kommer"
     lagkontakt: "Jon Anders Næsset"
     spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/8A6D62EF577D4B4BA110375FF0AF1B22"
@@ -205,20 +337,27 @@ lag:
     fodselsaarFra: 2008
     fodselsaarTil: 2009
     kjonn: [gutt]
+    farge: 265  # gutt: indigo
     treninger:
       - dag: "Mandag"
-        tid: "18:30 - 20:00"
+        fra: "18:30"
+        til: "20:00"
         sted: "Åsgård Skole"
+        bane: "Bane 2"
       - dag: "Onsdag"
-        tid: "20:00 - 22:00"
+        fra: "20:00"
+        til: "22:00"
         sted: "Åsgård Skole"
+        bane: "Bane 2"
+      # Deler bane med H1 (samme bane, samme tid = delt bane i timeplanen)
       - dag: "Torsdag"
-        tid: "20:00 - 22:00"
-        sted: "Åsgård Skole (G19/H1)"
+        fra: "20:00"
+        til: "22:00"
+        sted: "Åsgård Skole"
+        bane: "Bane 2"
     trener: "Informasjon kommer"
     lagkontakt: "Amund Kvalbein"
     spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/979A8DEF23924C62ADBFFFA8B5D2D0A2"
-
 
   - navn: "H1 Herrelaget"
     malgruppe: "herrer"
@@ -226,13 +365,18 @@ lag:
     fodselsaarFra: 1900
     fodselsaarTil: 2007
     kjonn: [gutt]
+    farge: 140  # gutt: grønn
     treninger:
       - dag: "Mandag"
-        tid: "20:00 - 22:00"
+        fra: "20:00"
+        til: "22:00"
         sted: "Åsgård Skole"
+        bane: "Bane 1"
       - dag: "Torsdag"
-        tid: "20:00 - 22:00"
+        fra: "20:00"
+        til: "22:00"
         sted: "Åsgård Skole"
+        bane: "Bane 1"
     trener: "Informasjon kommer"
     lagkontakt: "Magnus Hushovd"
     spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/FEEFA0DE5E1440EEA799E252397FC717"
@@ -245,17 +389,22 @@ lag:
     fodselsaarFra: 1900
     fodselsaarTil: 2007
     kjonn: [jente, gutt]
+    farge: 75  # blandet: gul
     beskrivelse: >-
       Lavterskel trening og spill for foreldre eller andre mosjonister, ingen krav til
       volleyball-erfaring. Laget stiller også i 5. divisjon, og både damer og
       herrer kan spille.
     treninger:
-      - dag: "Mandag"
-        tid: "20:00 - 22:00"
+      - dag: "Tirsdag"
+        fra: "20:00"
+        til: "22:00"
         sted: "Åsgård Skole"
+        bane: "Bane 1"
       - dag: "Torsdag"
-        tid: "20:00 - 22:00"
+        fra: "20:00"
+        til: "22:00"
         sted: "Åsgård Skole"
+        bane: ["Bane 3"]
     trener: "Espen Langaas"
     lagkontakt: "Espen Langaas"
     spond: "https://club.spond.com/landing/signup/holstadvolleybal/form/65FDFBA01EC942A981EDD68570C5E43C"
