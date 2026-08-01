@@ -6,12 +6,14 @@
   ekte headings i AST-et og havner i Hextra sin TOC-sidebar. Med vinkel-formen
   blir det rå HTML og overskriftene forsvinner fra TOC.
 
-  Overskriften står derfor som markdown, mens resten av laget ligger i én rå
+  Overskriften står derfor som markdown, mens selve kortet ligger i én rå
   HTML-blokk under. Blokka må stå på egen linje med blank linje foran og bak,
-  og uten blanke linjer inni — ellers svelger goldmark overskriften.
+  og uten blanke linjer inni — ellers svelger goldmark overskriften. Derfor
+  returnerer lag/kort.html HTML på én linje.
 
-  Samme datakilde som lagvelger, så treningstider og kontaktpersoner
-  vedlikeholdes kun ett sted.
+  Selve kortet bygges av partialen lag/kort.html, den samme lagvelgeren på
+  forsiden bruker. Overskriften er markdown her og en <h4> inne i kortet der;
+  alt annet er likt.
 */ -}}
 {{- /* hugo.Data krever Hugo >= 0.156 (site.Data er deprecated der). Versjonen
        er pinnet til 0.164.0 i Dockerfile og .forgejo/workflows/. */ -}}
@@ -22,75 +24,11 @@
 {{- $ut := slice -}}
 
 {{- range $d.lag -}}
-  {{- $fra := .fodselsaarFra | default 1900 -}}
-  {{- $til := .fodselsaarTil | default 2100 -}}
-  {{- $lenketekst := .lenketekst | default "Les mer" -}}
-
-  {{- /* Nivå og klassetrinn som merkelapper i stedet for en stadig lengre
-         parentes i overskriften. Holder også ankerne stabile fra sesong til
-         sesong (#j15, ikke #j15-f-2012-2013). */ -}}
-  {{- $merker := slice -}}
-  {{- with .niva -}}{{- $merker = $merker | append . -}}{{- end -}}
-  {{- with .trinn -}}{{- $merker = $merker | append . -}}{{- end -}}
-
-  {{- /* Samme formulering som i lagvelgeren: "For gutter født 2010-2011" */ -}}
-  {{- $malgruppe := partial "lag/aarstekst.html" (dict
-      "fra" .fodselsaarFra "til" .fodselsaarTil "lang" true
-      "kjonn" .kjonn "malgruppe" (.malgruppe | default "")) -}}
-
-  {{- $kropp := "" -}}
-  {{- with $merker -}}
-    {{- $m := "" -}}
-    {{- range . -}}{{- $m = printf `%s<span class="lagliste-merke">%s</span>` $m . -}}{{- end -}}
-    {{- $kropp = printf `%s<p class="lagliste-merker">%s</p>` $kropp $m -}}
-  {{- end -}}
-
-  {{- with $malgruppe -}}
-    {{- $kropp = printf `%s<p class="lagliste-malgruppe">%s</p>` $kropp . -}}
-  {{- end -}}
-
-  {{- with .beskrivelse -}}
-    {{- $kropp = printf `%s<p class="lagliste-tekst">%s</p>` $kropp . -}}
-  {{- end -}}
-
-  {{- with .treninger -}}
-    {{- $rader := "" -}}
-    {{- range . -}}
-      {{- $tt := partial "lag/treningstekst.html" . -}}
-      {{- $rader = printf `%s<li><span class="lagliste-dag">%s</span> %s<span class="lagliste-sted">%s</span></li>`
-          $rader .dag $tt.tid (printf " · %s" $tt.sted) -}}
-    {{- end -}}
-    {{- $kropp = printf `%s<ul class="lagliste-treninger">%s</ul>` $kropp $rader -}}
-  {{- end -}}
-
-  {{- /* Trener og lagkontakt er ofte samme person — da er to linjer bare støy */ -}}
-  {{- $folk := slice -}}
-  {{- if and .trener .lagkontakt (eq .trener .lagkontakt) -}}
-    {{- $folk = $folk | append (printf "Trener og lagkontakt: %s" .trener) -}}
-  {{- else -}}
-    {{- with .trener -}}{{- $folk = $folk | append (printf "Trener: %s" .) -}}{{- end -}}
-    {{- with .lagkontakt -}}{{- $folk = $folk | append (printf "Lagkontakt: %s" .) -}}{{- end -}}
-  {{- end -}}
-  {{- with $folk -}}
-    {{- $kropp = printf `%s<p class="lagliste-folk">%s</p>` $kropp (delimit . " — ") -}}
-  {{- end -}}
-
-  {{- with .merknad -}}
-    {{- $kropp = printf `%s<p class="lagliste-merknad">%s</p>` $kropp . -}}
-  {{- end -}}
-
-  {{- $knapper := printf `<a class="holstad-knapp" href="%s" target="_blank" rel="noopener">Bli medlem i %s</a>`
-      (.spond | default $spond) .navn -}}
-  {{- with .lenke -}}
-    {{- $knapper = printf `%s<a class="holstad-knapp holstad-knapp--sekundaer" href="%s">%s</a>`
-        $knapper (. | relURL) $lenketekst -}}
-  {{- end -}}
-  {{- $kropp = printf `%s<div class="holstad-knapper">%s</div>` $kropp $knapper -}}
-
   {{- $ut = $ut | append
       (printf "### %s" .navn)
       ""
-      (printf `<div class="lagliste-kort" style="--tp-h:%d">%s</div>` (index $farger .navn) $kropp)
+      (partial "lag/kort.html" (dict
+        "lag" . "spond" $spond "tone" (index $farger .navn) "tittel" false))
       "" -}}
 {{- end -}}
 

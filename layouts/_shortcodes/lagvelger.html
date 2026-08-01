@@ -5,12 +5,21 @@
   Valgfrie parametre:
     tittel     overskrift (default "Finn laget ditt")
     ingress    tekst over skjemaet
+
+  Alle lagkortene rendres server-side av partialen lag/kort.html — den samme
+  /lag bruker — og ligger skjult i sida. JavaScripten her filtrerer bare på
+  fødselsår og kjønn ved å sette/fjerne `hidden`. Den bygger ikke DOM.
+
+  Det var den forrige løsninga: kortet fantes én gang som Hugo-template for
+  /lag og én gang som DOM-bygging i JS her, og de to drev fra hverandre. Nå kan
+  de ikke det, og kortene finnes i HTML-en også for søkemotorer.
 */ -}}
 {{- /* hugo.Data krever Hugo >= 0.156 (site.Data er deprecated der). Versjonen
        er pinnet til 0.164.0 i Dockerfile og .forgejo/workflows/. */ -}}
 {{- $d := hugo.Data.lag -}}
 {{- $spond := $d.spondUrl -}}
 {{- $sesong := $d.sesong | default "" -}}
+{{- $farger := partial "lag/farger.html" $d.lag -}}
 {{- /* tittel="" skjuler overskriften (bruk når siden alt har en egen overskrift) */ -}}
 {{- $tittel := "Finn laget ditt" -}}
 {{- if isset .Params "tittel" -}}{{- $tittel = .Get "tittel" -}}{{- end -}}
@@ -31,44 +40,29 @@
   ) -}}
 {{- end -}}
 
-{{- $teams := slice -}}
+{{- /* Kortene bygges her, ett per lag, med filterdata som data-attributter */ -}}
+{{- $primaere := slice -}}
+{{- $sekundaere := slice -}}
 {{- range where $d.lag "tilrettelagt" "!=" true -}}
   {{- /* Snudde årsgrenser gir et lag som aldri kan matche, og som da forsvinner
          lydløst fra velgeren. Stopp bygget i stedet. */ -}}
   {{- if gt (.fodselsaarFra | default 1900) (.fodselsaarTil | default 2100) -}}
     {{- errorf "data/lag.yaml: laget %q har fodselsaarFra (%d) høyere enn fodselsaarTil (%d). Fra = eldste årgang, Til = yngste. Laget ville aldri gitt treff i lagvelgeren." .navn .fodselsaarFra .fodselsaarTil -}}
   {{- end -}}
-  {{- /* Treningene lagres strukturert (fra/til/bane) for timeplanen. JS-en her
-         vil bare ha ferdig tekst, så den settes sammen server-side — samme
-         partial som lagkortene bruker. */ -}}
-  {{- $treninger := slice -}}
-  {{- range .treninger -}}
-    {{- $tt := partial "lag/treningstekst.html" . -}}
-    {{- $treninger = $treninger | append (dict "dag" .dag "tid" $tt.tid "sted" $tt.sted) -}}
+  {{- $attr := printf ` data-fra="%d" data-til="%d" data-kjonn="%s" hidden`
+      (.fodselsaarFra | default 1900) (.fodselsaarTil | default 2100)
+      (delimit (.kjonn | default (slice "jente" "gutt")) " ") -}}
+  {{- $kort := partial "lag/kort.html" (dict
+      "lag" . "spond" $spond "tone" (index $farger .navn)
+      "tittel" true "sekundaer" (.sekundaer | default false) "attr" $attr) -}}
+  {{- if .sekundaer -}}
+    {{- $sekundaere = $sekundaere | append $kort -}}
+  {{- else -}}
+    {{- $primaere = $primaere | append $kort -}}
   {{- end -}}
-  {{- $teams = $teams | append (dict
-    "navn" .navn
-    "niva" (.niva | default "")
-    "trinn" (.trinn | default "")
-    "aarstekst" (partial "lag/aarstekst.html" (dict
-      "fra" .fodselsaarFra "til" .fodselsaarTil "lang" true
-      "kjonn" .kjonn "malgruppe" (.malgruppe | default "")))
-    "fra" (.fodselsaarFra | default 1900)
-    "til" (.fodselsaarTil | default 2100)
-    "kjonn" (.kjonn | default (slice "jente" "gutt"))
-    "sekundaer" (.sekundaer | default false)
-    "beskrivelse" (.beskrivelse | default "")
-    "merknad" (.merknad | default "")
-    "treninger" $treninger
-    "trener" (.trener | default "")
-    "lagkontakt" (.lagkontakt | default "")
-    "lenke" (.lenke | default "")
-    "lenketekst" (.lenketekst | default "")
-    "spond" (.spond | default $spond)
-  ) -}}
 {{- end -}}
 
-<div class="lagvelger" id="{{ $id }}" data-sesong="{{ $sesong }}">
+<div class="lagvelger" id="{{ $id }}" data-sesong="{{ $sesong }}" data-samleaar="{{ $samleAar }}">
   {{- with $tittel }}
   <h3 class="lagvelger-tittel">{{ . }}</h3>
   {{- end }}
@@ -99,7 +93,26 @@
     </fieldset>
   </div>
 
-  <div class="lagvelger-resultat" aria-live="polite"></div>
+  <div class="lagvelger-resultat" aria-live="polite">
+    <p class="lagvelger-innledning" hidden></p>
+
+    <div class="lagvelger-gruppe" data-gruppe="primaer" hidden>
+      <p class="lagvelger-seksjon lagvelger-seksjon--stor">Dette laget passer for deg</p>
+      <div class="lagvelger-grid">{{ delimit $primaere "" | safeHTML }}</div>
+    </div>
+
+    {{- with $sekundaere }}
+    <div class="lagvelger-gruppe" data-gruppe="sekundaer" hidden>
+      <p class="lagvelger-seksjon lagvelger-seksjon--stor">Andre tilbud som kan passe</p>
+      <div class="lagvelger-grid">{{ delimit . "" | safeHTML }}</div>
+    </div>
+    {{- end }}
+
+    <div class="lagvelger-ingen-blokk" hidden>
+      <p class="lagvelger-ingen">Vi fant ingen lag som matcher automatisk. Ta kontakt, vi finner et tilbud som passer!</p>
+      <div class="holstad-knapper"><a class="holstad-knapp" href="{{ "lag" | relURL }}">Se alle lag</a></div>
+    </div>
+  </div>
 
   {{- with $tilrettelagt }}
   <p class="lagvelger-tilrettelagt">
@@ -109,133 +122,70 @@
   {{- end }}
 
   <noscript>
-    <p>Denne modulen krever JavaScript. Du finner alle lag og treningstider på
+    <p>Denne modulen krever JavaScript for å filtrere. Du finner alle lag og treningstider på
       <a href="{{ "lag" | relURL }}">Lag og treningstider</a>.</p>
   </noscript>
 </div>
 
 <script>
 (function () {
-  /* Hugo serialiserer verdiene som JSON-literaler i JS-kontekst */
-  var teams = {{ $teams }};
-  var lagUrl = {{ "lag" | relURL }};
-  var samleAar = {{ $samleAar }};
-
   var root = document.getElementById({{ $id }});
   if (!root) return;
 
-  var out = root.querySelector('.lagvelger-resultat');
   var aarEl = root.querySelector('.lagvelger-aar');
   var kjonnEls = root.querySelectorAll('.lagvelger-kjonn input');
+  var innledning = root.querySelector('.lagvelger-innledning');
+  var grupper = root.querySelectorAll('.lagvelger-gruppe');
+  var kort = root.querySelectorAll('.lagvelger-resultat .lagkort');
+  var ingen = root.querySelector('.lagvelger-ingen-blokk');
+
   var sesong = root.dataset.sesong || '';
   var sesongStart = parseInt(sesong.slice(0, 4), 10);
-
-  function el(tag, cls, text) {
-    var n = document.createElement(tag);
-    if (cls) n.className = cls;
-    if (text) n.textContent = text;
-    return n;
-  }
-
-  function kort(t, sekundaer) {
-    var card = el('div', 'lagvelger-kort' + (sekundaer ? ' lagvelger-kort--sekundaer' : ''));
-
-    var h = el('h4', 'lagvelger-kort-navn', t.navn);
-    if (t.niva) h.appendChild(el('span', 'lagvelger-badge', t.niva));
-    card.appendChild(h);
-
-    /* Målgruppe og årganger — viser hvem som spiller på laget */
-    if (t.aarstekst) card.appendChild(el('p', 'lagvelger-aargang', t.aarstekst));
-    if (t.trinn) card.appendChild(el('p', 'lagvelger-trinn', t.trinn));
-    if (t.beskrivelse) card.appendChild(el('p', 'lagvelger-beskrivelse', t.beskrivelse));
-
-    if (t.treninger && t.treninger.length) {
-      card.appendChild(el('p', 'lagvelger-seksjon', 'Treningstider'));
-      var ul = el('ul', 'lagvelger-treninger');
-      t.treninger.forEach(function (tr) {
-        var parts = [tr.dag, tr.tid, tr.sted].filter(Boolean);
-        ul.appendChild(el('li', null, parts.join(' · ')));
-      });
-      card.appendChild(ul);
-    }
-
-    var folk = [];
-    if (t.trener) folk.push('Trener: ' + t.trener);
-    if (t.lagkontakt) folk.push('Lagkontakt: ' + t.lagkontakt);
-    if (folk.length) card.appendChild(el('p', 'lagvelger-folk', folk.join(' — ')));
-
-    if (t.merknad) card.appendChild(el('p', 'lagvelger-merknad', t.merknad));
-
-    var knapper = el('div', 'holstad-knapper');
-    var a = el('a', 'holstad-knapp', 'Meld deg på ' + t.navn);
-    a.href = t.spond;
-    a.target = '_blank';
-    a.rel = 'noopener';
-    knapper.appendChild(a);
-    if (t.lenke) {
-      var b = el('a', 'holstad-knapp holstad-knapp--sekundaer', t.lenketekst || 'Les mer');
-      b.href = t.lenke;
-      knapper.appendChild(b);
-    }
-    card.appendChild(knapper);
-
-    return card;
-  }
+  var samleAar = parseInt(root.dataset.samleaar, 10);
 
   function render() {
     var aar = parseInt(aarEl.value, 10);
     var kjonn = '';
     kjonnEls.forEach(function (r) { if (r.checked) kjonn = r.value; });
+    var valgt = !!(aar && kjonn);
 
-    out.innerHTML = '';
-    if (!aar || !kjonn) return;
-
-    var treff = teams.filter(function (t) {
-      return aar >= t.fra && aar <= t.til && t.kjonn.indexOf(kjonn) !== -1;
+    var treff = 0;
+    kort.forEach(function (c) {
+      var passer = valgt &&
+        aar >= +c.dataset.fra && aar <= +c.dataset.til &&
+        c.dataset.kjonn.split(' ').indexOf(kjonn) !== -1;
+      c.hidden = !passer;
+      if (passer) treff++;
     });
-    var primaer = treff.filter(function (t) { return !t.sekundaer; });
-    var sekundaer = treff.filter(function (t) { return t.sekundaer; });
 
-    var alder = sesongStart ? sesongStart - aar : null;
-    var innledning;
-    if (aar === samleAar) {
-      /* Samlevalget dekker flere årganger, så alder blir meningsløs */
-      innledning = 'Født ' + aar + ' eller tidligere';
-    } else {
-      innledning = 'Født ' + aar;
-      if (alder !== null && alder >= 0) innledning += ' (' + alder + ' år i sesongen ' + sesong + ')';
+    grupper.forEach(function (g) {
+      var n = g.querySelectorAll('.lagkort:not([hidden])').length;
+      g.hidden = n === 0;
+      if (g.dataset.gruppe === 'primaer') {
+        g.querySelector('.lagvelger-seksjon').textContent =
+          n === 1 ? 'Dette laget passer for deg' : 'Disse lagene passer for deg';
+      }
+    });
+
+    innledning.hidden = !valgt;
+    if (valgt) {
+      var tekst;
+      if (aar === samleAar) {
+        /* Samlevalget dekker flere årganger, så alder blir meningsløs */
+        tekst = 'Født ' + aar + ' eller tidligere';
+      } else {
+        tekst = 'Født ' + aar;
+        var alder = sesongStart ? sesongStart - aar : null;
+        if (alder !== null && alder >= 0) tekst += ' (' + alder + ' år i sesongen ' + sesong + ')';
+      }
+      innledning.textContent = tekst;
     }
 
-    if (!primaer.length && !sekundaer.length) {
-      out.appendChild(el('p', 'lagvelger-ingen',
-        'Vi fant ingen lag som matcher automatisk. Ta kontakt, vi finner et tilbud som passer!'));
-      var lenke = el('div', 'holstad-knapper');
-      var la = el('a', 'holstad-knapp', 'Se alle lag');
-      la.href = lagUrl;
-      lenke.appendChild(la);
-      out.appendChild(lenke);
-      return;
-    }
-
-    out.appendChild(el('p', 'lagvelger-innledning', innledning));
-
-    if (primaer.length) {
-      out.appendChild(el('p', 'lagvelger-seksjon lagvelger-seksjon--stor',
-        primaer.length === 1 ? 'Dette laget passer for deg' : 'Disse lagene passer for deg'));
-      var grid = el('div', 'lagvelger-grid');
-      primaer.forEach(function (t) { grid.appendChild(kort(t, false)); });
-      out.appendChild(grid);
-    }
-
-    if (sekundaer.length) {
-      out.appendChild(el('p', 'lagvelger-seksjon lagvelger-seksjon--stor', 'Andre tilbud som kan passe'));
-      var grid2 = el('div', 'lagvelger-grid');
-      sekundaer.forEach(function (t) { grid2.appendChild(kort(t, true)); });
-      out.appendChild(grid2);
-    }
+    ingen.hidden = !valgt || treff > 0;
   }
 
   aarEl.addEventListener('change', render);
   kjonnEls.forEach(function (r) { r.addEventListener('change', render); });
+  render();
 })();
 </script>

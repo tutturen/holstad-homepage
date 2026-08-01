@@ -47,8 +47,18 @@ hugo --gc --minify --baseURL "https://holstadvolley.com/"
   bookings (`andreBookinger`). `content/lag.md` has no schedule tables
 - Each `treninger` entry is `{dag, fra, til, sted, bane}` — `bane` is one court
   name or a list — plus optional `oppvarming` (minutes before `fra`) and `notat`
+- **One team card, one template.** `_partials/lag/kort.html` is the only place a
+  team card is built; `lagvelger` and `lagliste` both call it, so their markup
+  cannot drift apart (it had: different button text, different training-time
+  layout, two parallel CSS class families). Its `tittel` param is the one real
+  difference — the front page renders the team name as an `<h4>` inside the card,
+  `/lag` needs it as a markdown heading outside so Hextra's TOC picks it up. It
+  returns HTML on a **single line**, which goldmark requires for the `/lag` case
 - Rendered by three shortcodes in `layouts/_shortcodes/`:
-  - `lagvelger.html` — interactive "which team fits me?" module (front page)
+  - `lagvelger.html` — interactive "which team fits me?" module (front page).
+    All cards are rendered server-side and hidden; the JS only toggles `hidden`
+    on year/gender change. It builds no DOM — that was what let the two cards
+    diverge in the first place
   - `lagliste.html` — the team list on `/lag`
   - `timeplan.html` — the schedule calendar on `/lag`: one CSS grid per
     (day, hall), courts as columns, one grid row per 5 minutes, so block height
@@ -60,15 +70,17 @@ hugo --gc --minify --baseURL "https://holstadvolley.com/"
   then vanish from Hextra's TOC sidebar
 - Every team has its own colour, not a shared category colour — people look for
   their own team. `farge` on a team is an HSL hue 0-359 or a name (`blå`,
-  `lilla`, …); `layouts/partials/lag/farger.html` resolves it and auto-assigns a
-  hue to teams that omit it. Only the hue reaches the HTML (`--tp-h`); saturation
-  and lightness for light/dark mode live in `custom.css`. The same hue paints
-  the team card's left border in `lagliste`. Non-team bookings stay neutral
-  (grey striped, or black outline for `type: apen`) so colour always means team
-- Shared helpers in `layouts/partials/lag/`: `minutter.html` / `klokke.html`
-  (HH:MM ↔ minutes), `booking.html` (normalises + validates one booking),
-  `treningstekst.html` (structured booking → "18:30 - 20:15" / "Åsgård Skole,
-  bane 1" for the cards), `farger.html` (team → hue)
+  `lilla`, …); `_partials/lag/farger.html` resolves it and auto-assigns a hue to
+  teams that omit it. Only the hue reaches the HTML (`--tp-h`); saturation and
+  lightness for light/dark mode live in `custom.css`. The same hue tints the
+  team card, so card and schedule blocks read as the same team. Non-team
+  bookings stay neutral (grey striped, or black outline for `type: apen`) so
+  colour always means team
+- Shared helpers in `layouts/_partials/lag/`: `kort.html` (the team card),
+  `minutter.html` / `klokke.html` (HH:MM ↔ minutes), `booking.html` (normalises
+  + validates one booking), `treningstekst.html` (structured booking →
+  "18:30 - 20:15" / "Åsgård Skole, bane 1"), `farger.html` (team → hue),
+  `aarstekst.html` ("For jenter født 2012-2013")
 - Bad schedule data fails the build (`errorf`), so CI's `hugo --minify` step
   catches it. Two sessions on the same court at the *same* times means a shared
   court and renders side by side; *partial* overlap also renders side by side but
