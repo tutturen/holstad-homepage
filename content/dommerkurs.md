@@ -1,5 +1,7 @@
 ---
 title: Dommerkurs
+description: >-
+  Dommerkurs i Holstad Volleyball: hvordan du blir godkjent dommer og hva klubben dekker.
 ---
 
 Klubben er interessert i å legge til rette for at våre spillere kan bli

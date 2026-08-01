@@ -1,0 +1,62 @@
+{{- /*
+  llms.txt — kuratert lenkeliste, én linje per side.
+
+  Overstyrer Hextras egen mal. Forskjellene fra den, og hvorfor:
+    - Håndsortert rekkefølge. Temaets versjon legger Nyheter først fordi den er
+      første seksjon alfabetisk; det folk (og modeller) spør om er treningstider
+      og innmelding.
+    - Bruker `description` fra front matter, ikke `.Summary | truncate 100`.
+      Summary er de første ordene i brødteksten, som ga linjer av typen
+      "Ukesplan Mandag Bane 1 Bane 2 17.00-19.00 …".
+    - Ingen "Generated on <tidspunkt>". Den endret seg ved hvert bygg og sa
+      ingenting om innholdet.
+    - Egen blokk med treningstidene, generert fra data/lag.yaml. Da svarer
+      /llms.txt på "når trener J15?" i ett kall, uten å hente /lag.
+
+  `Andre sider` fanger opp alt som ikke står i den kuraterte lista, slik at en ny
+  side aldri forsvinner stille ut av fila.
+*/ -}}
+{{- define "linje" -}}
+{{- $d := .Description -}}
+{{- if not $d -}}{{- $d = .Summary | plainify | truncate 140 -}}{{- end -}}
+- [{{ .Title }}]({{ .Permalink }}){{ with $d }}: {{ . | plainify | replaceRE `\s+` " " | strings.TrimSpace }}{{ end }}
+{{- end -}}
+{{- $seksjoner := slice
+  (dict "tittel" "Start her" "sider" (slice "/lag" "/bli-medlem" "/priser" "/ny-i-klubben" "/tullball"))
+  (dict "tittel" "For foresatte og frivillige" "sider" (slice "/lagleder" "/lagmote" "/oppgaver" "/rekruttering-av-frivillige" "/dommerkurs" "/klubbtoy" "/stotte" "/vaffelrore"))
+  (dict "tittel" "For trenere" "sider" (slice "/trener" "/trener-guide" "/teknikk-og-tips-videoer" "/lonnsutbetaling"))
+  (dict "tittel" "Om klubben" "sider" (slice "/styret" "/kalender"))
+-}}
+{{- $brukt := slice -}}
+# {{ site.Title }}
+
+> {{ site.Params.description | plainify | replaceRE `\s+` " " | strings.TrimSpace }}
+
+Nettstedet er på norsk (bokmål). Klubben er volleyballgruppa i Holstad IL, Ås kommune. Kontakt: {{ hugo.Data.klubb.epost }}
+{{ range $seksjoner }}
+## {{ .tittel }}
+{{ range .sider }}{{ with site.GetPage . }}{{ $brukt = $brukt | append .RelPermalink }}{{ template "linje" . }}
+{{ end }}{{ end }}
+{{- end }}
+## Treningstider {{ hugo.Data.lag.sesong }}
+
+Én økt per linje: dag, klokkeslett, hall, bane, lag. Samme data som tabellen på {{ (site.GetPage "/lag").Permalink }}
+{{ $kilde := partial "lag/bookinger.html" hugo.Data.lag }}
+{{- $rader := slice -}}
+{{- range $di, $dag := hugo.Data.lag.dager -}}
+{{- range $b := (where $kilde.alle "dag" $dag) -}}
+{{- $rader = $rader | append (merge $b (dict "sortnokkel" (printf "%02d %04d %s" $di $b.fra (index $b.baner 0)))) -}}
+{{- end -}}
+{{- end -}}
+{{- range sort $rader "sortnokkel" }}
+- {{ .dag }} {{ .fratxt }}–{{ .tiltxt }}, {{ .sted }}, {{ delimit .baner ", " " og " }} — {{ .navn }}{{ with .notat }} ({{ . }}){{ end }}
+{{- end }}
+
+## Nyheter
+{{ range (where site.RegularPages "Section" "nyheter") }}{{ $brukt = $brukt | append .RelPermalink }}- [{{ .Title }}]({{ .Permalink }}) — publisert {{ .Date.Format "2006-01-02" }}{{ with .Description }}: {{ . | plainify | replaceRE `\s+` " " | strings.TrimSpace }}{{ end }}
+{{ end }}
+{{- $resten := where site.RegularPages "RelPermalink" "not in" $brukt -}}
+{{- with $resten }}
+## Andre sider
+{{ range . }}{{ template "linje" . }}
+{{ end }}{{- end -}}

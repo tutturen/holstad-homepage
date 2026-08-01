@@ -1,12 +1,14 @@
 ---
+title: Nyhetsbrev november 2025
+description: >-
+  Nyhetsbrev fra Holstad Volleyball november 2025: FredagsVolley, turneringer
+  og annet som skjer i klubben.
 date: 2025-11-12
 authors:
   - name: Sindre Øye Svendby
 tags:
   - Volleyball
 ---
-# Nyhetsbrev November 🎉🏐
-
 Da er sesongen godt i gang!
 
 

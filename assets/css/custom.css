@@ -884,6 +884,127 @@ a.timeplan-blokk:focus-visible {
 }
 
 /* ------------------------------------------------------------------ */
+/* faq — ofte stilte spørsmål (faq-shortcoden)                         */
+/* ------------------------------------------------------------------ */
+
+/* Spørsmålene ligger i front matter og mater både denne visningen og
+   FAQPage-JSON-LD-en. Svarene står i HTML-en selv om <details> er lukket,
+   som er det både skjermlesere og søkemotorer trenger. */
+.faq {
+  margin: 1rem 0 2rem;
+}
+
+.faq-post {
+  border-bottom: 1px solid var(--h-border);
+}
+
+.faq-sporsmal {
+  padding: 0.75rem 0;
+  cursor: pointer;
+  font-weight: 600;
+  list-style-position: outside;
+}
+
+.faq-sporsmal:hover {
+  color: var(--h-accent);
+}
+
+.faq-svar {
+  padding: 0 0 1rem 1.25rem;
+}
+
+.faq-svar > :first-child {
+  margin-top: 0;
+}
+
+.faq-svar > :last-child {
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* timeplan-tabellen — den semantiske versjonen av rutenettet          */
+/* ------------------------------------------------------------------ */
+
+/* Rutenettet over er aria-hidden fordi et posisjonert div-rutenett ikke lar
+   seg lese lineært. Denne tabellen er den lesbare kopien: én økt per rad, med
+   dag og hall på hver rad, så hver rad står støtt alene i et tekstuttrekk.
+   Den ligger i en lukket <details> fordi den for seende er samme plan om
+   igjen — men i DOM-en, ikke sr-only: en tabell ingen kan åpne er en tabell
+   ingen oppdager at er blitt feil. */
+.timeplan-tabell-boks {
+  margin: 0.75rem 0 2rem;
+}
+
+.timeplan-tabell-knapp {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  color: var(--h-dempet);
+  font-size: 0.875rem;
+}
+
+.timeplan-tabell-knapp:hover {
+  color: var(--h-accent);
+}
+
+.timeplan-tabell-rull {
+  overflow-x: auto;
+}
+
+.timeplan-tabell {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.timeplan-tabell caption {
+  padding-bottom: 0.5rem;
+  color: var(--h-dempet);
+  font-size: 0.8125rem;
+  text-align: left;
+}
+
+.timeplan-tabell th,
+.timeplan-tabell td {
+  padding: 0.375rem 0.75rem 0.375rem 0;
+  border-bottom: 1px solid var(--h-border);
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.timeplan-tabell thead th {
+  color: var(--h-dempet);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.timeplan-tabell tbody th {
+  font-weight: 600;
+}
+
+.timeplan-tabell td:last-child {
+  white-space: normal;
+}
+
+.timeplan-tabell-notat {
+  color: var(--h-dempet);
+  font-size: 0.8125rem;
+}
+
+@media (max-width: 40rem) {
+  .timeplan-tabell {
+    font-size: 0.8125rem;
+  }
+
+  .timeplan-tabell th,
+  .timeplan-tabell td {
+    padding-right: 0.5rem;
+  }
+}
+
+/* ------------------------------------------------------------------ */
 /* Sidepadding på mobil                                                */
 /* ------------------------------------------------------------------ */
 

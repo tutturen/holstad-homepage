@@ -1,5 +1,7 @@
 ---
 title: Hvordan støtte Holstad Volley
+description: >-
+  Måter å støtte Holstad Volleyball på: Grasrotandelen, sponsing, dugnad og andre bidrag.
 ---
 
 # Ønsker du å hjelpe Holstad IL? Det er mange måter å gjøre det på.

@@ -1,5 +1,12 @@
 ---
 title: Lagmøte
+description: >-
+  Slik holder dere et godt lagmøte ved sesongstart: fordeling av roller,
+  forventninger og hva som bør avklares med de foresatte.
+# Fila het lagmøte.md og ga den prosentkodede URL-en /lagm%C3%B8te/, som
+# brekker i verktøykjeder. Aliaset holder gamle lenker i live.
+aliases:
+  - /lagmøte/
 ---
 
 ## En god start på sesongen

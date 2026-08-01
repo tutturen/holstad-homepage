@@ -38,13 +38,26 @@ spondUrl: "https://club.spond.com/landing/signup/holstadvolleybal/form/CA8744863
 # er "gammel del" / "ny del" det eneste som skiller Tullballs to økter, så der
 # må den med.
 # ---------------------------------------------------------------------------
+#
+# `adresse` brukes ikke i visningen, men i JSON-LD-en (seo/jsonld.html), der
+# hver hall blir en SportsActivityLocation under klubben. Den ligger her fordi
+# hallene ellers bare finnes her.
+# ---------------------------------------------------------------------------
 haller:
   - navn: "Åsgård Skole"
     baner: ["Bane 1", "Bane 2", "Bane 3"]
     visBaneIKort: false
+    adresse:
+      gate: "Skoleveien 7"
+      postnr: "1430"
+      sted: "Ås"
   - navn: "Åshallen"
     baner: ["Gammel del", "Ny del"]
     visBaneIKort: true
+    adresse:
+      gate: "Gamle Hogstvetvei 9"
+      postnr: "1435"
+      sted: "Ås"
 
 # Ukedagene i visningsrekkefølge. `dag` på en trening må matche en av disse.
 dager: ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"]

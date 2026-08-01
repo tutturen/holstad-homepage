@@ -1,0 +1,44 @@
+{{- /*
+  Alle bookinger i data/lag.yaml — lagenes treninger og `andreBookinger` — flatet
+  ut til én liste av normaliserte oppføringer (se lag/booking.html for formen).
+
+  Ligger her og ikke inne i timeplan-shortcoden fordi timeplanen tegner de samme
+  dataene to ganger: som rutenett for øyet, og som tabell for skjermlesere,
+  søkemotorer og tekstuttrekk. To lister ville før eller siden drevet fra
+  hverandre — samme grunn som at lagkortet bare finnes ett sted (lag/kort.html).
+
+  Inn: hugo.Data.lag
+
+  Ut (dict):
+    alle      liste av normaliserte bookinger
+    banerPer  dict hall -> liste av banenavn
+    farger    dict lagnavn -> fargetone
+*/ -}}
+{{- $d := . -}}
+{{- if not $d.haller -}}
+  {{- errorf "data/lag.yaml mangler `haller`. Timeplanen trenger den for å vite hvilke baner hver hall har." -}}
+{{- end -}}
+
+{{- $banerPer := dict -}}
+{{- range $d.haller -}}
+  {{- $banerPer = merge $banerPer (dict .navn .baner) -}}
+{{- end -}}
+
+{{- $farger := partial "lag/farger.html" $d.lag -}}
+
+{{- $alle := slice -}}
+{{- range $d.lag -}}
+  {{- $lag := . -}}
+  {{- range .treninger -}}
+    {{- $alle = $alle | append (partial "lag/booking.html" (dict
+        "t" . "navn" $lag.navn "tone" (index $farger $lag.navn)
+        "anker" (anchorize $lag.navn) "banerPer" $banerPer "dager" $d.dager)) -}}
+  {{- end -}}
+{{- end -}}
+{{- range $d.andreBookinger -}}
+  {{- $alle = $alle | append (partial "lag/booking.html" (dict
+      "t" . "navn" .tekst "notat" (.notat | default "") "type" (.type | default "")
+      "banerPer" $banerPer "dager" $d.dager)) -}}
+{{- end -}}
+
+{{- return dict "alle" $alle "banerPer" $banerPer "farger" $farger -}}

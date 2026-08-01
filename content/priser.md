@@ -1,5 +1,7 @@
 ---
 title: Priser
+description: >-
+  Medlemskontingent og treningsavgift i Holstad Volleyball, med frister, betalingsmåter og støtteordninger.
 ---
 
 Holstad støtter de som trenger det, se [Betalingsfritak](#betalingsfritak) for

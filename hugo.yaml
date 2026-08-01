@@ -1,6 +1,16 @@
 # Hugo configuration file
 title: Holstad Volleyball
 
+# Må stå her, ikke bare som --baseURL-flagg: produksjonsbygget går via
+# Dockerfile (`hugo --minify`), som ikke setter flagget. Uten den blir
+# canonical, og:url, sitemap.xml og llms.txt relative/localhost.
+baseURL: "https://holstadvolley.com/"
+
+# Gir .Lastmod fra git-historikken, som mater article:modified_time og
+# dateModified i JSON-LD. Krever .git i byggekonteksten (Kaniko henter
+# repoet med fetch-depth: 0, så den er der).
+enableGitInfo: true
+
 # import hextra as module
 module:
   imports:
@@ -45,6 +55,13 @@ menu:
         type: search
 
 params:
+  # Brukes av forsidens meta description, og:description og av innledningen
+  # i llms.txt. Uten den blir alle tre tomme.
+  description: >-
+    Holstad Volleyball er volleyballgruppa i Holstad IL i Ås kommune. Over 300
+    spillere fra Tullball i barnehagealder til senior, med treninger på Åsgård
+    skole og i Åshallen.
+
   navbar:
     displayTitle: true
     displayLogo: true

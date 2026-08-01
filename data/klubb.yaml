@@ -1,0 +1,29 @@
+# Klubbfakta. Eneste kilde til navn, adresse, kontaktinfo og profiler ute på
+# nett. Brukes i dag av seo/jsonld.html (SportsClub på forsiden); legges noe
+# av dette ut i footeren senere, skal det hentes herfra og ikke skrives om
+# igjen i en template.
+#
+# Hallene ligger IKKE her — de står under `haller` i data/lag.yaml, som er
+# eneste kilde for hall- og banedata.
+
+navn: "Holstad Volleyball"
+alternativtNavn: "Holstad IL Volleyball"
+idrett: "Volleyball"
+orgnr: "912053997"
+epost: "post@holstadvolley.com"
+
+# Postadresse, ikke besøksadresse — treningene skjer i hallene i lag.yaml.
+adresse:
+  gate: "Torderudveien 25"
+  postnr: "1434"
+  sted: "Ås"
+  land: "NO"
+
+logo: "/logo.svg"
+bilde: "/holstad-forside-2026.jpg"
+
+# sameAs i JSON-LD: profilene som beviser at dette er samme klubb andre steder.
+profiler:
+  - "https://www.facebook.com/HolstadVolley"
+  - "https://www.instagram.com/holstad_volley/"
+  - "https://spond.com/discover/nb-no/clubs/BFB0A570D8694869B2C2D672824D5197/holstadvolleyball"

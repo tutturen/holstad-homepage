@@ -2,3 +2,9 @@
 
 file_server
 root * /usr/share/caddy
+
+# PR-previews kjører samme image som prod, og siden baseURL nå er absolutt
+# peker canonical deres til holstadvolley.com. Det holder dem normalt ute av
+# indeksen, men her sies det rett ut for alt som ikke er prod-domenet.
+@ikkeprod not host holstadvolley.com www.holstadvolley.com
+header @ikkeprod X-Robots-Tag "noindex, nofollow"

@@ -67,6 +67,14 @@ hugo --gc --minify --baseURL "https://holstadvolley.com/"
     switched off and the
     blocks fall out as a chronological list, so the template emits them sorted
     by start time
+- **The grid is visual only.** A grid of positioned divs collapses to unreadable
+  soup in screen readers and text extraction ("Bane 1Bane 2Bane 317:0017:30…"),
+  so each grid is `aria-hidden` and its block links carry `tabindex="-1"`. The
+  semantic copy is the `<table>` `timeplan.html` emits last, one session per row
+  with day and hall on every row, so each row stands alone in an extract. It is
+  visible, not `sr-only`: hidden duplicate text is an SEO risk and rots unseen.
+  Both are built from `_partials/lag/bookinger.html`, which flattens teams +
+  `andreBookinger` into one validated list — the reason they cannot drift apart
 - `lagliste` and `timeplan` emit **markdown**, so they must be called with the
   percent form (`{{%` … `%}}`); the angle form produces raw HTML and the headings
   then vanish from Hextra's TOC sidebar
@@ -96,6 +104,35 @@ hugo --gc --minify --baseURL "https://holstadvolley.com/"
   precompiled, so new `hx:` classes do not exist in the build)
 - New season: bump `sesong` plus every `fodselsaarFra`/`fodselsaarTil` by one, and
   update the `treninger` blocks in `data/lag.yaml`
+
+### Machine readability (SEO, screen readers, LLMs)
+- `baseURL` lives in `hugo.yaml`, **not** in a `--baseURL` flag: production is
+  built by the `Dockerfile` (`hugo --minify`), which passes no flags. Without it
+  canonical, `og:url`, `sitemap.xml` and `llms.txt` all go relative
+- `enableGitInfo: true` supplies `.Lastmod` (→ `dateModified`), so the Kaniko
+  build needs the `.git` directory in its context
+- Every page needs an explicit `description` in front matter. Hextra otherwise
+  autogenerates it from the body text, which on `/lag` meant the whole schedule
+  ended up in the meta description. `params.description` in `hugo.yaml` covers
+  the front page and the intro line in `llms.txt`
+- `data/klubb.yaml` is the single source for club facts (name, org number,
+  address, email, social profiles). The halls stay in `data/lag.yaml`
+- JSON-LD is built by `_partials/seo/jsonld.html`, hooked in through Hextra's
+  `custom/head-end.html`. One `@graph` per page: `SportsClub` on the front page,
+  one `SportsTeam` per team on `/lag`, `FAQPage` where front matter has `faq`,
+  `NewsArticle` under `/nyheter`. Everything comes from the data files — nothing
+  is written twice. `SportsEvent` for home fixtures is still missing; it needs
+  the terminliste in `content/kalender.md` moved into a data file first
+- The `faq` shortcode renders the `faq` list from front matter, and the same
+  list feeds `FAQPage`. Questions live in one place, not one for humans and one
+  for machines
+- `layouts/llms.txt` overrides Hextra's generated version: hand-sorted sections,
+  `description` instead of a truncated body summary, no build timestamp, plus a
+  one-line-per-session dump of the schedule. An `Andre sider` section catches
+  any page missing from the curated list, so new pages never fall out silently
+- Norwegian letters in filenames become percent-encoded URLs (`/lagm%C3%B8te`),
+  which breaks tooling — keep content filenames ASCII and use `aliases` when
+  renaming
 
 ### Configuration
 - `hugo.yaml` - Main Hugo configuration with menu structure and theme settings

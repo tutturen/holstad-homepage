@@ -1,5 +1,9 @@
-# Plan for rekruttering av frivillige  
-Holstad Volley
+---
+title: Plan for rekruttering av frivillige
+description: >-
+  Holstad Volleyballs plan for å rekruttere frivillige: mål, prinsipper,
+  roller og hvordan oppgavene fordeles gjennom sesongen.
+---
 
 ## 1. Mål
 

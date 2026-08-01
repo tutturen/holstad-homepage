@@ -1,0 +1,197 @@
+{{- /*
+  JSON-LD (schema.org) for sidene som har noe strukturert å si.
+
+  Hextra legger ingen ld+json i <head> selv, så alt her er nytt. Kalles fra
+  custom/head-end.html, som er kroken temaet gir oss helt sist i <head>.
+
+  Alt hentes fra data-filene, ikke fra brødteksten:
+    data/klubb.yaml  navn, org.nr, adresse, e-post, profiler ute på nett
+    data/lag.yaml    lagene og hallene
+
+  Hvilken side får hva:
+    forsiden        SportsClub, med hallene som location
+    /lag            ett SportsTeam per lag, koblet til klubben med memberOf
+    /nyheter/*      NewsArticle med datePublished/dateModified
+
+  Alt legges i én @graph, slik at @id-ene kan peke på hverandre (lagene peker
+  på klubben) uten å gjenta klubbobjektet på hver side.
+*/ -}}
+
+{{- $klubb := hugo.Data.klubb -}}
+{{- $klubbId := printf "%s#klubb" site.Home.Permalink -}}
+{{- $iso := "2006-01-02T15:04:05-07:00" -}}
+{{- $graf := slice -}}
+
+{{- /* --------------------------------------------------------------- */ -}}
+{{- /* Klubben — bare på forsiden                                       */ -}}
+{{- /* --------------------------------------------------------------- */ -}}
+{{- if .IsHome -}}
+  {{- $steder := slice -}}
+  {{- range hugo.Data.lag.haller -}}
+    {{- $sted := dict "@type" "SportsActivityLocation" "name" .navn -}}
+    {{- with .adresse -}}
+      {{- $sted = merge $sted (dict "address" (dict
+          "@type" "PostalAddress"
+          "streetAddress" .gate
+          "postalCode" .postnr
+          "addressLocality" .sted
+          "addressCountry" "NO")) -}}
+    {{- end -}}
+    {{- $steder = $steder | append $sted -}}
+  {{- end -}}
+
+  {{- $k := dict
+      "@type" "SportsClub"
+      "@id" $klubbId
+      "name" $klubb.navn
+      "alternateName" $klubb.alternativtNavn
+      "url" site.Home.Permalink
+      "sport" $klubb.idrett
+      "email" $klubb.epost
+      "logo" ($klubb.logo | absURL)
+      "image" ($klubb.bilde | absURL)
+      "sameAs" $klubb.profiler
+      "identifier" (dict
+        "@type" "PropertyValue"
+        "propertyID" "organisasjonsnummer"
+        "value" $klubb.orgnr)
+      "address" (dict
+        "@type" "PostalAddress"
+        "streetAddress" $klubb.adresse.gate
+        "postalCode" $klubb.adresse.postnr
+        "addressLocality" $klubb.adresse.sted
+        "addressCountry" $klubb.adresse.land)
+      "location" $steder
+  -}}
+  {{- with site.Params.description -}}
+    {{- $k = merge $k (dict "description" .) -}}
+  {{- end -}}
+  {{- $graf = $graf | append $k -}}
+{{- end -}}
+
+{{- /* --------------------------------------------------------------- */ -}}
+{{- /* Lagene — på sida som faktisk lister dem                          */ -}}
+{{- /* --------------------------------------------------------------- */ -}}
+{{- /* .File er nil på taksonomi-sidene, så den må sjekkes for seg */ -}}
+{{- $erLagsida := false -}}
+{{- with .File -}}
+  {{- $erLagsida = eq .ContentBaseName "lag" -}}
+{{- end -}}
+{{- if $erLagsida -}}
+  {{- $side := .Permalink -}}
+  {{- $hallPer := dict -}}
+  {{- range hugo.Data.lag.haller -}}
+    {{- $hallPer = merge $hallPer (dict .navn .) -}}
+  {{- end -}}
+
+  {{- range hugo.Data.lag.lag -}}
+    {{- $l := . -}}
+    {{- $url := printf "%s#%s" $side (anchorize $l.navn) -}}
+    {{- $t := dict
+        "@type" "SportsTeam"
+        "@id" $url
+        "name" $l.navn
+        "sport" $klubb.idrett
+        "url" $url
+        "memberOf" (dict "@id" $klubbId)
+    -}}
+
+    {{- /* Beskrivelsen laget selv oppgir, ellers målgruppeteksten kortene
+           bruker ("For jenter født 2012-2013") — samme ordlyd som på sida. */ -}}
+    {{- $beskrivelse := $l.beskrivelse | default (partial "lag/aarstekst.html" (dict
+        "fra" $l.fodselsaarFra "til" $l.fodselsaarTil "lang" true
+        "kjonn" $l.kjonn "malgruppe" ($l.malgruppe | default ""))) -}}
+    {{- with $beskrivelse -}}
+      {{- $t = merge $t (dict "description" .) -}}
+    {{- end -}}
+
+    {{- /* Bare entydige lag får gender; blandede lag skal ikke merkes */ -}}
+    {{- $kjonn := $l.kjonn | default slice -}}
+    {{- if eq (len $kjonn) 1 -}}
+      {{- $t = merge $t (dict "gender" (cond (eq (index $kjonn 0) "jente") "Female" "Male")) -}}
+    {{- end -}}
+
+    {{- /* "Informasjon kommer" er en plassholder, ikke et menneske */ -}}
+    {{- with $l.trener -}}
+      {{- if not (strings.Contains (lower .) "kommer") -}}
+        {{- $t = merge $t (dict "coach" (dict "@type" "Person" "name" .)) -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- with $l.treninger -}}
+      {{- $hall := index $hallPer (index . 0).sted -}}
+      {{- with $hall -}}
+        {{- $sted := dict "@type" "Place" "name" .navn -}}
+        {{- with .adresse -}}
+          {{- $sted = merge $sted (dict "address" (dict
+              "@type" "PostalAddress"
+              "streetAddress" .gate
+              "postalCode" .postnr
+              "addressLocality" .sted
+              "addressCountry" "NO")) -}}
+        {{- end -}}
+        {{- $t = merge $t (dict "location" $sted) -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $graf = $graf | append $t -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* --------------------------------------------------------------- */ -}}
+{{- /* FAQ — samme liste som faq-shortcoden viser på sida             */ -}}
+{{- /* --------------------------------------------------------------- */ -}}
+{{- with .Params.faq -}}
+  {{- $sporsmal := slice -}}
+  {{- range . -}}
+    {{- $sporsmal = $sporsmal | append (dict
+        "@type" "Question"
+        "name" .sporsmal
+        "acceptedAnswer" (dict
+          "@type" "Answer"
+          "text" (.svar | markdownify | plainify | replaceRE `\s+` " " | strings.TrimSpace))) -}}
+  {{- end -}}
+  {{- $graf = $graf | append (dict
+      "@type" "FAQPage"
+      "@id" (printf "%s#faq" $.Permalink)
+      "url" $.Permalink
+      "name" $.Title
+      "inLanguage" "nb-NO"
+      "mainEntity" $sporsmal) -}}
+{{- end -}}
+
+{{- /* --------------------------------------------------------------- */ -}}
+{{- /* Nyhetssaker                                                      */ -}}
+{{- /* --------------------------------------------------------------- */ -}}
+{{- if and .IsPage (eq .Section "nyheter") -}}
+  {{- $a := dict
+      "@type" "NewsArticle"
+      "@id" .Permalink
+      "mainEntityOfPage" .Permalink
+      "url" .Permalink
+      "headline" .Title
+      "inLanguage" "nb-NO"
+      "datePublished" (.Date.Format $iso)
+      "dateModified" (.Lastmod.Format $iso)
+      "publisher" (dict "@id" $klubbId)
+  -}}
+  {{- with partial "utils/page-description.html" . -}}
+    {{- $a = merge $a (dict "description" .) -}}
+  {{- end -}}
+  {{- $forfattere := slice -}}
+  {{- range .Params.authors -}}
+    {{- with .name -}}
+      {{- $forfattere = $forfattere | append (dict "@type" "Person" "name" .) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if $forfattere -}}
+    {{- $a = merge $a (dict "author" $forfattere) -}}
+  {{- else -}}
+    {{- $a = merge $a (dict "author" (dict "@id" $klubbId)) -}}
+  {{- end -}}
+  {{- $graf = $graf | append $a -}}
+{{- end -}}
+
+{{- with $graf -}}
+  <script type="application/ld+json">{{ (dict "@context" "https://schema.org" "@graph" .) | jsonify | safeJS }}</script>
+{{- end -}}

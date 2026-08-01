@@ -1,5 +1,7 @@
 ---
 title: Tullball
+description: >-
+  Tullball er Holstad Volleyballs tilbud til de aller minste, med lek og ballaktivitet i Åshallen.
 ---
 
 ## Hva er Tullball

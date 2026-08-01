@@ -1,0 +1,26 @@
+{{- /*
+  faq — ofte stilte spørsmål, hentet fra `faq` i sidas front matter.
+
+  Samme liste mater JSON-LD-en (FAQPage, se seo/jsonld.html). Spørsmålene står
+  altså ett sted, ikke ett sted for folk og ett sted for maskiner.
+
+  Svarene kjøres gjennom markdownify, så de kan inneholde lenker.
+
+  Kalles med vinkel-form: shortcoden lager ingen markdown-overskrifter, så den
+  trenger ikke gå gjennom markdown-rendereren.
+*/ -}}
+{{- $faq := .Page.Params.faq -}}
+{{- if not $faq -}}
+  {{- errorf "faq-shortcoden på %q krever en `faq`-liste i front matter." .Page.File.Path -}}
+{{- end -}}
+<div class="faq">
+  {{- range $faq -}}
+    {{- if or (not .sporsmal) (not .svar) -}}
+      {{- errorf "Hver oppføring under `faq` må ha både `sporsmal` og `svar`." -}}
+    {{- end -}}
+    <details class="faq-post">
+      <summary class="faq-sporsmal">{{ .sporsmal }}</summary>
+      <div class="faq-svar">{{ .svar | markdownify }}</div>
+    </details>
+  {{- end -}}
+</div>

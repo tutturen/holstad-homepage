@@ -1,5 +1,7 @@
 ---
 title: Styret
+description: >-
+  Styret i Holstad Volleyball: hvem sitter i det, og hvilke roller de har.
 ---
 
 {{< cards cols="3" >}}

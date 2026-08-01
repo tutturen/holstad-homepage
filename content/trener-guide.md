@@ -1,4 +1,9 @@
-# Holstad Trener Guide
+---
+title: Trenerguide
+description: >-
+  Guide for nye juniortrenere i Holstad Volleyball: plikter, rettigheter,
+  praktiske rutiner og forventninger til trenerrollen.
+---
 
 ## Introduksjon og formål
 - Guide for nye junior trenere

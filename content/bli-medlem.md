@@ -1,5 +1,7 @@
 ---
 title: Bli medlem
+description: >-
+  Slik melder du deg inn i Holstad Volleyball: innmeldingsskjema i Spond, hva medlemskapet koster og hvem du kontakter.
 ---
 
 Ønsker du å bli medlem, må følgende gjøres:

@@ -1,5 +1,7 @@
 ---
 title: Laglederen i Holstad Volley
+description: >-
+  Hva laglederrollen i Holstad Volleyball innebærer, og hvilke oppgaver som hører til.
 ---
 
 ## Bindeledd mellom laget, foreldrene og styret
@@ -14,7 +16,7 @@ title: Laglederen i Holstad Volley
 4. Engasjere foresatte gjennom samtale og informasjon  
 5. Sjekke at spillerne har gyldig lisens før de spiller turnering  
 6. Være i dialog med Arrangmentansvarlig i styret om oppgaver laget har før hjemmeturneringer – sørge for at oppgavene fordeles mellom flere  
-7. Engasjere og fordele oppgaver til flere foresatte på [lagmøte](/lagmøte)
+7. Engasjere og fordele oppgaver til flere foresatte på [lagmøte](/lagmote)
    * Utstyrsansvarlig (hovedfokus drakter)  
    * Sosialt ansvarlig  
    * Reiseansvarlig  

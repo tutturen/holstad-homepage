@@ -91,7 +91,7 @@ toc: false
  {{< card link="klubbtoy" title="Bestill klubbtøy" icon="shopping-cart" >}}
  {{< card link="dommerkurs" title="Bli Dommer!" icon="flag" >}}
  {{< card link="lagleder" title="Lagleder i Holstad" icon="user" >}}
- {{< card link="lagmøte" title="Lagmøte" icon="user-group" >}}
+ {{< card link="lagmote" title="Lagmøte" icon="user-group" >}}
  {{< card link="styret" title="Styret i Holstad" icon="user-group" >}}
  {{< card link="oppgaver" title="Oppgaver" icon="badge-check" >}}
 {{< card link="stotte" title="Måter å støtte klubben" icon="cash" >}}

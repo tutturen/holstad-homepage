@@ -1,5 +1,7 @@
 ---
 title: Klubbtøy
+description: >-
+  Bestillingsrutine og oversikt over klubbtøy for spillere i Holstad Volleyball.
 ---
 
 ## Bestillingsrutine

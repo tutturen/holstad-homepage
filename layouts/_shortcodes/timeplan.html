@@ -19,40 +19,27 @@
 
   Ingen JavaScript. Blokkene for klubbens egne lag er lenker til lagkortet
   lenger ned på samme side.
+
+  Rutenettet er REN VISNING: det er merket aria-hidden, og blokk-lenkene er
+  tatt ut av tabulatorrekkefølgen. Grunnen er at et rutenett bygget av
+  posisjonerte div-er kollapser til uleselig grøt i skjermlesere og i tekst-
+  uttrekk ("Bane 1Bane 2Bane 317:0017:30…Mini 4.-5. klasse17:00–18:30…").
+  Den semantiske versjonen er tabellen nederst, som tegnes fra nøyaktig samme
+  liste og har én økt per rad, med dag og hall på hver rad. Den er synlig, ikke
+  skjult tekst: skjult duplikat er både en SEO- og en vedlikeholdsfelle.
 */ -}}
 {{- $d := hugo.Data.lag -}}
 {{- $dager := $d.dager -}}
 {{- $haller := $d.haller -}}
-{{- if not $haller -}}
-  {{- errorf "data/lag.yaml mangler `haller`. Timeplanen trenger den for å vite hvilke baner hver hall har." -}}
-{{- end -}}
 
-{{- /* hall -> baner, brukt til validering og til kolonnerekkefølgen */ -}}
-{{- $banerPer := dict -}}
-{{- range $haller -}}
-  {{- $banerPer = merge $banerPer (dict .navn .baner) -}}
-{{- end -}}
-
-{{- /* Hvert lag har sin egen farge, så man finner sitt eget lag på tvers av
-       dager uten å lese teksten. Derfor ingen tegnforklaring: navnet står i
-       blokka, og fargen er bare en gjenkjennings-hjelp. */ -}}
-{{- $farger := partial "lag/farger.html" $d.lag -}}
-
-{{- /* Alle bookinger flatet ut til én liste, lag og andre om hverandre */ -}}
-{{- $alle := slice -}}
-{{- range $d.lag -}}
-  {{- $lag := . -}}
-  {{- range .treninger -}}
-    {{- $alle = $alle | append (partial "lag/booking.html" (dict
-        "t" . "navn" $lag.navn "tone" (index $farger $lag.navn)
-        "anker" (anchorize $lag.navn) "banerPer" $banerPer "dager" $dager)) -}}
-  {{- end -}}
-{{- end -}}
-{{- range $d.andreBookinger -}}
-  {{- $alle = $alle | append (partial "lag/booking.html" (dict
-      "t" . "navn" .tekst "notat" (.notat | default "") "type" (.type | default "")
-      "banerPer" $banerPer "dager" $dager)) -}}
-{{- end -}}
+{{- /* Bookinger, banerPer og farger bygges av en delt partial, slik at rutenettet
+       og tabellen under garantert leser samme data. Hvert lag har sin egen
+       farge, så man finner sitt eget lag på tvers av dager uten å lese teksten;
+       derfor ingen tegnforklaring. */ -}}
+{{- $kilde := partial "lag/bookinger.html" $d -}}
+{{- $alle := $kilde.alle -}}
+{{- $banerPer := $kilde.banerPer -}}
+{{- $farger := $kilde.farger -}}
 
 {{- $ut := slice -}}
 
@@ -160,8 +147,11 @@
         {{- /* Bane vises bare på mobil, der kolonnene forsvinner */ -}}
         {{- $innhold = printf `%s<span class="timeplan-bane">%s</span>` $innhold (delimit $bk.baner ", " " og ") -}}
 
+        {{- /* tabindex="-1": lenka ligger inne i et aria-hidden rutenett, og et
+               fokuserbart element der er en a11y-feil. Samme lenke finnes i
+               tabellen nederst, som er der tastatur og skjermleser skal gå. */ -}}
         {{- if $bk.anker -}}
-          {{- $celler = printf `%s<a class="%s" style="%s" href="#%s">%s</a>` $celler $klasser $stil $bk.anker $innhold -}}
+          {{- $celler = printf `%s<a class="%s" style="%s" href="#%s" tabindex="-1">%s</a>` $celler $klasser $stil $bk.anker $innhold -}}
         {{- else -}}
           {{- $celler = printf `%s<div class="%s" style="%s">%s</div>` $celler $klasser $stil $innhold -}}
         {{- end -}}
@@ -170,10 +160,52 @@
       {{- $ut = $ut | append
           (printf "### %s, %s" $dag $hall.navn)
           ""
-          (printf `<div class="timeplan" style="--baner:%d;--rader:%d">%s</div>` $nbaner $rader $celler)
+          (printf `<div class="timeplan" style="--baner:%d;--rader:%d" aria-hidden="true">%s</div>` $nbaner $rader $celler)
           "" -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
+
+{{- /* ------------------------------------------------------------------
+       Tabellen: samme data, én økt per rad, hver rad selvstendig lesbar
+       ("Mandag | 17:00–18:30 | Åsgård Skole | Bane 1 | Mini 4.-5. klasse").
+       Dette er den versjonen skjermlesere, søkemotorer og tekstuttrekk får.
+       ------------------------------------------------------------------ */ -}}
+{{- $tabellrader := slice -}}
+{{- range $di, $dag := $dager -}}
+  {{- range $b := (where $alle "dag" $dag) -}}
+    {{- $tabellrader = $tabellrader | append (merge $b (dict
+        "sortnokkel" (printf "%02d %04d %s %s" $di $b.fra $b.sted (index $b.baner 0)))) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $tbody := "" -}}
+{{- range $bk := sort $tabellrader "sortnokkel" -}}
+  {{- $lagcelle := $bk.navn -}}
+  {{- with $bk.anker -}}
+    {{- $lagcelle = printf `<a href="#%s">%s</a>` . $bk.navn -}}
+  {{- end -}}
+  {{- $tillegg := slice -}}
+  {{- with $bk.oppvarming -}}
+    {{- $tillegg = $tillegg | append (printf "oppvarming fra %s" (partial "lag/klokke.html" (sub $bk.fra .))) -}}
+  {{- end -}}
+  {{- with $bk.notat -}}{{- $tillegg = $tillegg | append . -}}{{- end -}}
+  {{- with $tillegg -}}
+    {{- $lagcelle = printf `%s <span class="timeplan-tabell-notat">(%s)</span>` $lagcelle (delimit . ", ") -}}
+  {{- end -}}
+  {{- $tbody = printf `%s<tr><th scope="row">%s</th><td>%s–%s</td><td>%s</td><td>%s</td><td>%s</td></tr>`
+      $tbody $bk.dag $bk.fratxt $bk.tiltxt $bk.sted (delimit $bk.baner ", " " og ") $lagcelle -}}
+{{- end -}}
+
+{{- /* Lukket <details>, ikke en synlig tabell: for folk er rutenettet over
+       allerede svaret, og to oppstillinger av samme plan er bare dobbelt opp.
+       Innholdet står uansett i HTML-en — <details> skjuler det for øyet, ikke
+       for tekstuttrekk, søkemotorer eller skjermlesere. Derfor er dette heller
+       ikke sr-only: en tabell ingen kan åpne er en tabell ingen oppdager at er
+       blitt feil. */ -}}
+{{- $tabell := printf `<details class="timeplan-tabell-boks"><summary class="timeplan-tabell-knapp">Alle treningstider som tabell</summary><div class="timeplan-tabell-rull"><table class="timeplan-tabell"><caption>Alle treningstider i sesongen %s</caption><thead><tr><th scope="col">Dag</th><th scope="col">Tid</th><th scope="col">Hall</th><th scope="col">Bane</th><th scope="col">Lag</th></tr></thead><tbody>%s</tbody></table></div></details>`
+    $d.sesong $tbody -}}
+
+{{- $ut = $ut | append $tabell "" -}}
 
 {{ delimit $ut "\n" | safeHTML }}

@@ -1,5 +1,7 @@
 ---
 title: For Trenere
+description: >-
+  Nyttige lenker, dokumenter og rutiner for deg som er trener i Holstad Volleyball.
 ---
 
 Her har vi samlet noen nyttige lenker og dokumenter for deg som trener i Holstad

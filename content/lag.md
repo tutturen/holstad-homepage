@@ -1,5 +1,7 @@
 ---
 title: Lag og treningstider 2026/2027
+description: >-
+  Alle lag i Holstad Volleyball sesongen 2026/2027, med treningstider, haller, trenere og påmelding.
 ---
 
 ## Treningshaller

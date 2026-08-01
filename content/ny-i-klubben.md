@@ -1,5 +1,49 @@
 ---
 title: Ny i klubben
+faq:
+  - sporsmal: "Hvordan melder jeg meg inn i Holstad Volleyball?"
+    svar: >-
+      Innmelding gjøres i Spond, via [innmeldingsskjemaet](/bli-medlem). Ett av
+      lagene har eget skjema — se [Lag og treningstider](/lag). Én foresatt bør
+      settes som betalingskontakt i Spond, siden det er der
+      betalingsforespørslene sendes.
+  # Ingen satser her — de endrer seg hvert år, og et beløp på to sider blir
+  # før eller siden feil på den ene. [Priser](/priser) er eneste kilde.
+  - sporsmal: "Hva koster det å spille volleyball i Holstad?"
+    svar: >-
+      Volleyball er en rimelig idrett. Det betales årskontingent til klubben og
+      treningsavgift to ganger i året, og fra fylte 13 år lisens til
+      Volleyballforbundet. Gjeldende satser, hva som er gratis og hvordan man
+      søker betalingsfritak står på [Priser](/priser).
+  - sporsmal: "Hvor gammel må man være for å begynne?"
+    svar: >-
+      Klubben har tilbud fra barnehagealder og oppover: Tullball for de minste,
+      Minivolley på barneskolen, ungdomslag fra U15 til U19, samt senior- og
+      mosjonistlag. [Lag og treningstider](/lag) viser hvilket lag som passer for
+      hvilket fødselsår.
+  - sporsmal: "Hvor og når trener lagene?"
+    svar: >-
+      Treningene er på Åsgård skole (Skoleveien 7, 1430 Ås) og i Åshallen
+      (Gamle Hogstvetvei 9, 1435 Ås). Full oversikt med dag, klokkeslett og bane
+      ligger på [Lag og treningstider](/lag).
+  - sporsmal: "Hvilket utstyr trenger spilleren?"
+    svar: >-
+      Innesko, tights eller shorts og knebeskyttere. Fra U15 og oppover kommer
+      eget draktsett i tillegg. Volleyball er ellers en rimelig idrett med lite
+      utstyrsbehov.
+  - sporsmal: "Hva forventes av foresatte?"
+    svar: >-
+      At man er med i Spond, bidrar på dugnad ved klubbens hjemmearrangementer
+      (kiosk, sekretariat, hallansvar), og gjerne tar en rolle på laget. Oppgavene
+      fordeles på [lagmøtet](/lagmote) ved sesongstart, og det er dugnaden som
+      holder prisene nede.
+  - sporsmal: "Hva er Spond og Profixio?"
+    svar: >-
+      Spond brukes til innmelding, påmelding til treninger og arrangementer, og
+      til betaling. Profixio brukes av Volleyballforbundet til terminlister,
+      kampoppsett og resultater i turneringer.
+description: >-
+  Kort innføring for nye spillere og foresatte: hvordan klubben er organisert, hvilke turneringer som finnes og hva som forventes.
 ---
 
 # Organisering
@@ -165,3 +209,9 @@ Innmelding gjøres også via Spond.
 
 Under **Begeistringskvelden høsten 2025** uttrykte mange utøvere et ønske om flere foreldre på tribunen.  
 👉 **Ta turen og hei fram sønnen eller datteren din!**
+
+---
+
+# Ofte stilte spørsmål
+
+{{< faq >}}

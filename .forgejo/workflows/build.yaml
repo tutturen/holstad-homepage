@@ -28,5 +28,7 @@ jobs:
         run: |
           curl -sL https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz | tar xz -C /usr/local/bin hugo
           hugo version
+      # baseURL settes i hugo.yaml, ikke som flagg her -- produksjonsbygget går
+      # via Dockerfile og hadde ellers ikke fått den.
       - name: Build with Hugo
-        run: hugo --gc --minify --baseURL "https://holstadvolley.com/"
+        run: hugo --gc --minify

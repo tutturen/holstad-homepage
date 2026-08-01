@@ -1,5 +1,7 @@
 ---
 title: Kalender
+description: >-
+  Kalender over treninger, kamper og arrangementer i Holstad Volleyball, samt terminliste for hjemmearrangement.
 ---
 
 Se all aktivtet som er relevant for spillerne i vår klubb
